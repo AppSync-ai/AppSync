@@ -1,41 +1,19 @@
 package com.teamup.rohitasawa;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.teamup.rohitasawa_library.InbuiltListenerExample;
-import com.teamup.rohitasawa_library.RohiAds;
-import com.teamup.rohitasawa_library.RohiBottomSheetDialog;
-import com.teamup.rohitasawa_library.RohitAlertDialogInput;
-import com.teamup.rohitasawa_library.RohitBackPressed;
-import com.teamup.rohitasawa_library.RohitBitmapsTheory;
-import com.teamup.rohitasawa_library.RohitContactPicker;
-import com.teamup.rohitasawa_library.RohitDirectResponseListen;
-import com.teamup.rohitasawa_library.RohitDirectResponseListenNew;
-import com.teamup.rohitasawa_library.RohitHandlers;
-import com.teamup.rohitasawa_library.RohitHexColor;
-import com.teamup.rohitasawa_library.RohitJsonArray;
-import com.teamup.rohitasawa_library.RohitNotification;
-import com.teamup.rohitasawa_library.RohitOpenApps;
-import com.teamup.rohitasawa_library.RohitPermissions;
-import com.teamup.rohitasawa_library.RohitStorage;
-import com.teamup.rohitasawa_library.RohitTextGradient;
-import com.teamup.rohitasawa_library.RohitToast;
+import com.teamup.app_sync.AppSyncBackPressed;
+import com.teamup.app_sync.AppSyncJsonArray;
+import com.teamup.app_sync.AppSyncTextGradient;
 
-import org.json.JSONArray;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,13 +34,13 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-        RohitJsonArray.setContext(this);
+        AppSyncJsonArray.setContext(this);
 
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                RohitTextGradient.makeShaded(txt1, 3);
+                AppSyncTextGradient.makeShaded(txt1, 3);
             }
         });
 
@@ -529,7 +507,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        RohitBackPressed.enable(this);
+        AppSyncBackPressed.enable(this);
 
     }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.teamup.rohitasawa_library">
+    package="com.teamup.app_sync">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -19,18 +19,18 @@
         android:supportsRtl="true">
 
         <activity
-            android:name=".RohitLogin"
+            android:name="com.teamup.app_sync.AppSyncLogin"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity
-            android:name=".RohitCalculator"
+            android:name="com.teamup.app_sync.AppSyncCalculator"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".NoInternetConnection" />
+        <activity android:name="com.teamup.app_sync.NoInternetConnection" />
 
         <provider
-            android:name=".GenericFileProvider"
+            android:name="com.teamup.app_sync.GenericFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">

@@ -3,9 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RohitAsawa.iml" filepath="$PROJECT_DIR$/.idea/modules/RohitAsawa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-gif-drawable-1.2.20/RohitAsawa.android-gif-drawable-1.2.20.iml" filepath="$PROJECT_DIR$/.idea/modules/android-gif-drawable-1.2.20/RohitAsawa.android-gif-drawable-1.2.20.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rohitasawa_library/RohitAsawa.rohitasawa_library.iml" filepath="$PROJECT_DIR$/.idea/modules/rohitasawa_library/RohitAsawa.rohitasawa_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.iml" filepath="$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.iml" />
     </modules>
   </component>
 </project>

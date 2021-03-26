@@ -1,2 +1,2 @@
-include ':app', ':rohitasawa_library', ':android-gif-drawable-1.2.20'
+include ':app', ':app_sync_ai'
 rootProject.name='RohitAsawa'

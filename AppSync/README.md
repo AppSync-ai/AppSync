@@ -1,2 +1,0 @@
-# AppSync
-AppSync Android

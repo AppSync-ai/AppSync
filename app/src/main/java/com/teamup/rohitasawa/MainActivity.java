@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.teamup.app_sync.AppSyncBackPressed;
+import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncTextGradient;
 
@@ -48,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+            }
+        });
+
+        txt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AppSyncInputDialogs.showSimpleInputDialog(MainActivity.this, txt1, "TP", true, 5);
             }
         });
 

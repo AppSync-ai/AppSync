@@ -5,6 +5,10 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e5669d0b-17fe-451b-a7de-485cf2d1ee76" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,12 +41,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app_sync_ai/src/main/res/layout" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.teamup.app_sync" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\layout" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -128,9 +140,29 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="285" y="177" key="#PSD/0.0.1536.864@0.0.1536.864" timestamp="1616775071115" />
+    <state width="1489" height="441" key="GridCell.Tab.0.bottom" timestamp="1616847886891">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1489" height="441" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1616847886891" />
+    <state width="1489" height="441" key="GridCell.Tab.0.center" timestamp="1616847886891">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1489" height="441" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1616847886891" />
+    <state width="1489" height="441" key="GridCell.Tab.0.left" timestamp="1616847886891">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1489" height="441" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1616847886891" />
+    <state width="1489" height="441" key="GridCell.Tab.0.right" timestamp="1616847886891">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1489" height="441" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1616847886891" />
     <state x="475" y="165" width="586" height="534" key="find.popup" timestamp="1616775000732">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="475" y="165" width="586" height="534" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1616775000732" />
+    <state x="474" y="189" key="refactoring.ChangeSignatureDialog" timestamp="1616847199368">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="474" y="189" key="refactoring.ChangeSignatureDialog/0.0.1536.864@0.0.1536.864" timestamp="1616847199368" />
   </component>
 </project>

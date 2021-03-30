@@ -4,11 +4,10 @@ import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
-public class AESUtils
-{
+public class AESUtils {
 
     private static final byte[] keyValue =
-            new byte[]{'c', 'o', 'd', 'i', 'n', 'g', 'a', 'f', 'f', 'a', 'i', 'r', 's', 'c', 'o', 'm'};
+            new byte[]{'a', 'p', 'p', 's', 'y', 'n', 'c', 'a', 'i', 'r', 'o', 'h', 'i', 't', 'a', 's', 'a', 'w', 'a'};
 
 
     public static String encrypt(String cleartext)

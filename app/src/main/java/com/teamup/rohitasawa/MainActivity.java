@@ -14,6 +14,7 @@ import com.teamup.app_sync.AppSyncBackPressed;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncStorage;
 import com.teamup.app_sync.AppSyncPopupWindow;
+import com.teamup.app_sync.AppSyncViewLocation;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
         });
 
@@ -59,10 +59,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
 //        final AppSyncPopupWindow popupWindow = new AppSyncPopupWindow(MainActivity.this, R.layout.test);
-//                popupWindow.show(findViewById(R.id.content), 250, 250);
+//                popupWindow.show(findViewById(R.id.content), AppSyncViewLocation.locationX(view), AppSyncViewLocation.locationY(view));
 //                TextView txt = AppSyncPopupWindow.popupView.findViewById(R.id.txt);
 //                txt.setTextColor(getResources().getColor(R.color.Green_Apple));
+
 
 //        AppSyncInputDialogs.showSimpleInputDialog(MainActivity.this, txt1, "TP", true, 5);
 

@@ -11,9 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.teamup.app_sync.AppSyncBackPressed;
-import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
-import com.teamup.app_sync.AppSyncTextGradient;
+import com.teamup.app_sync.AppSyncStorage;
+import com.teamup.app_sync.AppSyncPopupWindow;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         img = findViewById(R.id.img);
 
         AppSyncJsonArray.setContext(this);
-
+        final AppSyncStorage appSyncStorage = new AppSyncStorage(this);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncTextGradient.makeShaded(txt1, 3);
+
             }
         });
 
@@ -55,9 +55,18 @@ public class MainActivity extends AppCompatActivity {
         txt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncInputDialogs.showSimpleInputDialog(MainActivity.this, txt1, "TP", true, 5);
+
             }
         });
+
+//        final AppSyncPopupWindow popupWindow = new AppSyncPopupWindow(MainActivity.this, R.layout.test);
+//                popupWindow.show(findViewById(R.id.content), 250, 250);
+//                TextView txt = AppSyncPopupWindow.popupView.findViewById(R.id.txt);
+//                txt.setTextColor(getResources().getColor(R.color.Green_Apple));
+
+//        AppSyncInputDialogs.showSimpleInputDialog(MainActivity.this, txt1, "TP", true, 5);
+
+//        AppSyncTextGradient.makeShaded(txt1, 3);
 
 //        button.setBackgroundColor(Color.parseColor(RohitHexColor.generate()));
 

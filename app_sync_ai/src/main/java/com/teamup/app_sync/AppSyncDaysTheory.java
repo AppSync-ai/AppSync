@@ -116,9 +116,7 @@ public class AppSyncDaysTheory {
 
             format = new SimpleDateFormat(newFormat);
             date = format.format(newDate);
-        }
-        catch (Exception v)
-        {
+        } catch (Exception v) {
 
         }
         return date;

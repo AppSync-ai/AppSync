@@ -26,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -39,9 +40,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-viewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/TestLayout.java_SELECTED" value="TestLayout" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app_sync_ai/src/main/res/layout" />
+    <property name="multi-representation-previewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/TestLayout.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -49,6 +52,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.teamup.app_sync" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.teamup.app_sync" />
     </key>
@@ -140,22 +146,34 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="285" y="177" key="#PSD/0.0.1536.864@0.0.1536.864" timestamp="1616775071115" />
-    <state width="1489" height="441" key="GridCell.Tab.0.bottom" timestamp="1616847886891">
+    <state x="537" y="300" width="462" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1617099205310">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1489" height="441" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1616847886891" />
-    <state width="1489" height="441" key="GridCell.Tab.0.center" timestamp="1616847886891">
+    <state x="537" y="300" width="462" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1617099205310" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617101912859">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1489" height="441" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1616847886891" />
-    <state width="1489" height="441" key="GridCell.Tab.0.left" timestamp="1616847886891">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.864@0.0.1536.864" timestamp="1617101912859" />
+    <state x="348" y="186" key="AndroidCreateResourceFileDialog" timestamp="1617100825061">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1489" height="441" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1616847886891" />
-    <state width="1489" height="441" key="GridCell.Tab.0.right" timestamp="1616847886891">
+    <state x="348" y="186" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1617100825061" />
+    <state width="1489" height="266" key="GridCell.Tab.0.bottom" timestamp="1617101303199">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1489" height="441" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1616847886891" />
+    <state width="1489" height="266" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617101303199" />
+    <state width="1489" height="266" key="GridCell.Tab.0.center" timestamp="1617101303199">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1489" height="266" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1617101303199" />
+    <state width="1489" height="266" key="GridCell.Tab.0.left" timestamp="1617101303199">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1489" height="266" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1617101303199" />
+    <state width="1489" height="266" key="GridCell.Tab.0.right" timestamp="1617101303199">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1489" height="266" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1617101303199" />
     <state x="475" y="165" width="586" height="534" key="find.popup" timestamp="1616775000732">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

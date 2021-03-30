@@ -9,8 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.teamup.app_sync.AppSyncBackPressed;
+import com.teamup.app_sync.AppSyncEncryptDecrypt;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncStorage;
 import com.teamup.app_sync.AppSyncPopupWindow;
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "" + AppSyncEncryptDecrypt.Encrypt("rohit.asawa21@gmail.com"), Toast.LENGTH_SHORT).show();
             }
         });
 

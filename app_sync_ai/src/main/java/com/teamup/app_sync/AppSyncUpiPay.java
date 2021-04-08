@@ -57,46 +57,60 @@ public class AppSyncUpiPay {
     }
 
 
-    public static boolean upiPaymentDataOperation(ArrayList<String> data, Context context) {
+    public static boolean upiPaymentDataOperation(Intent idata, Context context) {
 
-        String str = data.get(0);
-        Log.e("UPIPAY", "upiPaymentDataOperation: " + str);
-        String paymentCancel = "";
-        if (str == null) str = "discard";
-        String status = "";
-        String approvalRefNo = "";
-        String response[] = str.split("&");
-        for (int i = 0; i < response.length; i++) {
-            String equalStr[] = response[i].split("=");
-            if (equalStr.length >= 2) {
-                if (equalStr[0].toLowerCase().equals("Status".toLowerCase())) {
-                    status = equalStr[1].toLowerCase();
-                } else if (equalStr[0].toLowerCase().equals("ApprovalRefNo".toLowerCase()) || equalStr[0].toLowerCase().equals("txnRef".toLowerCase())) {
-                    approvalRefNo = equalStr[1];
+        if (idata != null) {
+            String trxt = idata.getStringExtra("response");
+            Log.e("UPI", "onActivityResult: " + trxt);
+            ArrayList<String> dataList = new ArrayList<>();
+
+            String str = dataList.get(0);
+            Log.e("UPIPAY", "upiPaymentDataOperation: " + str);
+            String paymentCancel = "";
+            if (str == null) str = "discard";
+            String status = "";
+            String approvalRefNo = "";
+            String response[] = str.split("&");
+            for (int i = 0; i < response.length; i++) {
+                String equalStr[] = response[i].split("=");
+                if (equalStr.length >= 2) {
+                    if (equalStr[0].toLowerCase().equals("Status".toLowerCase())) {
+                        status = equalStr[1].toLowerCase();
+                    } else if (equalStr[0].toLowerCase().equals("ApprovalRefNo".toLowerCase()) || equalStr[0].toLowerCase().equals("txnRef".toLowerCase())) {
+                        approvalRefNo = equalStr[1];
+                    }
+                } else {
+                    paymentCancel = "Payment cancelled by user.";
                 }
-            } else {
-                paymentCancel = "Payment cancelled by user.";
             }
+            if (status.contains("success")) {
+
+
+                //Code to handle successful transaction here.
+                Log.e("UPI", "payment successfull: " + approvalRefNo);
+
+                return true;
+
+            } else if ("Payment cancelled by user.".equals(paymentCancel)) {
+
+                Log.e("UPI", "Cancelled by user: " + approvalRefNo);
+
+                return false;
+            } else {
+
+                Log.e("UPI", "failed payment: " + approvalRefNo);
+
+                return false;
+            }
+
+
         }
-        if (status.contains("success")) {
-
-
-            //Code to handle successful transaction here.
-            Log.e("UPI", "payment successfull: " + approvalRefNo);
-
-            return true;
-
-        } else if ("Payment cancelled by user.".equals(paymentCancel)) {
-
-            Log.e("UPI", "Cancelled by user: " + approvalRefNo);
-
-            return false;
-        } else {
-
-            Log.e("UPI", "failed payment: " + approvalRefNo);
-
+        else
+        {
+//            Failed
             return false;
         }
+
 
     }
 

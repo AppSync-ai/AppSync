@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +17,7 @@ import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncCustomNotification;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
+import com.teamup.app_sync.AppSyncFigerShow;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPermissions;
@@ -52,9 +54,12 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
 
         AppSyncPermissions.READ_WRITE_STORAAGE(this, 444);
 
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Toast.makeText(MainActivity.this, "listner caller", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -71,6 +76,12 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
 
             }
         });
+
+//        AppSyncFigerShow.showOn(MainActivity.this, findViewById(R.id.content), button);
+
+//        AppSyncPopupWindow popupWindow = new AppSyncPopupWindow(MainActivity.this, R.layout.test);
+//        popupWindow.show(findViewById(R.id.content), AppSyncViewLocation.locationX(button), AppSyncViewLocation.locationY(button));
+
 
 //        final ArrayList<TpReq> names = new ArrayList<>();
 //        TpReq tp = new TpReq(1, "Rohit");

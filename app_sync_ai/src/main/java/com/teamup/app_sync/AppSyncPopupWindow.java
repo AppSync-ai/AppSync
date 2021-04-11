@@ -17,7 +17,6 @@ public class AppSyncPopupWindow extends android.widget.PopupWindow {
     public AppSyncPopupWindow(Context context, int layoutId) {
         super(context);
 
-        Toast.makeText(context, "" + layoutId, Toast.LENGTH_SHORT).show();
         ctx = context;
         popupView = LayoutInflater.from(context).inflate(layoutId, null);
         setContentView(popupView);
@@ -47,7 +46,12 @@ public class AppSyncPopupWindow extends android.widget.PopupWindow {
     } // End constructor
 
     // Attaches the view to its parent anchor-view at position x and y
-    public void show(View anchor, int x, int y) {
-        showAtLocation(anchor, Gravity.NO_GRAVITY, x, y);
+    public void show(final View anchor, final int x, final int y) {
+        anchor.post(new Runnable() {
+            public void run() {
+                showAtLocation(anchor, Gravity.NO_GRAVITY, x, y);
+            }
+        });
+
     }
 }

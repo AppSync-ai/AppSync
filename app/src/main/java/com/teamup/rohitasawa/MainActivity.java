@@ -12,14 +12,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.teamup.app_sync.AppSyncBackPressed;
+import com.teamup.app_sync.AppSyncBitmapsTheory;
+import com.teamup.app_sync.AppSyncCurrentDate;
+import com.teamup.app_sync.AppSyncCustomNotification;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
 import com.teamup.app_sync.AppSyncJsonArray;
+import com.teamup.app_sync.AppSyncNotification;
+import com.teamup.app_sync.AppSyncPermissions;
+import com.teamup.app_sync.AppSyncSaveArrayList;
 import com.teamup.app_sync.AppSyncStorage;
 import com.teamup.app_sync.AppSyncPopupWindow;
+import com.teamup.app_sync.AppSyncUpdate;
 import com.teamup.app_sync.AppSyncViewLocation;
+import com.teamup.app_sync.ViewPagerFolder.AppSyncBackkgroundTint;
+
+import java.util.ArrayList;
+
+import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AppSyncCurrentDate.NetworkDate {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -38,13 +50,11 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-        AppSyncJsonArray.setContext(this);
-        final AppSyncStorage appSyncStorage = new AppSyncStorage(this);
+        AppSyncPermissions.READ_WRITE_STORAAGE(this, 444);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "" + AppSyncEncryptDecrypt.Encrypt("rohit.asawa21@gmail.com"), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -61,6 +71,20 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+//        final ArrayList<TpReq> names = new ArrayList<>();
+//        TpReq tp = new TpReq(1, "Rohit");
+//        names.add(tp);
+//        TpReq tp2 = new TpReq(2, "Rohit");
+//        names.add(tp2);
+//        Toast.makeText(MainActivity.this, "" + AppSyncSaveArrayList.getListToJsonArray(names), Toast.LENGTH_SHORT).show();
+
+
+//        AppSyncUpdate.checkForUpdate(this, "1.0", BuildConfig.VERSION_NAME);
+
+//        AppSyncBackkgroundTint.setTintToButton(R.color.colorAccent, button, MainActivity.this);
+
+//        AppSyncCurrentDate.getNetworkDate(MainActivity.this, "dd/MM/yyyy");
 
 
 //        final AppSyncPopupWindow popupWindow = new AppSyncPopupWindow(MainActivity.this, R.layout.test);
@@ -531,6 +555,11 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         AppSyncBackPressed.enable(this);
 
+    }
+
+    @Override
+    public void gotDate(String date) {
+        txt1.setText(date + "");
     }
 
 //    @Override

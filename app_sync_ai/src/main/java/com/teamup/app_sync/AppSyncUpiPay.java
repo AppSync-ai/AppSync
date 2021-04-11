@@ -27,8 +27,6 @@ public class AppSyncUpiPay {
         } else {
             payUsingUpi(context, name, Upi, extraTxt, Amount);
         }
-
-
     }
 
     private static void payUsingUpi(Context context, String name, String upi, String extraTxt, String amount) {
@@ -104,9 +102,7 @@ public class AppSyncUpiPay {
             }
 
 
-        }
-        else
-        {
+        } else {
 //            Failed
             return false;
         }

@@ -13,20 +13,17 @@ import android.widget.TextView;
 public class AppSyncUpdate {
     static Dialog fetching;
 
-    public static void checkForUpdate(Context context, String update){
-        String versionName = BuildConfig.VERSION_NAME;
-        if (versionName.equalsIgnoreCase(update))
-        {
+    public static void checkForUpdate(Context context, String update, String buildConfigVersionName) {
 
-        }
-        else
-        {
-          showDialog(context);
+        if (buildConfigVersionName.equalsIgnoreCase(update)) {
+
+        } else {
+            showDialog(context);
         }
     }
 
-    public static void showDialog(final Context context){
-        fetching= new Dialog(context);
+    public static void showDialog(final Context context) {
+        fetching = new Dialog(context);
 
         DisplayMetrics metrics = context.getResources().getDisplayMetrics();
         int width = metrics.widthPixels;
@@ -62,7 +59,7 @@ public class AppSyncUpdate {
 
     }
 
-    public static void stopDialog(Context context){
+    public static void stopDialog(Context context) {
         fetching.dismiss();
     }
 

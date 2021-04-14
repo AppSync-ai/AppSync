@@ -12,10 +12,11 @@ public class AppSyncDirectResponse {
     public static String getResponse(String stringUrl) {
         try {
             StringBuilder response;
+
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            response = new StringBuilder();
             if (cctoast.intialized) {
-                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-                StrictMode.setThreadPolicy(policy);
-                response = new StringBuilder();
             } else {
                 return "null";
             }

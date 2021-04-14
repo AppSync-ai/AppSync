@@ -24,6 +24,7 @@ import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPermissions;
+import com.teamup.app_sync.cctoast;
 
 import java.util.ArrayList;
 
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(MainActivity.this, "listner caller", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "" + cctoast.intialized, Toast.LENGTH_SHORT).show();
             }
         });
 

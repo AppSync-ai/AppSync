@@ -11,22 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5669d0b-17fe-451b-a7de-485cf2d1ee76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/AllAdapters/AppsAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/AllAdapters/BlankAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/AllReqs/AppsReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/ManageApps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/TinyDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/hitman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_add_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/refresh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/white_card_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_manage_apps.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/bottom_add_app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/single_app.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDirectResponseAsync.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncInitialize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -37,17 +21,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDirectResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDirectResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDirectResponseListen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDirectResponseListen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDirectResponseListenNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDirectResponseListenNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncInitialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncInitialize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/cctoast.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/cctoast.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,34 +213,34 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="547" y="191" key="FileChooserDialogImpl/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618372627685" />
-    <state width="1474" height="263" key="GridCell.Tab.0.bottom" timestamp="1618381905125">
+    <state width="1474" height="161" key="GridCell.Tab.0.bottom" timestamp="1618385446140">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1474" height="263" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618381905125" />
+    <state width="1474" height="161" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618385446140" />
     <state width="1489" height="266" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1617101303199" />
-    <state width="1474" height="263" key="GridCell.Tab.0.center" timestamp="1618381905125">
+    <state width="1474" height="161" key="GridCell.Tab.0.center" timestamp="1618385446139">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1474" height="263" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618381905125" />
+    <state width="1474" height="161" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618385446139" />
     <state width="1489" height="266" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1617101303199" />
-    <state width="1474" height="263" key="GridCell.Tab.0.left" timestamp="1618381905125">
+    <state width="1474" height="161" key="GridCell.Tab.0.left" timestamp="1618385446139">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1474" height="263" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618381905125" />
+    <state width="1474" height="161" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618385446139" />
     <state width="1489" height="266" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1617101303199" />
-    <state width="1474" height="263" key="GridCell.Tab.0.right" timestamp="1618381905125">
+    <state width="1474" height="161" key="GridCell.Tab.0.right" timestamp="1618385446139">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1474" height="263" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618381905125" />
+    <state width="1474" height="161" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618385446139" />
     <state width="1489" height="266" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1617101303199" />
     <state x="583" y="209" key="chooseDestDirectoryDialog" timestamp="1618372726172">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="583" y="209" key="chooseDestDirectoryDialog/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618372726172" />
-    <state x="475" y="165" width="586" height="534" key="find.popup" timestamp="1618373233909">
+    <state x="475" y="165" width="586" height="534" key="find.popup" timestamp="1618385785678">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="475" y="165" width="586" height="534" key="find.popup/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618373233909" />
+    <state x="475" y="165" width="586" height="534" key="find.popup/0.0.1536.864/1920.0.1280.720@0.0.1536.864" timestamp="1618385785678" />
     <state x="475" y="165" width="586" height="534" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1617855421046" />
     <state x="474" y="189" key="refactoring.ChangeSignatureDialog" timestamp="1616847199368">
       <screen x="0" y="0" width="1536" height="864" />

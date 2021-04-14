@@ -14,7 +14,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
 import androidx.core.graphics.ColorUtils;
 
-class cctoast {
+public class cctoast {
 
     public static boolean intialized = false;
 

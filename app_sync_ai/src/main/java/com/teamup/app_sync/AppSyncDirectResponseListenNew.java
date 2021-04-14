@@ -86,8 +86,10 @@ public class AppSyncDirectResponseListenNew {
             super.onPostExecute(result);
 
             try {
-                if (cctoast.intialized) {
-                    listener.responser(result);
+
+                listener.responser(result);
+                if (!cctoast.intialized) {
+                    Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
                 }
             } catch (Exception c) {
                 Log.e("Rohit 93 ", c.getMessage());

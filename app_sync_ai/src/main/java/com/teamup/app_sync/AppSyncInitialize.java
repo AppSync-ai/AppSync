@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
@@ -29,12 +30,15 @@ public class AppSyncInitialize {
         as.getResponseFromUrl(new AppSyncDirectResponseListen.ResponseListener() {
             @Override
             public void responser(String response, String datakey) {
+
                 if (datakey.equalsIgnoreCase("Fuck")) {
                     try {
                         JSONArray jsonArray = new JSONArray(response);
                         if (jsonArray.length() > 0) {
                             JSONObject obj = jsonArray.getJSONObject(0);
                             int status = obj.getInt("status");
+
+                            Log.e("Hulk40", status + " is the status");
 
                             if (status == 1) {
                                 cctoast.intialized = true;
@@ -54,5 +58,7 @@ public class AppSyncInitialize {
             }
         });
         as.getResponseFromUrlMethod("http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=" + context.getPackageName(), "Fuck");
+
+        Log.e("Hulk60", "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=" + context.getPackageName());
     }
 }

@@ -6,7 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,6 +21,7 @@ import com.teamup.app_sync.AppSyncChangeNavigationColor;
 import com.teamup.app_sync.AppSyncDirectResponse;
 import com.teamup.app_sync.AppSyncDirectResponseListenNew;
 import com.teamup.app_sync.AppSyncHideTop;
+import com.teamup.app_sync.AppSyncSearchPlugin;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.AppSyncYesNoDialog;
 import com.teamup.rohitasawa.AllAdapters.AppsAdapter;
@@ -36,6 +39,7 @@ public class ManageApps extends AppCompatActivity implements AppSyncYesNoDialog.
     ArrayList<AppsReq> list;
     RecyclerView recycler;
     AppsAdapter adapter;
+    EditText searchEdt;
     ImageView refreshImg;
     public static Context context;
     FloatingActionButton addBtn;
@@ -49,6 +53,7 @@ public class ManageApps extends AppCompatActivity implements AppSyncYesNoDialog.
 
         context = this;
 
+        searchEdt = findViewById(R.id.searchEdt);
         addBtn = findViewById(R.id.addBtn);
         refreshImg = findViewById(R.id.refreshImg);
         recycler = findViewById(R.id.recycler);
@@ -72,6 +77,27 @@ public class ManageApps extends AppCompatActivity implements AppSyncYesNoDialog.
             @Override
             public void onClick(View view) {
                 HandleBottomAdder();
+            }
+        });
+
+        searchEdt.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                adapter = new AppsAdapter(AppSyncSearchPlugin.search(ManageApps.this, searchEdt.getText().toString(), list));
+                recycler.setAdapter(adapter);
+                adapter.notifyDataSetChanged();
+
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
             }
         });
     }

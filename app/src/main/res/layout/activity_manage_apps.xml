@@ -40,6 +40,13 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
+        <EditText
+            android:id="@+id/searchEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:hint="search here.." />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"

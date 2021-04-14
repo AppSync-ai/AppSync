@@ -16,6 +16,9 @@ import androidx.core.graphics.ColorUtils;
 
 class cctoast {
 
+    public static boolean intialized = false;
+
+
     private Context context;
     private String message;
     private Drawable icon;

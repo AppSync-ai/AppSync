@@ -1,6 +1,7 @@
 package com.teamup.app_sync;
 
 import android.os.StrictMode;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -10,10 +11,14 @@ import java.net.URL;
 public class AppSyncDirectResponse {
     public static String getResponse(String stringUrl) {
         try {
-
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
-            StringBuilder response = new StringBuilder();
+            StringBuilder response;
+            if (cctoast.intialized) {
+                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                StrictMode.setThreadPolicy(policy);
+                response = new StringBuilder();
+            } else {
+                return "null";
+            }
 
             URL url = new URL(stringUrl);
             HttpURLConnection httpconn = (HttpURLConnection) url.openConnection();

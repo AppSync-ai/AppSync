@@ -5,9 +5,7 @@
     android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     android:background="@color/whiite"
-    android:gravity="center"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -81,4 +79,41 @@
             app:period_in_ms="100" />
 
     </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/manage_reler"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_card_view"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:foreground="?selectableItemBackground"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/hitman" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Manage Apps"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
 </RelativeLayout>

@@ -3,6 +3,7 @@ package com.teamup.rohitasawa;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -18,15 +19,11 @@ import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncCustomNotification;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
 import com.teamup.app_sync.AppSyncFigerShow;
+import com.teamup.app_sync.AppSyncInitialize;
+import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPermissions;
-import com.teamup.app_sync.AppSyncSaveArrayList;
-import com.teamup.app_sync.AppSyncStorage;
-import com.teamup.app_sync.AppSyncPopupWindow;
-import com.teamup.app_sync.AppSyncUpdate;
-import com.teamup.app_sync.AppSyncViewLocation;
-import com.teamup.app_sync.ViewPagerFolder.AppSyncBackkgroundTint;
 
 import java.util.ArrayList;
 
@@ -38,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
     Button button, button2;
     TextView txt1, txt2;
     ImageView img;
+    RelativeLayout manage_reler;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -46,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
 
         setContentView(R.layout.activity_main);
 
+        manage_reler = findViewById(R.id.manage_reler);
         button2 = findViewById(R.id.button2);
         txt1 = findViewById(R.id.txt1);
         txt2 = findViewById(R.id.txt2);
@@ -54,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
 
         AppSyncPermissions.READ_WRITE_STORAAGE(this, 444);
 
+        AppSyncInitialize.init(this);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +74,13 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
             @Override
             public void onClick(View view) {
 
+            }
+        });
+
+        manage_reler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ManageApps.class));
             }
         });
 

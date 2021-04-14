@@ -86,9 +86,9 @@ public class AppSyncDirectResponseListenNew {
             super.onPostExecute(result);
 
             try {
-
-                listener.responser(result);
-
+                if (cctoast.intialized) {
+                    listener.responser(result);
+                }
             } catch (Exception c) {
                 Log.e("Rohit 93 ", c.getMessage());
             }

@@ -99,7 +99,10 @@ public class AppSyncDirectResponseListen {
 
             try {
 
-                listener.responser(result, datakeyIs);
+                if (cctoast.intialized) {
+                    listener.responser(result, datakeyIs);
+                }
+
 
             } catch (Exception c) {
 

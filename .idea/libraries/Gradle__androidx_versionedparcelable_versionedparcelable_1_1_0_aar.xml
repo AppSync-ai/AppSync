@@ -21,6 +21,9 @@
       <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/21807f180356244766bf5528789ff155/versionedparcelable-1.1.0/jars/classes.jar!/" />
       <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/21807f180356244766bf5528789ff155/versionedparcelable-1.1.0/res" />
       <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/21807f180356244766bf5528789ff155/versionedparcelable-1.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21807f180356244766bf5528789ff155/versionedparcelable-1.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21807f180356244766bf5528789ff155/versionedparcelable-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/21807f180356244766bf5528789ff155/versionedparcelable-1.1.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -28,7 +31,7 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_221/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.0/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.0/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.0/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.0-sources.jar!/" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.0/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.0/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -13,6 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.teamup.app_sync.AppSyncAlertWithList;
 import com.teamup.app_sync.AppSyncBackPressed;
 import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncCurrentDate;
@@ -24,6 +25,7 @@ import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPermissions;
+import com.teamup.app_sync.AppSyncPleaseWait;
 import com.teamup.app_sync.cctoast;
 
 import java.util.ArrayList;
@@ -31,7 +33,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncCurrentDate.NetworkDate {
+public class MainActivity extends AppCompatActivity implements AppSyncAlertWithList.AlertDialogList {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -60,7 +62,14 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(MainActivity.this, "" + cctoast.intialized, Toast.LENGTH_SHORT).show();
+                ArrayList<String> names = new ArrayList<>();
+                names.add("Rohit");
+                names.add("Sumit");
+                names.add("Darshan");
+
+                AppSyncAlertWithList.showListDialog(MainActivity.this, names, R.drawable.lock, "Please select your Hero");
+
+
             }
         });
 
@@ -577,9 +586,19 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
     }
 
     @Override
-    public void gotDate(String date) {
-        txt1.setText(date + "");
+    public void selectedFromAlertDialogList(String selected) {
+        Toast.makeText(this, "Selected : " + selected, Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void AlertDialogWithListDismissed() {
+
+    }
+
+//    @Override
+//    public void gotDate(String date) {
+//        txt1.setText(date + "");
+//    }
 
 //    @Override
 //    public void details(String number) {

@@ -2,6 +2,7 @@ package com.teamup.app_sync;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
@@ -37,7 +38,7 @@ public class AppSyncAlertWithList {
                     AlertDialogList ad = (AlertDialogList) context;
                     ad.selectedFromAlertDialogList(strName);
                 } catch (Exception v) {
-                    Toast.makeText(context, "Please implement AlertDialogList interface in your " + context.getClass(), Toast.LENGTH_SHORT).show();
+                    Log.wtf("Hulk41", "Please implement AlertDialogList interface in your ");
                 }
 
             }

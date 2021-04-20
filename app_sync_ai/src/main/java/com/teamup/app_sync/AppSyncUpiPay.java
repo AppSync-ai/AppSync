@@ -14,8 +14,7 @@ public class AppSyncUpiPay {
 
     public static final int UPI_PAYMENT = 0;
 
-    public static void doPayment(Context context, String name,String Upi, String Amount, String extraTxt)
-    {
+    public static void doPayment(Context context, String name, String Upi, String Amount, String extraTxt) {
 
         if (TextUtils.isEmpty(name)) {
             Toast.makeText(context, " Name is invalid", Toast.LENGTH_SHORT).show();
@@ -23,16 +22,16 @@ public class AppSyncUpiPay {
             Toast.makeText(context, " UPI ID is invalid", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.isEmpty(extraTxt)) {
             Toast.makeText(context, " Note is invalid", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(""+Amount)) {
+        } else if (TextUtils.isEmpty("" + Amount)) {
             Toast.makeText(context, " Amount is invalid", Toast.LENGTH_SHORT).show();
         } else {
-            payUsingUpi(context,name, Upi, extraTxt, Amount);
+            payUsingUpi(context, name, Upi, extraTxt, Amount);
         }
 
 
     }
 
-    private static void payUsingUpi(Context context,String name, String upi, String extraTxt, String amount) {
+    private static void payUsingUpi(Context context, String name, String upi, String extraTxt, String amount) {
         Log.e("main ", "name " + name + "--up--" + upi + "--" + extraTxt + "--" + amount);
         Uri uri = Uri.parse("upi://pay").buildUpon()
                 .appendQueryParameter("pa", upi)
@@ -51,55 +50,64 @@ public class AppSyncUpiPay {
         Intent chooser = Intent.createChooser(upiPayIntent, "Pay with");
         // check if intent resolves
         if (null != chooser.resolveActivity(context.getPackageManager())) {
-            ((Activity)context).startActivityForResult(chooser, UPI_PAYMENT);
+            ((Activity) context).startActivityForResult(chooser, UPI_PAYMENT);
         } else {
             Toast.makeText(context, "No UPI app found, please install one to continue", Toast.LENGTH_SHORT).show();
         }
     }
 
 
+    public static boolean upiPaymentDataOperation(Intent idata, Context context) {
 
-    public static boolean upiPaymentDataOperation(ArrayList<String> data, Context context) {
-
-        String str = data.get(0);
-        Log.e("UPIPAY", "upiPaymentDataOperation: " + str);
-        String paymentCancel = "";
-        if (str == null) str = "discard";
-        String status = "";
-        String approvalRefNo = "";
-        String response[] = str.split("&");
-        for (int i = 0; i < response.length; i++) {
-            String equalStr[] = response[i].split("=");
-            if (equalStr.length >= 2) {
-                if (equalStr[0].toLowerCase().equals("Status".toLowerCase())) {
-                    status = equalStr[1].toLowerCase();
-                } else if (equalStr[0].toLowerCase().equals("ApprovalRefNo".toLowerCase()) || equalStr[0].toLowerCase().equals("txnRef".toLowerCase())) {
-                    approvalRefNo = equalStr[1];
-                }
-            } else {
-                paymentCancel = "Payment cancelled by user.";
-            }
-        }
-        if (status.contains("success")) {
-
-
-            //Code to handle successful transaction here.
-            Log.e("UPI", "payment successfull: " + approvalRefNo);
-
-            return true;
-
-        } else if ("Payment cancelled by user.".equals(paymentCancel)) {
-
-            Log.e("UPI", "Cancelled by user: " + approvalRefNo);
-
+        if (idata != null) {
             return false;
         } else {
 
-            Log.e("UPI", "failed payment: " + approvalRefNo);
+            String trxt = idata.getStringExtra("response");
+            Log.e("UPI", "onActivityResult: " + trxt);
+            ArrayList<String> dataList = new ArrayList<>();
+            dataList.add(trxt);
 
-            return false;
+            String str = dataList.get(0);
+            Log.e("UPIPAY", "upiPaymentDataOperation: " + str);
+            String paymentCancel = "";
+            if (str == null) str = "discard";
+            String status = "";
+            String approvalRefNo = "";
+            String response[] = str.split("&");
+            for (int i = 0; i < response.length; i++) {
+                String equalStr[] = response[i].split("=");
+                if (equalStr.length >= 2) {
+                    if (equalStr[0].toLowerCase().equals("Status".toLowerCase())) {
+                        status = equalStr[1].toLowerCase();
+                    } else if (equalStr[0].toLowerCase().equals("ApprovalRefNo".toLowerCase()) || equalStr[0].toLowerCase().equals("txnRef".toLowerCase())) {
+                        approvalRefNo = equalStr[1];
+                    }
+                } else {
+                    paymentCancel = "Payment cancelled by user.";
+                }
+            }
+            if (status.contains("success")) {
+
+
+                //Code to handle successful transaction here.
+                Log.e("UPI", "payment successfull: " + approvalRefNo);
+
+                return true;
+
+            } else if ("Payment cancelled by user.".equals(paymentCancel)) {
+
+                Log.e("UPI", "Cancelled by user: " + approvalRefNo);
+
+                return false;
+            } else {
+
+                Log.e("UPI", "failed payment: " + approvalRefNo);
+
+                return false;
+            }
+
         }
-
     }
 
 }

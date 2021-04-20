@@ -23,7 +23,7 @@ public class AppSyncSearchPlugin {
             JsonObject object = jsonArray.get(i).getAsJsonObject();
             String sobj = String.valueOf(object);
 
-            if (sobj.contains(searchTxt)) {
+            if (sobj.toLowerCase().contains(searchTxt.toLowerCase())) {
                 newList.add(list.get(i));
             }
 

@@ -57,7 +57,7 @@ public class AppSyncUpiPay {
 
     public static boolean upiPaymentDataOperation(Intent idata, Context context) {
 
-        if (idata != null) {
+        if (idata == null) {
             return false;
         } else {
 

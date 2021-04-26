@@ -17,8 +17,10 @@ import com.teamup.app_sync.AppSyncAlertWithList;
 import com.teamup.app_sync.AppSyncBackPressed;
 import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncCalendarView;
+import com.teamup.app_sync.AppSyncCopyPaste;
 import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncCustomNotification;
+import com.teamup.app_sync.AppSyncDaysTheory;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
 import com.teamup.app_sync.AppSyncFigerShow;
 import com.teamup.app_sync.AppSyncInitialize;
@@ -63,9 +65,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncCalendarVi
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                AppSyncCalendarView.show(MainActivity.this, "yyyy-MM-dd", "2021-04-05", "yyyy-MM-dd");
-
 
             }
         });

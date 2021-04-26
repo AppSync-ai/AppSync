@@ -11,7 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5669d0b-17fe-451b-a7de-485cf2d1ee76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/InitilizingMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -22,16 +21,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_5_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__pl_droidsonroids_gif_android_gif_drawable_1_2_23_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__pl_droidsonroids_gif_android_gif_drawable_1_2_23_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncCalendarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncCalendarView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncInitialize.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncInitialize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/ViewPagerFolder/AppSyncBackkgroundTint.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncBackkgroundTint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/cctoast.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/cctoast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/dialog_calendarview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/dialog_calendarview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDaysTheory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDaysTheory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

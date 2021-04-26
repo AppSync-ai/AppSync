@@ -1,6 +1,7 @@
 package com.teamup.app_sync;
 
 import android.os.Build;
+import android.text.format.DateFormat;
 
 import androidx.annotation.RequiresApi;
 
@@ -140,6 +141,29 @@ public class AppSyncDaysTheory {
         return ageS;
     }
 
+    public static long DateToLongMillis(String date, String dateFormat) {
+        String string_date = date;
 
+        long milliseconds = 0;
+        SimpleDateFormat f = new SimpleDateFormat(dateFormat);
+        try {
+            Date d = f.parse(string_date);
+            milliseconds = d.getTime();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return milliseconds;
+    }
+
+
+    public static String LongToDateString(String longDate, String outputFormat)
+    {
+        String longV = longDate;
+        long millisecond = Long.parseLong(longV);
+        String dateString = DateFormat.format(outputFormat, new Date(millisecond)).toString();
+
+        return dateString;
+    }
 }
 

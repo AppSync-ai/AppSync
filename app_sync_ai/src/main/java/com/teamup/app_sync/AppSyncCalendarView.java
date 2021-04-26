@@ -54,7 +54,7 @@ public class AppSyncCalendarView {
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int iyear, int imonth, int iday) {
 
                 year = "" + iyear;
-                month = "" + imonth;
+                month = "" + (imonth+1);
                 day = "" + iday;
 
 

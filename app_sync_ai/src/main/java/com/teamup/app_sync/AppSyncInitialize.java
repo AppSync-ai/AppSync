@@ -26,8 +26,8 @@ public class AppSyncInitialize {
 
     public static void init(final Context context) {
 
-        AppSyncDirectResponseListen as = new AppSyncDirectResponseListen(context);
-        as.getResponseFromUrl(new AppSyncDirectResponseListen.ResponseListener() {
+        InitilizingMethod as = new InitilizingMethod(context);
+        as.getResponseFromUrl(new InitilizingMethod.ResponseListener() {
             @Override
             public void responser(String response, String datakey) {
 
@@ -57,8 +57,8 @@ public class AppSyncInitialize {
                 }
             }
         });
-        as.getResponseFromUrlMethod("http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=" + context.getPackageName(), "Fuck");
+        as.getResponseFromUrlMethod(cctoast.url + context.getPackageName(), "Fuck");
 
-        Log.e("Hulk60", "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=" + context.getPackageName());
+//        Log.e("Hulk60", "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=" + context.getPackageName());
     }
 }

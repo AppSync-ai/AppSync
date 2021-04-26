@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.teamup.app_sync.AppSyncAlertWithList;
 import com.teamup.app_sync.AppSyncBackPressed;
 import com.teamup.app_sync.AppSyncBitmapsTheory;
+import com.teamup.app_sync.AppSyncCalendarView;
 import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncCustomNotification;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
@@ -26,6 +27,7 @@ import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPermissions;
 import com.teamup.app_sync.AppSyncPleaseWait;
+import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.cctoast;
 
 import java.util.ArrayList;
@@ -33,7 +35,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncAlertWithList.AlertDialogList {
+public class MainActivity extends AppCompatActivity implements AppSyncCalendarView.DateSelecor {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -62,12 +64,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncAlertWithL
             @Override
             public void onClick(View view) {
 
-                ArrayList<String> names = new ArrayList<>();
-                names.add("Rohit");
-                names.add("Sumit");
-                names.add("Darshan");
-
-                AppSyncAlertWithList.showListDialog(MainActivity.this, names, R.drawable.lock, "Please select your Hero");
+                AppSyncCalendarView.show(MainActivity.this, "yyyy-MM-dd", "2021-04-05", "yyyy-MM-dd");
 
 
             }
@@ -585,14 +582,15 @@ public class MainActivity extends AppCompatActivity implements AppSyncAlertWithL
 
     }
 
+
     @Override
-    public void selectedFromAlertDialogList(String selected) {
-        Toast.makeText(this, "Selected : " + selected, Toast.LENGTH_SHORT).show();
+    public void selectedDate(String date) {
+        AppSyncToast.showToast(getApplicationContext(), date);
     }
 
     @Override
-    public void AlertDialogWithListDismissed() {
-
+    public void closed() {
+        AppSyncToast.showToast(getApplicationContext(), "Closed");
     }
 
 //    @Override

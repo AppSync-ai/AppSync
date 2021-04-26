@@ -17,6 +17,7 @@ import androidx.core.graphics.ColorUtils;
 public class cctoast {
 
     public static boolean intialized = false;
+    public static String url = "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=";
 
 
     private Context context;

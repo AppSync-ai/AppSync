@@ -37,7 +37,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncCalendarView.DateSelecor {
+public class MainActivity extends AppCompatActivity implements AppSyncCurrentDate.NetworkDate {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncCalendarVi
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                AppSyncCurrentDate.getNetworkDate(MainActivity.this, "dd/MM/yyyy");
 
             }
         });
@@ -581,15 +583,9 @@ public class MainActivity extends AppCompatActivity implements AppSyncCalendarVi
 
     }
 
-
     @Override
-    public void selectedDate(String date) {
-        AppSyncToast.showToast(getApplicationContext(), date);
-    }
-
-    @Override
-    public void closed() {
-        AppSyncToast.showToast(getApplicationContext(), "Closed");
+    public void gotDate(String date) {
+        Toast.makeText(this, "" + date, Toast.LENGTH_SHORT).show();
     }
 
 //    @Override

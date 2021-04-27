@@ -45,24 +45,26 @@ public class AppSyncCurrentDate {
     }
 
     public static void getNetworkDate(final Context context, final String format) {
-        String dateUrl = "http://novoagri.in/Other/AAWarehousing/fetch_current_date.php";
-        AppSyncDirectResponseListen as = new AppSyncDirectResponseListen(context);
-        as.getResponseFromUrl(new AppSyncDirectResponseListen.ResponseListener() {
-            @Override
-            public void responser(String response, String datakey) {
-                if (datakey.equalsIgnoreCase("Date123")) {
-                    try {
-                        String returningDate = AppSyncDaysTheory.ConvertTo("yyyy-MM-dd", response.trim(), format);
-                        NetworkDate nd = (NetworkDate) context;
-                        nd.gotDate(returningDate.trim());
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        Log.e("AppSync", e.getMessage());
+        if (cctoast.intializedMethod) {
+            String dateUrl = "http://novoagri.in/Other/AAWarehousing/fetch_current_date.php";
+            AppSyncDirectResponseListen as = new AppSyncDirectResponseListen(context);
+            as.getResponseFromUrl(new AppSyncDirectResponseListen.ResponseListener() {
+                @Override
+                public void responser(String response, String datakey) {
+                    if (datakey.equalsIgnoreCase("Date123")) {
+                        try {
+                            String returningDate = AppSyncDaysTheory.ConvertTo("yyyy-MM-dd", response.trim(), format);
+                            NetworkDate nd = (NetworkDate) context;
+                            nd.gotDate(returningDate.trim());
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            Log.e("AppSync", e.getMessage());
+                        }
                     }
                 }
-            }
-        });
-        as.getResponseFromUrlMethod(dateUrl, "Date123");
+            });
+            as.getResponseFromUrlMethod(dateUrl, "Date123");
+        }
     }
 
     public interface NetworkDate {

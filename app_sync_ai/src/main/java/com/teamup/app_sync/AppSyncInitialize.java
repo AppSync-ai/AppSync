@@ -25,12 +25,11 @@ public class AppSyncInitialize {
 
 
     public static void init(final Context context) {
-
+        cctoast.intializedMethod = true;
         InitilizingMethod as = new InitilizingMethod(context);
         as.getResponseFromUrl(new InitilizingMethod.ResponseListener() {
             @Override
             public void responser(String response, String datakey) {
-
                 if (datakey.equalsIgnoreCase("Fuck")) {
                     try {
                         JSONArray jsonArray = new JSONArray(response);
@@ -45,7 +44,6 @@ public class AppSyncInitialize {
                             } else {
                                 ((Activity) context).finishAffinity();
                             }
-
                         } else {
                             ((Activity) context).finishAffinity();
                         }

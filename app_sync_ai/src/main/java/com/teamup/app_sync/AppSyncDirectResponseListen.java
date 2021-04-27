@@ -98,19 +98,21 @@ public class AppSyncDirectResponseListen {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
 
-            try {
+            if (cctoast.intializedMethod) {
+                try {
 
 
-                listener.responser(result, datakeyIs);
-                if (!cctoast.intialized) {
-                    Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
-                }
+                    listener.responser(result, datakeyIs);
+                    if (!cctoast.intialized) {
+                        Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
+                    }
 
 
-            } catch (Exception c) {
+                } catch (Exception c) {
 
 //                Admin.fetchListen2.setValue("" + RohitRandomNumber.generateRandomNumber(5));
 
+                }
             }
         }
     }

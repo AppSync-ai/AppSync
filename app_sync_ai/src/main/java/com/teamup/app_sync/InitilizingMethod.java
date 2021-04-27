@@ -17,6 +17,7 @@ import java.net.URL;
 
 public class InitilizingMethod {
 
+    public static boolean enabled = true;
     public static ResponseListener listener;
     public Context contextThis;
     public String datakeyIs = "";

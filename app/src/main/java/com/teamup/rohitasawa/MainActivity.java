@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -27,6 +28,7 @@ import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncNotification;
+import com.teamup.app_sync.AppSyncPHPMailer;
 import com.teamup.app_sync.AppSyncPermissions;
 import com.teamup.app_sync.AppSyncPleaseWait;
 import com.teamup.app_sync.AppSyncToast;
@@ -66,7 +68,13 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
             @Override
             public void onClick(View view) {
 
-                AppSyncCurrentDate.getNetworkDate(MainActivity.this, "dd/MM/yyyy");
+                if (AppSyncPHPMailer.sendMail(MainActivity.this, "rohit.asawa21@gmail.com", "Hello Buddy", "This is Fucking Awesome..!")) {
+                    AppSyncToast.showToast(getApplicationContext(), "Sent");
+                } else {
+                    AppSyncToast.showToast(getApplicationContext(), "Failed");
+                }
+
+
 
             }
         });

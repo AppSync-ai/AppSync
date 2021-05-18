@@ -16,7 +16,7 @@ public class AppSyncInputDialogs {
 
     public static View view2;
 
-    public static void showSimpleInputDialog(final Context context, final TextView textView, final String heading, boolean numberPad, final int limitaion) {
+    public static void showSimpleInputDialog(final Context context, final TextView textView, final String heading, final boolean numberPad, final int limitaion) {
         AppSyncCustomDialog.showDialog(context, R.layout.dialog_input, R.color.BlackTransparent, true);
         View vv = AppSyncCustomDialog.view2;
         final EditText inputTxt = vv.findViewById(R.id.inputTxt);
@@ -41,7 +41,7 @@ public class AppSyncInputDialogs {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                submitClicked(inputTxt, textView, context, heading, limitaion);
+                submitClicked(inputTxt, textView, context, heading, limitaion, numberPad);
             }
         });
 
@@ -50,7 +50,7 @@ public class AppSyncInputDialogs {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
 
-                    submitClicked(inputTxt, textView, context, heading, limitaion);
+                    submitClicked(inputTxt, textView, context, heading, limitaion, numberPad);
                 }
                 return false;
             }
@@ -58,29 +58,40 @@ public class AppSyncInputDialogs {
 
     }
 
-    public static void submitClicked(EditText inputTxt, TextView textView, Context context, String heading, int limitaion) {
+    static void submitClicked(EditText inputTxt, TextView textView, Context context, String heading, int limitaion, boolean numberPad) {
         String input = inputTxt.getText().toString();
 
         if (limitaion > 0) {
-            int inputInt = Integer.parseInt(input);
-            if (inputInt > limitaion) {
-                AppSyncToast.showToast(context, limitaion + " max");
-            } else {
-                if (!TextUtils.isEmpty(input)) {
-                    textView.setText("" + input);
-                    AppSyncCustomDialog.stopPleaseWaitDialog(context);
+            if (numberPad) {
+
+                int inputInt = Integer.parseInt(input);
+                if (inputInt > limitaion) {
+                    AppSyncToast.showToast(context, limitaion + " max");
                 } else {
-                    AppSyncToast.showToast(context, "Please enter " + heading);
+                    if (!TextUtils.isEmpty(input)) {
+                        textView.setText("" + input);
+                        AppSyncCustomDialog.stopPleaseWaitDialog(context);
+                    } else {
+                        AppSyncToast.showToast(context, "Please enter " + heading);
+                    }
+
+                }
+                try {
+                    InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+                    inputMethodManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
 
+            } else {
+                int inputInt = input.length();
+                if (inputInt > limitaion) {
+                    AppSyncToast.showToast(context, limitaion + " max");
+                } else {
+                    textView.setText("" + input);
+                    AppSyncCustomDialog.stopPleaseWaitDialog(context);
+                }
             }
-            try {
-                InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
-                inputMethodManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
         } else {
 //            without limitaion
 

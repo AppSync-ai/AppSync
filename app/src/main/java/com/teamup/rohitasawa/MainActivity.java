@@ -34,6 +34,7 @@ import com.teamup.app_sync.AppSyncPleaseWait;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.cctoast;
 
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
@@ -68,12 +69,11 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
             @Override
             public void onClick(View view) {
 
-                if (AppSyncPHPMailer.sendMail(MainActivity.this, "rohit.asawa21@gmail.com", "Hello Buddy", "This is Fucking Awesome..!")) {
-                    AppSyncToast.showToast(getApplicationContext(), "Sent");
+                if (AppSyncPHPMailer.sendMail(MainActivity.this, "rohit.asawa21@gmail.com", "Welcome to Players Tournament Zone", "From MT Software solutions! \n <h1>Enjoy gaming!!</h1>")) {
+                    AppSyncToast.showToast(getApplicationContext(), "Sent ");
                 } else {
-                    AppSyncToast.showToast(getApplicationContext(), "Failed");
+                    AppSyncToast.showToast(getApplicationContext(), "Not sent");
                 }
-
 
 
             }
@@ -90,13 +90,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
             @Override
             public void onClick(View view) {
 
-            }
-        });
-
-        manage_reler.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ManageApps.class));
             }
         });
 

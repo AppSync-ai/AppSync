@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageButton;
@@ -13,8 +14,8 @@ import android.widget.TextView;
 public class AppSyncYesNoDialog {
     static Dialog fetching;
 
-    public static void showDialog(final Context context, String title){
-        fetching= new Dialog(context);
+    public static void showDialog(final Context context, String title) {
+        fetching = new Dialog(context);
 
         DisplayMetrics metrics = context.getResources().getDisplayMetrics();
         int width = metrics.widthPixels;
@@ -31,42 +32,50 @@ public class AppSyncYesNoDialog {
         ImageButton noBtn = fetching.findViewById(R.id.noBtn);
         TextView txt = fetching.findViewById(R.id.txt);
 
-        txt.setText(""+title);
+        txt.setText("" + title);
 
 
         noBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dialogSayings green = (dialogSayings)context;
-                green.redSignal();
-                stopDialog(context);
+                try {
+                    dialogSayings green = (dialogSayings) context;
+                    green.redSignal();
+                    stopDialog(context);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Log.wtf("Hulk-47", "Please implement Yes No Dialog ");
+                }
             }
         });
 
         yesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dialogSayings green = (dialogSayings)context;
-                green.greenSignal();
-                stopDialog(context);
+                try {
+                    dialogSayings green = (dialogSayings) context;
+                    green.greenSignal();
+                    stopDialog(context);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Log.wtf("Hulk-47", "Please implement Yes No Dialog ");
+                }
             }
         });
 
 
     }
 
-    public interface dialogSayings{
+    public interface dialogSayings {
         public void greenSignal();
 
         public void redSignal();
     }
 
-    public static void stopDialog(Context context){
+    public static void stopDialog(Context context) {
         try {
             fetching.dismiss();
-        }
-        catch (Exception v)
-        {
+        } catch (Exception v) {
 
         }
     }

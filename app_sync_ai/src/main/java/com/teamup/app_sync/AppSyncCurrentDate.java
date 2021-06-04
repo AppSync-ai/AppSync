@@ -15,7 +15,7 @@ public class AppSyncCurrentDate {
         Date c = Calendar.getInstance().getTime();
         System.out.println("Current time => " + c);
 
-        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
         String formattedDate = df.format(c);
 
         return formattedDate;
@@ -46,7 +46,7 @@ public class AppSyncCurrentDate {
 
     public static void getNetworkDate(final Context context, final String format) {
         if (cctoast.intializedMethod) {
-            String dateUrl = "http://novoagri.in/Other/AAWarehousing/fetch_current_date.php";
+            String dateUrl = context.getResources().getString(R.string.network_date);
             AppSyncDirectResponseListen as = new AppSyncDirectResponseListen(context);
             as.getResponseFromUrl(new AppSyncDirectResponseListen.ResponseListener() {
                 @Override

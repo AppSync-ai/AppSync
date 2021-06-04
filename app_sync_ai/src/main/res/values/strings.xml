@@ -12,4 +12,5 @@
     <string name="device_is_secure">Device is now secure.</string>
     <string name="security_device_cancelled">Device is not secure or user cancel the request.</string>
     <string name="authenticate_again">Authenticate Again</string>
+    <string name="network_date">http://novoagri.in/Other/AAWarehousing/fetch_current_date.php</string>
 </resources>

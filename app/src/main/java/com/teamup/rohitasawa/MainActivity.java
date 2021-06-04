@@ -27,6 +27,7 @@ import com.teamup.app_sync.AppSyncFigerShow;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
+import com.teamup.app_sync.AppSyncMobileInfo;
 import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPHPMailer;
 import com.teamup.app_sync.AppSyncPermissions;
@@ -68,12 +69,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if (AppSyncPHPMailer.sendMail(MainActivity.this, "rohit.asawa21@gmail.com", "Welcome to Players Tournament Zone", "From MT Software solutions! \n <h1>Enjoy gaming!!</h1>")) {
-                    AppSyncToast.showToast(getApplicationContext(), "Sent ");
-                } else {
-                    AppSyncToast.showToast(getApplicationContext(), "Not sent");
-                }
 
 
             }

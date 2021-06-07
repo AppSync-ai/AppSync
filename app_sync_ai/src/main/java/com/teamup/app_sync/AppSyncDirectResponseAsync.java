@@ -17,7 +17,7 @@ public class AppSyncDirectResponseAsync {
 
                 URL url = new URL(stringUrl);
                 HttpURLConnection httpconn = (HttpURLConnection) url.openConnection();
-                httpconn.setConnectTimeout(30);
+                httpconn.setConnectTimeout(5000);
                 if (httpconn.getResponseCode() == HttpURLConnection.HTTP_OK) {
                     BufferedReader input = new BufferedReader(new InputStreamReader(httpconn.getInputStream()), 8192);
                     String strLine = null;

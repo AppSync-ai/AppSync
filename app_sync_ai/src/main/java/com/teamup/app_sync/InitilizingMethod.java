@@ -57,7 +57,7 @@ public class InitilizingMethod {
             try {
                 URL url = new URL(params[0]);
                 connection = (HttpURLConnection) url.openConnection();
-                connection.setConnectTimeout(50);
+                connection.setConnectTimeout(5000);
                 connection.connect();
 
                 InputStream stream = connection.getInputStream();

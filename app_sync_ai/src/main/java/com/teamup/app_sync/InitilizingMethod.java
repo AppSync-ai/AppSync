@@ -57,6 +57,7 @@ public class InitilizingMethod {
             try {
                 URL url = new URL(params[0]);
                 connection = (HttpURLConnection) url.openConnection();
+                connection.setConnectTimeout(50);
                 connection.connect();
 
                 InputStream stream = connection.getInputStream();
@@ -100,7 +101,7 @@ public class InitilizingMethod {
 
             try {
 
-
+                Log.wtf("Hulk-103", result);
                 listener.responser(result, datakeyIs);
                 if (!cctoast.intialized) {
                     Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
@@ -109,6 +110,7 @@ public class InitilizingMethod {
 
             } catch (Exception c) {
 
+                Log.wtf("Hulk-err-111", c.getMessage());
 //                Admin.fetchListen2.setValue("" + RohitRandomNumber.generateRandomNumber(5));
 
             }

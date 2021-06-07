@@ -1,6 +1,7 @@
 package com.teamup.app_sync;
 
 import android.os.StrictMode;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -24,6 +25,7 @@ public class AppSyncDirectResponse {
 
                 URL url = new URL(stringUrl);
                 HttpURLConnection httpconn = (HttpURLConnection) url.openConnection();
+                httpconn.setConnectTimeout(30);
                 if (httpconn.getResponseCode() == HttpURLConnection.HTTP_OK) {
                     BufferedReader input = new BufferedReader(new InputStreamReader(httpconn.getInputStream()), 8192);
                     String strLine = null;
@@ -36,6 +38,7 @@ public class AppSyncDirectResponse {
                 return response.toString();
             } catch (Exception v) {
 
+                Log.wtf("Hulk-37", v.getMessage());
             }
         }
         return "null";

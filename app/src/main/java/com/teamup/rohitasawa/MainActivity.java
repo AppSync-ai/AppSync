@@ -22,6 +22,7 @@ import com.teamup.app_sync.AppSyncCopyPaste;
 import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncCustomNotification;
 import com.teamup.app_sync.AppSyncDaysTheory;
+import com.teamup.app_sync.AppSyncDirectResponse;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
 import com.teamup.app_sync.AppSyncFigerShow;
 import com.teamup.app_sync.AppSyncInitialize;
@@ -54,6 +55,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+        AppSyncInitialize.init(MainActivity.this);
+
 
         manage_reler = findViewById(R.id.manage_reler);
         button2 = findViewById(R.id.button2);
@@ -64,12 +67,11 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
 
         AppSyncPermissions.READ_WRITE_STORAAGE(this, 444);
 
-        AppSyncInitialize.init(this);
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                String res = AppSyncDirectResponse.getResponse("https://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=" + getPackageName());
+                AppSyncToast.showToast(getApplicationContext(), res);
 
             }
         });

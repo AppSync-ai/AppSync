@@ -48,6 +48,7 @@ public class AppSyncDirectResponseListenNew {
             try {
                 URL url = new URL(params[0]);
                 connection = (HttpURLConnection) url.openConnection();
+                connection.setConnectTimeout(50);
                 connection.connect();
 
                 InputStream stream = connection.getInputStream();

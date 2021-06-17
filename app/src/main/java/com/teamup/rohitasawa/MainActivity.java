@@ -1,5 +1,6 @@
 package com.teamup.rohitasawa;
 
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,6 +26,7 @@ import com.teamup.app_sync.AppSyncDaysTheory;
 import com.teamup.app_sync.AppSyncDirectResponse;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
 import com.teamup.app_sync.AppSyncFigerShow;
+import com.teamup.app_sync.AppSyncFileManager;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
@@ -36,6 +38,7 @@ import com.teamup.app_sync.AppSyncPleaseWait;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.cctoast;
 
+import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
@@ -70,8 +73,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String res = AppSyncDirectResponse.getResponse("https://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=" + getPackageName());
-                AppSyncToast.showToast(getApplicationContext(), res);
+
+                AppSyncFileManager.openFileChooser(MainActivity.this, 444);
 
             }
         });
@@ -558,7 +561,18 @@ public class MainActivity extends AppCompatActivity implements AppSyncCurrentDat
 
     }
 
-//    @Override
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        try {
+            String path = AppSyncFileManager.getSelectedFilePath(this, data);
+            Toast.makeText(this, "" + path, Toast.LENGTH_SHORT).show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    //    @Override
 //    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
 //        super.onActivityResult(requestCode, resultCode, data);
 //        try {

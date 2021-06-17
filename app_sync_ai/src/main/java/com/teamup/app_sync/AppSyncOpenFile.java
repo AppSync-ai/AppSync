@@ -9,8 +9,8 @@ import androidx.core.content.FileProvider;
 
 import java.io.File;
 
-public class AppSyncOpenFile {
-    private void openPdf(Context context, File pdfFile) {
+public  class AppSyncOpenFile {
+    public static void openPdf(Context context, File pdfFile) {
         try {
 
 
@@ -25,7 +25,7 @@ public class AppSyncOpenFile {
         }
     }
 
-    private void openExcel(Context context, File excelFile) {
+    public static void openExcel(Context context, File excelFile) {
         try {
 
 
@@ -40,7 +40,7 @@ public class AppSyncOpenFile {
         }
     }
 
-    private void openImage(Context context, File excelFile) {
+    public static void openImage(Context context, File excelFile) {
         try {
 
 

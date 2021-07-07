@@ -126,6 +126,8 @@ class StatesParser extends AsyncTask<String, String, String> {
         try {
 //            call url here
 
+            AppSyncLoadAllStatesDistTalCity.list.clear();
+
             pageDocument = Jsoup.connect("https://vlist.in/")
                     .timeout(15000)
                     .get();
@@ -229,6 +231,8 @@ class DistrictParser extends AsyncTask<String, String, String> {
 
         try {
 //            call url here
+
+            AppSyncLoadAllStatesDistTalCity.list.clear();
 
             pageDocument = Jsoup.connect(URL + url)
                     .timeout(15000)
@@ -335,6 +339,7 @@ class TalukaParser extends AsyncTask<String, String, String> {
         try {
 //            call url here
 
+            AppSyncLoadAllStatesDistTalCity.list.clear();
             pageDocument = Jsoup.connect(URL + url)
                     .timeout(15000)
                     .get();
@@ -439,6 +444,8 @@ class CityParser extends AsyncTask<String, String, String> {
 
         try {
 //            call url here
+
+            AppSyncLoadAllStatesDistTalCity.list.clear();
 
             pageDocument = Jsoup.connect(URL + url)
                     .timeout(15000)

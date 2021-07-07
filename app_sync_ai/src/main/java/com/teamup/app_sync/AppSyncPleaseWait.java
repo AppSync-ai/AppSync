@@ -11,22 +11,20 @@ public class AppSyncPleaseWait {
 
     static Dialog fetching;
 
-    public static void showDialog(Context context, String text){
+    public static void showDialog(Context context, String text) {
         try {
-            fetching= new Dialog(context);
+            fetching = new Dialog(context);
 
             DisplayMetrics metrics = context.getResources().getDisplayMetrics();
             int width = metrics.widthPixels;
             int height = metrics.heightPixels;
             fetching.show();
-
-
             fetching.setCancelable(false);
             fetching.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
             fetching.setContentView(R.layout.fragment_plwase_wait);
 
             TextView pleaseWaitTxt = fetching.findViewById(R.id.pleaseWaitTxt);
-            pleaseWaitTxt.setText(""+text);
+            pleaseWaitTxt.setText("" + text);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -34,12 +32,10 @@ public class AppSyncPleaseWait {
     }
 
 
-    public static void stopDialog(Context context){
+    public static void stopDialog(Context context) {
         try {
             fetching.dismiss();
-        }
-        catch (Exception v)
-        {
+        } catch (Exception v) {
 
         }
     }

@@ -60,6 +60,7 @@ public class AppSyncLoadAllStatesDistTalCity {
         new TalukaParser().execute(url);
 
     }
+
     public static void getAllCities(Context context, String url) {
         contextThis = context;
         AppSyncPleaseWait.showDialog(contextThis, "Loading..");
@@ -74,6 +75,7 @@ public class AppSyncLoadAllStatesDistTalCity {
         public void districtLoaded(ArrayList<SyncStatesReq> list);
 
         public void talukaLoaded(ArrayList<SyncStatesReq> list);
+
         public void cityLoaded(ArrayList<SyncStatesReq> list);
 
 
@@ -82,6 +84,7 @@ public class AppSyncLoadAllStatesDistTalCity {
         public void districtSelected(String district, String link);
 
         public void talukaSelected(String taluka, String link);
+
         public void citySelected(String city, String link);
     }
 
@@ -103,8 +106,20 @@ public class AppSyncLoadAllStatesDistTalCity {
         close_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncLoadAllStatesDistTalCity.Loaded loaded = (AppSyncLoadAllStatesDistTalCity.Loaded) contextThis;
-                loaded.stateSelected("", "");
+                if (KEY.equalsIgnoreCase("state")) {
+                    AppSyncLoadAllStatesDistTalCity.Loaded loaded = (AppSyncLoadAllStatesDistTalCity.Loaded) contextThis;
+                    loaded.stateSelected("", "");
+                } else if (KEY.equalsIgnoreCase("taluka")) {
+                    AppSyncLoadAllStatesDistTalCity.Loaded loaded = (AppSyncLoadAllStatesDistTalCity.Loaded) contextThis;
+                    loaded.talukaSelected("", "");
+                } else if (KEY.equalsIgnoreCase("district")) {
+                    AppSyncLoadAllStatesDistTalCity.Loaded loaded = (AppSyncLoadAllStatesDistTalCity.Loaded) contextThis;
+                    loaded.districtSelected("", "");
+                } else if (KEY.equalsIgnoreCase("city")) {
+                    AppSyncLoadAllStatesDistTalCity.Loaded loaded = (AppSyncLoadAllStatesDistTalCity.Loaded) contextThis;
+                    loaded.citySelected("", "");
+                }
+
                 AppSyncCustomDialog.stopPleaseWaitDialog(contextThis);
             }
         });
@@ -151,7 +166,7 @@ class StatesParser extends AsyncTask<String, String, String> {
                     Elements links = cols.select("a[href]");
                     for (Element link : links) {
                         Log.wtf("Hulk-state" + i, "" + cols.get(1).text() + " Link :" + link.attr("href"));
-                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(),  link.attr("href")));
+                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(), link.attr("href")));
                     }
                 }
 
@@ -257,7 +272,7 @@ class DistrictParser extends AsyncTask<String, String, String> {
                     Elements links = cols.select("a[href]");
                     for (Element link : links) {
                         Log.wtf("Hulk-state" + i, "" + cols.get(1).text() + " Link :" + link.attr("href"));
-                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(),  link.attr("href")));
+                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(), link.attr("href")));
                     }
                 }
 
@@ -363,7 +378,7 @@ class TalukaParser extends AsyncTask<String, String, String> {
                     Elements links = cols.select("a[href]");
                     for (Element link : links) {
                         Log.wtf("Hulk-state" + i, "" + cols.get(1).text() + " Link :" + link.attr("href"));
-                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(),  link.attr("href")));
+                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(), link.attr("href")));
                     }
                 }
 
@@ -470,7 +485,7 @@ class CityParser extends AsyncTask<String, String, String> {
                     Elements links = cols.select("a[href]");
                     for (Element link : links) {
                         Log.wtf("Hulk-state" + i, "" + cols.get(1).text() + " Link :" + link.attr("href"));
-                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(),  link.attr("href")));
+                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(), link.attr("href")));
                     }
                 }
 

@@ -149,7 +149,7 @@ class StatesParser extends AsyncTask<String, String, String> {
                     Elements links = cols.select("a[href]");
                     for (Element link : links) {
                         Log.wtf("Hulk-state" + i, "" + cols.get(1).text() + " Link :" + link.attr("href"));
-                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(), URL + link.attr("href")));
+                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(),  link.attr("href")));
                     }
                 }
 
@@ -253,7 +253,7 @@ class DistrictParser extends AsyncTask<String, String, String> {
                     Elements links = cols.select("a[href]");
                     for (Element link : links) {
                         Log.wtf("Hulk-state" + i, "" + cols.get(1).text() + " Link :" + link.attr("href"));
-                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(), URL + link.attr("href")));
+                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(),  link.attr("href")));
                     }
                 }
 
@@ -358,7 +358,7 @@ class TalukaParser extends AsyncTask<String, String, String> {
                     Elements links = cols.select("a[href]");
                     for (Element link : links) {
                         Log.wtf("Hulk-state" + i, "" + cols.get(1).text() + " Link :" + link.attr("href"));
-                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(), URL + link.attr("href")));
+                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(),  link.attr("href")));
                     }
                 }
 
@@ -463,7 +463,7 @@ class CityParser extends AsyncTask<String, String, String> {
                     Elements links = cols.select("a[href]");
                     for (Element link : links) {
                         Log.wtf("Hulk-state" + i, "" + cols.get(1).text() + " Link :" + link.attr("href"));
-                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(), URL + link.attr("href")));
+                        AppSyncLoadAllStatesDistTalCity.list.add(new SyncStatesReq(cols.get(1).text(),  link.attr("href")));
                     }
                 }
 

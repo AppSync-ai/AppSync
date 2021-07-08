@@ -40,6 +40,7 @@ import com.teamup.app_sync.AppSyncPleaseWait;
 import com.teamup.app_sync.AppSyncSaveArrayList;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.Reqs.SyncStatesReq;
+import com.teamup.app_sync.Scrapping.AppSyncScrapQuotes;
 import com.teamup.app_sync.cctoast;
 
 import java.io.IOException;
@@ -49,7 +50,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncLoadAllStatesDistTalCity.Loaded {
+public class MainActivity extends AppCompatActivity implements AppSyncScrapQuotes.Quotes {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncLoadAllSta
             @Override
             public void onClick(View view) {
 
-                AppSyncLoadAllStatesDistTalCity.getAllStates(MainActivity.this);
+                AppSyncScrapQuotes.getRanomQuote(MainActivity.this);
 
             }
         });
@@ -99,46 +100,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncLoadAllSta
     }
 
     @Override
-    public void statesLoaded(ArrayList<SyncStatesReq> list) {
-
-        AppSyncLoadAllStatesDistTalCity.DiloagShow(list, "States", "select state", "state");
-
+    public void gotRandomQuote(final String quote, String quotyeBy) {
+        txt1.setText("" + quote + "\n By " + quotyeBy);
     }
-
-    @Override
-    public void districtLoaded(ArrayList<SyncStatesReq> list) {
-        AppSyncLoadAllStatesDistTalCity.DiloagShow(list, "District", "select district", "district");
-    }
-
-    @Override
-    public void talukaLoaded(ArrayList<SyncStatesReq> list) {
-        AppSyncLoadAllStatesDistTalCity.DiloagShow(list, "Taluka", "select taluka", "taluka");
-    }
-
-    @Override
-    public void cityLoaded(ArrayList<SyncStatesReq> list) {
-        AppSyncLoadAllStatesDistTalCity.DiloagShow(list, "City", "select city", "city");
-    }
-
-    @Override
-    public void stateSelected(String state, String link) {
-        button.setText("" + state);
-    }
-
-    @Override
-    public void districtSelected(String district, String link) {
-        button2.setText("" + district);
-
-    }
-
-    @Override
-    public void talukaSelected(String district, String link) {
-
-    }
-
-    @Override
-    public void citySelected(String city, String link) {
-
-    }
-
 }

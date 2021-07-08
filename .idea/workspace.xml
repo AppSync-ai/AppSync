@@ -15,7 +15,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5669d0b-17fe-451b-a7de-485cf2d1ee76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncLoadAllStatesDistTalCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncLoadAllStatesDistTalCity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Scrapping/AppSyncScrapQuotes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +35,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +67,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app_sync_ai/src/main/res/layout" />
+    <property name="last_opened_file_path" value="D:/MT Software Solutions/ZIps/AK47KingGaming/bigfreefiretournament" />
     <property name="multi-representation-previewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/TestLayout.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />

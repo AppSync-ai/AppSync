@@ -39,7 +39,9 @@ import com.teamup.app_sync.AppSyncPermissions;
 import com.teamup.app_sync.AppSyncPleaseWait;
 import com.teamup.app_sync.AppSyncSaveArrayList;
 import com.teamup.app_sync.AppSyncToast;
+import com.teamup.app_sync.Reqs.SyncNewsReq;
 import com.teamup.app_sync.Reqs.SyncStatesReq;
+import com.teamup.app_sync.Scrapping.AppSyncNews;
 import com.teamup.app_sync.Scrapping.AppSyncScrapQuotes;
 import com.teamup.app_sync.cctoast;
 
@@ -50,7 +52,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncScrapQuotes.Quotes {
+public class MainActivity extends AppCompatActivity implements AppSyncNews.News {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncScrapQuote
             @Override
             public void onClick(View view) {
 
-                AppSyncScrapQuotes.getRanomQuote(MainActivity.this);
+                AppSyncNews.getAllNews(MainActivity.this);
 
             }
         });
@@ -100,7 +102,12 @@ public class MainActivity extends AppCompatActivity implements AppSyncScrapQuote
     }
 
     @Override
-    public void gotRandomQuote(final String quote, String quotyeBy) {
-        txt1.setText("" + quote + "\n By " + quotyeBy);
+    public void gotNews(final ArrayList<SyncNewsReq> list) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                AppSyncToast.showToast(getApplicationContext(), "Loaded : " + list.size());
+            }
+        });
     }
 }

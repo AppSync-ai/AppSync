@@ -95,7 +95,8 @@ ada\nds"
         android:clickable="true"
         android:elevation="4dp"
         android:foreground="?selectableItemBackground"
-        android:gravity="center">
+        android:gravity="center"
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -119,5 +120,13 @@ ada\nds"
         </LinearLayout>
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="TODO"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_1" />
 
 </RelativeLayout>

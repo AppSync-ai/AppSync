@@ -37,6 +37,7 @@ import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPHPMailer;
 import com.teamup.app_sync.AppSyncPermissions;
 import com.teamup.app_sync.AppSyncPleaseWait;
+import com.teamup.app_sync.AppSyncPost;
 import com.teamup.app_sync.AppSyncSaveArrayList;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.Reqs.SyncNewsReq;
@@ -45,6 +46,9 @@ import com.teamup.app_sync.Scrapping.AppSyncNews;
 import com.teamup.app_sync.Scrapping.AppSyncScrapQuotes;
 import com.teamup.app_sync.cctoast;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -52,28 +56,42 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncNews.News {
+public class MainActivity extends AppCompatActivity implements AppSyncNews.News, AppSyncPost.PostResponse {
 
     Button button, button2;
     TextView txt1, txt2;
     ImageView img;
     RelativeLayout manage_reler;
+    ImageView img_1;
+    boolean f_img = true;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
         AppSyncInitialize.init(MainActivity.this);
 
-
+        img_1 = findViewById(R.id.img_1);
         manage_reler = findViewById(R.id.manage_reler);
         button2 = findViewById(R.id.button2);
         txt1 = findViewById(R.id.txt1);
         txt2 = findViewById(R.id.txt2);
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
+
+        img_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (f_img) {
+                    f_img = false;
+                    img_1.setImageResource(R.drawable.img_2);
+                } else {
+                    img_1.setImageResource(R.drawable.img_1);
+                    f_img = true;
+                }
+            }
+        });
 
         AppSyncPermissions.READ_WRITE_STORAAGE(this, 444);
 
@@ -109,5 +127,10 @@ public class MainActivity extends AppCompatActivity implements AppSyncNews.News 
                 AppSyncToast.showToast(getApplicationContext(), "Loaded : " + list.size());
             }
         });
+    }
+
+    @Override
+    public void responseInReturn(String response) {
+        Log.wtf("Hulk-147", response);
     }
 }

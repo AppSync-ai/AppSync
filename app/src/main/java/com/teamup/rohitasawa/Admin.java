@@ -29,6 +29,7 @@ public class Admin {
 
     static String ServerURL1 = BASEURL + "make_it_query.php";
 
+
     public static void makeItQuery(final String query, final Context context) {
         class SendPostReqAsyncTask extends AsyncTask<String, Void, String> {
             @Override

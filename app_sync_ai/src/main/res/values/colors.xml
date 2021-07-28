@@ -17,6 +17,7 @@
     <color name="Transparent">#00ffffff</color>
     <color name="BlackTransparent">#8F000000</color>
     <color name="background">#dddddd</color>
+    <color name="new_white_transparent">#AEFFFFFF</color>
 
 
 </resources>

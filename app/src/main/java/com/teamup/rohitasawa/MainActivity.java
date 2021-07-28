@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,7 @@ import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncLoadAllStatesDistTalCity;
 import com.teamup.app_sync.AppSyncLoadAllStatesDistTalCity;
 import com.teamup.app_sync.AppSyncMobileInfo;
+import com.teamup.app_sync.AppSyncNewPleaseWait;
 import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPHPMailer;
 import com.teamup.app_sync.AppSyncPermissions;
@@ -56,7 +58,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncNews.News, AppSyncPost.PostResponse {
+public class MainActivity extends AppCompatActivity implements AppSyncNews.News, AppSyncPost.PostResponse, AppSyncNewPleaseWait.NewPleaseWaitDialog {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -79,6 +81,15 @@ public class MainActivity extends AppCompatActivity implements AppSyncNews.News,
         txt2 = findViewById(R.id.txt2);
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
+
+        AppSyncNewPleaseWait.showDialog(this, "Please wait..", 0, 0, 3000);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                AppSyncNewPleaseWait.setDescription("It's taking too long to fetch data\nbut pls dont worry");
+            }
+        }, 3000);
 
         img_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,5 +143,10 @@ public class MainActivity extends AppCompatActivity implements AppSyncNews.News,
     @Override
     public void responseInReturn(String response) {
         Log.wtf("Hulk-147", response);
+    }
+
+    @Override
+    public void DialogClosed() {
+        AppSyncToast.showToast(getApplicationContext(), "You fucked here");
     }
 }

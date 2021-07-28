@@ -54,7 +54,7 @@ public class AppSyncCalendarView {
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int iyear, int imonth, int iday) {
 
                 year = "" + iyear;
-                month = "" + (imonth+1);
+                month = "" + (imonth + 1);
                 day = "" + iday;
 
 
@@ -89,6 +89,7 @@ public class AppSyncCalendarView {
                 try {
                     fullDate = AppSyncDaysTheory.ConvertTo("d/M/yyyy", (day + "/" + month + "/" + year), finalOutputDateFormat);
                 } catch (ParseException e) {
+                    fullDate = AppSyncCurrentDate.getDateTimeInFormat(finalOutputDateFormat);
                     e.printStackTrace();
                 }
                 DateSelecor ds = (DateSelecor) context;

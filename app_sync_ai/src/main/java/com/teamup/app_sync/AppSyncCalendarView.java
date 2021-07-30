@@ -48,7 +48,6 @@ public class AppSyncCalendarView {
         ImageView closeImg = fetching.findViewById(R.id.closeImg);
         CardView card = fetching.findViewById(R.id.card);
 
-
         calendaView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int iyear, int imonth, int iday) {

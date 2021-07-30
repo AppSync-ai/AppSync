@@ -28,6 +28,7 @@ import com.teamup.app_sync.AppSyncDirectResponse;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
 import com.teamup.app_sync.AppSyncFigerShow;
 import com.teamup.app_sync.AppSyncFileManager;
+import com.teamup.app_sync.AppSyncFromToDatePicker;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputDialogs;
 import com.teamup.app_sync.AppSyncJsonArray;
@@ -58,7 +59,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncNews.News, AppSyncPost.PostResponse, AppSyncNewPleaseWait.NewPleaseWaitDialog {
+public class MainActivity extends AppCompatActivity implements AppSyncFromToDatePicker.DateSelected {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -82,14 +83,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncNews.News,
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-        AppSyncNewPleaseWait.showDialog(this, "Please wait..", 0, 0, 3000);
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                AppSyncNewPleaseWait.setDescription("It's taking too long to fetch data\nbut pls dont worry");
-            }
-        }, 3000);
+        AppSyncFromToDatePicker.openAndSelect(MainActivity.this, "dd/MM/yyyy");
 
         img_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,23 +124,15 @@ public class MainActivity extends AppCompatActivity implements AppSyncNews.News,
         });
     }
 
+
+
     @Override
-    public void gotNews(final ArrayList<SyncNewsReq> list) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                AppSyncToast.showToast(getApplicationContext(), "Loaded : " + list.size());
-            }
-        });
+    public void FromDate(String date) {
+        Log.wtf("Hulk-131-from", date);
     }
 
     @Override
-    public void responseInReturn(String response) {
-        Log.wtf("Hulk-147", response);
-    }
-
-    @Override
-    public void DialogClosed() {
-        AppSyncToast.showToast(getApplicationContext(), "You fucked here");
+    public void ToDate(String date) {
+        Log.wtf("Hulk-136-to", date);
     }
 }

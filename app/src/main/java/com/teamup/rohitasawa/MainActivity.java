@@ -59,7 +59,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncFromToDatePicker.DateSelected {
+public class MainActivity extends AppCompatActivity implements AppSyncFromToDatePicker.DateSelected, AppSyncScrapQuotes.Quotes {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-        AppSyncFromToDatePicker.openAndSelect(MainActivity.this, "dd/MM/yyyy");
+        AppSyncScrapQuotes.getRanomQuote(this);
 
         img_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
             @Override
             public void onClick(View view) {
 
-                AppSyncNews.getAllNews(MainActivity.this);
+                AppSyncScrapQuotes.getRanomQuote(MainActivity.this);
 
             }
         });
@@ -125,7 +125,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
     }
 
 
-
     @Override
     public void FromDate(String date) {
         Log.wtf("Hulk-131-from", date);
@@ -134,5 +133,10 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
     @Override
     public void ToDate(String date) {
         Log.wtf("Hulk-136-to", date);
+    }
+
+    @Override
+    public void gotRandomQuote(String quote, String quoteBy) {
+        AppSyncToast.showToast(this, quote);
     }
 }

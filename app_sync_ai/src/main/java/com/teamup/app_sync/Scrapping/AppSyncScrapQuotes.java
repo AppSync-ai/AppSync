@@ -43,27 +43,29 @@ public class AppSyncScrapQuotes {
             try {
 //            call url here
 
-                pageDocument = Jsoup.connect("https://www.appsious.com/quotes/random?topic=motivational-quotes")
+                pageDocument = Jsoup.connect("https://www.generatormix.com/random-inspirational-quotes")
                         .timeout(15000)
+                        .userAgent("Mozilla")
                         .get();
 
-
-                final Element quoteTxtElement = pageDocument.select("div.col-12").select("h1").first();
-                final Element quoteTxtElementBy = pageDocument.select("div.col-12").select("a.text-secondary").first();
+                final Element quoteTxtElement = pageDocument.getElementsByClass("text-left").first();
 
 //                Log.wtf("Hulk-54", pageDocument.getAllElements() + "");
 
-                ((Activity) contextThis).runOnUiThread(new Runnable() {
+                if (quoteTxtElement != null) {
+                    ((Activity) contextThis).runOnUiThread(new Runnable() {
 
-                    @Override
-                    public void run() {
-                        Quotes quotes = (Quotes) contextThis;
-                        quotes.gotRandomQuote(quoteTxtElement.text() , quoteTxtElementBy.text());
+                        @Override
+                        public void run() {
+                            Quotes quotes = (Quotes) contextThis;
+                            quotes.gotRandomQuote(quoteTxtElement.text(), "");
 
 
-                    }
-                });
-
+                        }
+                    });
+                } else {
+                    Log.wtf("Hulk-78", "null jsoup Element");
+                }
 //            Load state data here
 
             } catch (Exception v) {

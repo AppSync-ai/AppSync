@@ -28,7 +28,7 @@ public class AppSyncCalendarView {
     public static String calendarhexColor = "#FFFFFF";
     public static int calendartextColor = R.color.black;
 
-    public static String year = "", month = "", day = "", fullDate = "";
+    public static String year = AppSyncCurrentDate.getDateTimeInFormat("yyyy"), month = AppSyncCurrentDate.getDateTimeInFormat("MM"), day = AppSyncCurrentDate.getDateTimeInFormat("dd"), fullDate = AppSyncCurrentDate.getDate();
 
     @SuppressLint("ResourceType")
     public static void show(final Context context, String outputDateFormat, String selectedDate, String selectedDateFormat) {

@@ -127,7 +127,7 @@ ada\nds"
         android:layout_height="match_parent"
         android:contentDescription="TODO"
         android:scaleType="fitXY"
-        android:visibility="gone"
-        android:src="@drawable/img_1" />
+        android:src="@drawable/img_1"
+        android:visibility="gone" />
 
 </RelativeLayout>

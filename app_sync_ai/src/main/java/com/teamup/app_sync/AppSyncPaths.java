@@ -33,19 +33,39 @@ public class AppSyncPaths {
         return file.getAbsolutePath();
     }
 
-    public static String getDownloadFolderPath(Context context, String filenameWithExtension) {
+    public static String get_scoped_path(Context context, String filenameWithExtension) {
+
         String path = "";
-        ContextWrapper cw = new ContextWrapper(context);
-        File directory = cw.getDir(context.getResources().getString(R.string.app_name), Context.MODE_PRIVATE);
-        try {
-            directory.createNewFile();
-        } catch (Exception c) {
-            Log.wtf("Hulk-err-61", c.getMessage());
+        if (AppSyncTextUtils.check_empty_and_null(filenameWithExtension)) {
+            ContextWrapper cw = new ContextWrapper(context);
+            File directory = cw.getDir(context.getResources().getString(R.string.app_name), Context.MODE_PRIVATE);
+            try {
+                directory.createNewFile();
+            } catch (Exception c) {
+                Log.wtf("Hulk-err-61", c.getMessage());
+            }
+            File file = new File(directory, filenameWithExtension);
+
+            path = file.getAbsolutePath();
+        } else {
+            Log.wtf("Hulk-51", "Please enter path for get_scoped_path - filenameWithExtension");
         }
-        File file = new File(directory, filenameWithExtension);
-
-        path = file.getAbsolutePath();
-
         return path;
+    }
+
+    public static String get_download_folder_path(Context context, String filenameWithExtension) {
+
+
+        File dir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+        File file = new File(dir, filenameWithExtension);
+
+
+        boolean isDirectoryCreated = dir.exists();
+        if (!isDirectoryCreated) {
+            dir.mkdir();
+        }
+        return file.getPath();
+
+
     }
 }

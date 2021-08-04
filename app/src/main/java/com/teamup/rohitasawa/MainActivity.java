@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -46,6 +48,7 @@ import com.teamup.app_sync.AppSyncSaveArrayList;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.Reqs.SyncNewsReq;
 import com.teamup.app_sync.Reqs.SyncStatesReq;
+import com.teamup.app_sync.Scrapping.AppSyncDictionary;
 import com.teamup.app_sync.Scrapping.AppSyncNews;
 import com.teamup.app_sync.Scrapping.AppSyncScrapQuotes;
 import com.teamup.app_sync.cctoast;
@@ -60,7 +63,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncFromToDatePicker.DateSelected, AppSyncScrapQuotes.Quotes {
+public class MainActivity extends AppCompatActivity implements AppSyncDictionary.DictionaryCode {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -76,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
         setContentView(R.layout.activity_main);
         AppSyncInitialize.init(MainActivity.this);
 
+
         img_1 = findViewById(R.id.img_1);
         manage_reler = findViewById(R.id.manage_reler);
         button2 = findViewById(R.id.button2);
@@ -84,7 +88,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-        AppSyncScrapQuotes.getRanomQuote(this);
 
         img_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,12 +104,11 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
 
         AppSyncPermissions.READ_WRITE_STORAAGE(this, 444);
 
+        AppSyncDictionary.get_meaning(MainActivity.this, "Bottle");
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String path = AppSyncPaths.getDownloadFolderPath(MainActivity.this, "tp.txt");
-                Toast.makeText(MainActivity.this, "" + path, Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -114,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncLoadAllStatesDistTalCity.getAllCities(MainActivity.this, "sub-district/04204.html");
+
             }
         });
 
@@ -128,17 +130,22 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
 
 
     @Override
-    public void FromDate(String date) {
-        Log.wtf("Hulk-131-from", date);
+    public void short_meaning(String result) {
+        txt1.setText("" + result);
     }
 
     @Override
-    public void ToDate(String date) {
-        Log.wtf("Hulk-136-to", date);
+    public void long_meaning(String result) {
+        txt1.append("\n\n" + result);
     }
 
     @Override
-    public void gotRandomQuote(String quote, String quoteBy) {
-        AppSyncToast.showToast(this, quote);
+    public void defenation_meaning(String child, String result) {
+        txt1.append("\n\n" + child + "\n" + result);
+    }
+
+    @Override
+    public void error_loading() {
+        AppSyncToast.showToast(getApplicationContext(), "Error loading");
     }
 }

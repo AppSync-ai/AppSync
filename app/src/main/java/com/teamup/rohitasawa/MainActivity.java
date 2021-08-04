@@ -38,6 +38,7 @@ import com.teamup.app_sync.AppSyncMobileInfo;
 import com.teamup.app_sync.AppSyncNewPleaseWait;
 import com.teamup.app_sync.AppSyncNotification;
 import com.teamup.app_sync.AppSyncPHPMailer;
+import com.teamup.app_sync.AppSyncPaths;
 import com.teamup.app_sync.AppSyncPermissions;
 import com.teamup.app_sync.AppSyncPleaseWait;
 import com.teamup.app_sync.AppSyncPost;
@@ -104,7 +105,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncFromToDate
             @Override
             public void onClick(View view) {
 
-                AppSyncScrapQuotes.getRanomQuote(MainActivity.this);
+                String path = AppSyncPaths.getDownloadFolderPath(MainActivity.this, "tp.txt");
+                Toast.makeText(MainActivity.this, "" + path, Toast.LENGTH_SHORT).show();
 
             }
         });

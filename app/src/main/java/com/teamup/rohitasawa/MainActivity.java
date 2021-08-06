@@ -30,6 +30,7 @@ import com.teamup.app_sync.AppSyncDirectResponse;
 import com.teamup.app_sync.AppSyncEncryptDecrypt;
 import com.teamup.app_sync.AppSyncFigerShow;
 import com.teamup.app_sync.AppSyncFileManager;
+import com.teamup.app_sync.AppSyncFilter;
 import com.teamup.app_sync.AppSyncFromToDatePicker;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputDialogs;
@@ -63,7 +64,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncDictionary.DictionaryCode {
+public class MainActivity extends AppCompatActivity implements AppSyncDictionary.DictionaryCode, AppSyncFilter.OptionSelected {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -79,8 +80,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncDictionary
         setContentView(R.layout.activity_main);
         AppSyncInitialize.init(MainActivity.this);
 
-
-        img_1 = findViewById(R.id.img_1);
         manage_reler = findViewById(R.id.manage_reler);
         button2 = findViewById(R.id.button2);
         txt1 = findViewById(R.id.txt1);
@@ -88,19 +87,12 @@ public class MainActivity extends AppCompatActivity implements AppSyncDictionary
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-
-        img_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (f_img) {
-                    f_img = false;
-                    img_1.setImageResource(R.drawable.img_2);
-                } else {
-                    img_1.setImageResource(R.drawable.img_1);
-                    f_img = true;
-                }
-            }
-        });
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Sort by Ascending");
+        list.add("Sort by Descending");
+        list.add("Sort by Date ASC");
+        list.add("Sort by Date DESC");
+        AppSyncFilter.setFilterOptions(list);
 
         AppSyncPermissions.READ_WRITE_STORAAGE(this, 444);
 
@@ -147,5 +139,15 @@ public class MainActivity extends AppCompatActivity implements AppSyncDictionary
     @Override
     public void error_loading() {
         AppSyncToast.showToast(getApplicationContext(), "Error loading");
+    }
+
+    @Override
+    public void option_selected(String selected_option, int option_position) {
+        AppSyncToast.showToast(getApplicationContext(), "Selected : " + selected_option + " at : " + option_position);
+    }
+
+    @Override
+    public void closed() {
+        AppSyncToast.showToast(getApplicationContext(), "Closed");
     }
 }

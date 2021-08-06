@@ -84,6 +84,11 @@ ada\nds"
 
     </LinearLayout>
 
+    <com.teamup.app_sync.AppSyncFilter
+        android:id="@+id/appsync_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
     <RelativeLayout
         android:id="@+id/manage_reler"

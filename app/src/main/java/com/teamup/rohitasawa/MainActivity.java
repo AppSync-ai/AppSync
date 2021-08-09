@@ -34,6 +34,7 @@ import com.teamup.app_sync.AppSyncFilter;
 import com.teamup.app_sync.AppSyncFromToDatePicker;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputDialogs;
+import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncJsonArray;
 import com.teamup.app_sync.AppSyncLoadAllStatesDistTalCity;
 import com.teamup.app_sync.AppSyncLoadAllStatesDistTalCity;
@@ -47,6 +48,7 @@ import com.teamup.app_sync.AppSyncPleaseWait;
 import com.teamup.app_sync.AppSyncPost;
 import com.teamup.app_sync.AppSyncSaveArrayList;
 import com.teamup.app_sync.AppSyncToast;
+import com.teamup.app_sync.AppSyncWebviewDialog;
 import com.teamup.app_sync.Reqs.SyncNewsReq;
 import com.teamup.app_sync.Reqs.SyncStatesReq;
 import com.teamup.app_sync.Scrapping.AppSyncDictionary;
@@ -80,6 +82,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncDictionary
         setContentView(R.layout.activity_main);
         AppSyncInitialize.init(MainActivity.this);
 
+        AppSyncInstallation.set_instaltion(this);
+
         manage_reler = findViewById(R.id.manage_reler);
         button2 = findViewById(R.id.button2);
         txt1 = findViewById(R.id.txt1);
@@ -101,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncDictionary
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                AppSyncToast.showToast(getApplicationContext(), AppSyncInstallation.get_days_being_installed() + "");
             }
         });
 

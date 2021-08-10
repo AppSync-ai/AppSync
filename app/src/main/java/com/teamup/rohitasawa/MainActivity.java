@@ -14,12 +14,13 @@ import android.widget.TextView;
 
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
+import com.teamup.app_sync.Scrapping.AppSyncHashTags;
 import com.teamup.app_sync.Scrapping.AppSyncImagesFromWord;
 
 import java.util.ArrayList;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncImagesFromWord.Translate {
+public class MainActivity extends AppCompatActivity implements AppSyncHashTags.Hashtags {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -45,12 +46,12 @@ public class MainActivity extends AppCompatActivity implements AppSyncImagesFrom
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-        AppSyncImagesFromWord.get_images_of_word(this, "water");
+        AppSyncHashTags.get_all_hashtags(this);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                AppSyncHashTags.get_all_hashtags(MainActivity.this);
             }
         });
 
@@ -75,8 +76,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncImagesFrom
     }
 
     @Override
-    public void translated(ArrayList<String> list_of_urls) {
-        Log.wtf("Hulk-61", list_of_urls.size() + "");
+    public void loaded_hashtags(ArrayList<String> list_of_hashtags) {
+        Log.wtf("Hulk-88", list_of_hashtags.get(0) + " ");
     }
 
 

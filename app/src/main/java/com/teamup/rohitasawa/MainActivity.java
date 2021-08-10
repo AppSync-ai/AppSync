@@ -49,6 +49,7 @@ import com.teamup.app_sync.AppSyncPost;
 import com.teamup.app_sync.AppSyncSaveArrayList;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.AppSyncWebviewDialog;
+import com.teamup.app_sync.AppSyncWorldSelector;
 import com.teamup.app_sync.Reqs.SyncNewsReq;
 import com.teamup.app_sync.Reqs.SyncStatesReq;
 import com.teamup.app_sync.Scrapping.AppSyncDictionary;
@@ -66,7 +67,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncSaveArrayList.getListToJsonArray;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncDictionary.DictionaryCode, AppSyncFilter.OptionSelected {
+public class MainActivity extends AppCompatActivity implements AppSyncDictionary.DictionaryCode, AppSyncFilter.OptionSelected, AppSyncWorldSelector.Country_selected {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -105,7 +106,9 @@ public class MainActivity extends AppCompatActivity implements AppSyncDictionary
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncToast.showToast(getApplicationContext(), AppSyncInstallation.get_days_being_installed() + "");
+
+                AppSyncWorldSelector.get_all_countries(MainActivity.this);
+
             }
         });
 
@@ -153,5 +156,10 @@ public class MainActivity extends AppCompatActivity implements AppSyncDictionary
     @Override
     public void closed() {
         AppSyncToast.showToast(getApplicationContext(), "Closed");
+    }
+
+    @Override
+    public void selected(String name_of_country, String flag_img_url, String country_code) {
+        AppSyncToast.showToast(getApplicationContext(), name_of_country);
     }
 }

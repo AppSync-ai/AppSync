@@ -40,6 +40,7 @@ public class AppSyncHashTags {
             try {
 //            call url here
 
+                list.clear();
                 start_from = AppSyncRandomNumber.generateRandomNumber(2) + "01";
 
                 Log.wtf("Hulk-rand", start_from);

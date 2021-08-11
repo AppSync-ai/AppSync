@@ -22,7 +22,6 @@ public class InitilizingMethod {
     public Context contextThis;
     public String datakeyIs = "";
 
-
     public interface ResponseListener {
         public void responser(String response, String datakey);
     }
@@ -100,19 +99,14 @@ public class InitilizingMethod {
             super.onPostExecute(result);
 
             try {
-
                 Log.wtf("Hulk-103", result);
                 listener.responser(result, datakeyIs);
                 if (!cctoast.intialized) {
                     Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
                 }
-
-
             } catch (Exception c) {
-
                 Log.wtf("Hulk-err-111", c.getMessage());
 //                Admin.fetchListen2.setValue("" + RohitRandomNumber.generateRandomNumber(5));
-
             }
         }
     }

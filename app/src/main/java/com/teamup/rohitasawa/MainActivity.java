@@ -15,6 +15,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.teamup.app_sync.AppSyncChatBot;
+import com.teamup.app_sync.AppSyncDirectResponseListen;
+import com.teamup.app_sync.AppSyncDirectResponseListenOffline;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncToast;
@@ -58,18 +60,17 @@ public class MainActivity extends AppCompatActivity implements AppSyncHashTags.H
             }
         });
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Welcome..!!\nI hope you are all good!!\n\nWhat is your name?");
-        list.add("What is your Email id?");
-        list.add("What is your Mobile Number?");
-        list.add("What is your State??");
-        list.add("What is your City?");
+        AppSyncDirectResponseListenOffline appSyncDirectResponseListen = new AppSyncDirectResponseListenOffline(this);
+        appSyncDirectResponseListen.getResponseFromUrl(new AppSyncDirectResponseListenOffline.ResponseListener() {
+            @Override
+            public void responser(String response, String datakey) {
+                if (datakey.equalsIgnoreCase("KKK")) {
+                    Log.wtf("Hulk-68", response);
+                }
+            }
+        });
+        appSyncDirectResponseListen.getResponseFromUrlMethod("http://adminapp.tech/matka/api/markets?userid=2", "KKK");
 
-        AppSyncChatBot.set_bot_image(R.drawable.img_1);
-        AppSyncChatBot.set_bot_questions(list);
-        AppSyncChatBot.set_bot_head_name("Rohit Asawa");
-        AppSyncChatBot.set_bot_end_response("Thank You..!!");
-        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override

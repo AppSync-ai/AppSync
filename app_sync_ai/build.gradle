@@ -41,6 +41,8 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.11.1'
     implementation 'com.google.code.gson:gson:2.8.6'
 
+    //    Added for chat bot
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/text_message_incoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/in_bubble"
+        android:lineSpacingExtra="2dp"
+        android:maxWidth="250dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp"
+        android:paddingVertical="10dp"
+        android:text="Hi, How are you?"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_message_outgoing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/out_bubble"
+        android:lineSpacingExtra="2dp"
+        android:maxWidth="250dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="25dp"
+        android:paddingVertical="10dp"
+        android:text="Hi, How are you?"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

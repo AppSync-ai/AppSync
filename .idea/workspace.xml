@@ -16,8 +16,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5669d0b-17fe-451b-a7de-485cf2d1ee76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Adapters/MessagesAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncChatBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Interfaces/ChatBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Reqs/MessagesReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Reqs/UserMessagesReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/chatbot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/ic_baseline_send_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/in_bubble.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/out_bubble.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/pattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/activity_app_sync_chat_bot.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/single_message.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Scrapping/AppSyncHashTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Scrapping/AppSyncHashTags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +62,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -76,26 +105,32 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.-1891879396">
-      <recent name="com.teamup.rohitasawa" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.teamup.app_sync" />
-    </key>
-    <key name="android.template.875273883">
-      <recent name="com.teamup.app_sync" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.teamup.app_sync.Scrapping" />
-      <recent name="com.teamup.app_sync.Reqs" />
-      <recent name="com.teamup.app_sync.Adapters" />
-      <recent name="com.teamup.app_sync" />
-      <recent name="com.teamup.rohitasawa.AllAdapters" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Projects\AppSync\app\src\main\res\drawable" />
       <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\drawable" />
       <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\layout" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.teamup.app_sync" />
+    </key>
+    <key name="android.template.-2104311170">
+      <recent name="com.teamup.app_sync" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\drawable" />
+    </key>
+    <key name="android.template.-1891879396">
+      <recent name="com.teamup.rohitasawa" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.teamup.app_sync.Reqs" />
+      <recent name="com.teamup.app_sync.Adapters" />
+      <recent name="com.teamup.app_sync.Scrapping" />
+      <recent name="com.teamup.app_sync" />
+      <recent name="com.teamup.rohitasawa.AllAdapters" />
+    </key>
+    <key name="android.template.875273883">
+      <recent name="com.teamup.app_sync" />
     </key>
   </component>
   <component name="RunManager">
@@ -192,18 +227,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Rohit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1628597974920">
+    <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1628671963532">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1628597974920" />
+    <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1628671963532" />
     <state x="531" y="300" width="474" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1627892879303">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="531" y="300" width="474" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1627892879303" />
-    <state x="348" y="186" key="AndroidCreateResourceFileDialog" timestamp="1628573458517">
+    <state x="348" y="186" key="AndroidCreateResourceFileDialog" timestamp="1628662421686">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="348" y="186" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1628573458517" />
+    <state x="348" y="186" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1628662421686" />
     <state x="613" y="221" key="AndroidCreateXmlResourceDialog" timestamp="1627471933052">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -212,30 +247,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1628487237017" />
-    <state width="1491" height="256" key="GridCell.Tab.0.bottom" timestamp="1628598738697">
+    <state width="1491" height="228" key="GridCell.Tab.0.bottom" timestamp="1628676186236">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="256" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1628598738697" />
-    <state width="1491" height="256" key="GridCell.Tab.0.center" timestamp="1628598738697">
+    <state width="1491" height="228" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1628676186236" />
+    <state width="1491" height="228" key="GridCell.Tab.0.center" timestamp="1628676186236">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="256" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1628598738697" />
-    <state width="1491" height="256" key="GridCell.Tab.0.left" timestamp="1628598738697">
+    <state width="1491" height="228" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1628676186236" />
+    <state width="1491" height="228" key="GridCell.Tab.0.left" timestamp="1628676186235">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="256" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1628598738697" />
-    <state width="1491" height="256" key="GridCell.Tab.0.right" timestamp="1628598738697">
+    <state width="1491" height="228" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1628676186235" />
+    <state width="1491" height="228" key="GridCell.Tab.0.right" timestamp="1628676186236">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="256" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1628598738697" />
-    <state x="583" y="209" key="chooseDestDirectoryDialog" timestamp="1628574479098">
+    <state width="1491" height="228" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1628676186236" />
+    <state x="276" y="76" key="SettingsEditor" timestamp="1628673179796">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="583" y="209" key="chooseDestDirectoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1628574479098" />
-    <state x="478" y="165" width="579" height="534" key="find.popup" timestamp="1628597869524">
+    <state x="276" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1628673179796" />
+    <state x="583" y="209" key="chooseDestDirectoryDialog" timestamp="1628672925772">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="478" y="165" width="579" height="534" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1628597869524" />
+    <state x="583" y="209" key="chooseDestDirectoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1628672925772" />
+    <state x="539" y="241" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1628664176111">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="539" y="241" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1628664176111" />
+    <state x="478" y="165" width="579" height="534" key="find.popup" timestamp="1628673255182">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="478" y="165" width="579" height="534" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1628673255182" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1628166181451">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

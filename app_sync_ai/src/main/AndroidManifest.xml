@@ -20,23 +20,22 @@
 
     <application
         android:allowBackup="true"
-        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
-        android:supportsRtl="true">
-
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AppSyncChatBot"></activity>
         <activity
-            android:name="com.teamup.app_sync.AppSyncLogin"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
-        <activity
-            android:name="com.teamup.app_sync.AppSyncCalculator"
+            android:name=".AppSyncLogin"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.teamup.app_sync.NoInternetConnection" />
+        <activity
+            android:name=".AppSyncCalculator"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NoInternetConnection" />
 
         <provider
-            android:name="com.teamup.app_sync.GenericFileProvider"
+            android:name=".GenericFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -44,7 +43,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/filepaths" />
         </provider>
-
     </application>
 
 </manifest>

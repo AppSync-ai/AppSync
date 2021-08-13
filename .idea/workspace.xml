@@ -16,7 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5669d0b-17fe-451b-a7de-485cf2d1ee76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDirectResponseListenOffline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/logo.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -29,8 +29,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/InitilizingMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/InitilizingMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Adapters/MessagesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Adapters/MessagesAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/single_message.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/single_message.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +82,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable" />
     <property name="multi-representation-previewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/TestLayout.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -90,8 +92,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Projects\AppSync\app\src\main\res\drawable" />
       <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\drawable" />
+      <recent name="E:\Projects\AppSync\app\src\main\res\drawable" />
       <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -215,10 +217,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1628671963532" />
-    <state x="531" y="300" width="474" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1627892879303">
+    <state x="531" y="300" width="474" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1628832533668">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="531" y="300" width="474" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1627892879303" />
+    <state x="531" y="300" width="474" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1628832533668" />
     <state x="348" y="186" key="AndroidCreateResourceFileDialog" timestamp="1628662421686">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -227,26 +229,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="613" y="221" key="AndroidCreateXmlResourceDialog/0.0.1536.864@0.0.1536.864" timestamp="1627471933052" />
-    <state x="548" y="186" key="FileChooserDialogImpl" timestamp="1628487237017">
+    <state x="548" y="186" key="FileChooserDialogImpl" timestamp="1628688390658">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1628487237017" />
-    <state width="1491" height="350" key="GridCell.Tab.0.bottom" timestamp="1628685670252">
+    <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1628688390658" />
+    <state width="1491" height="175" key="GridCell.Tab.0.bottom" timestamp="1628749050508">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1628685670252" />
-    <state width="1491" height="350" key="GridCell.Tab.0.center" timestamp="1628685670252">
+    <state width="1491" height="175" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1628749050508" />
+    <state width="1491" height="175" key="GridCell.Tab.0.center" timestamp="1628749050508">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1628685670252" />
-    <state width="1491" height="350" key="GridCell.Tab.0.left" timestamp="1628685670252">
+    <state width="1491" height="175" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1628749050508" />
+    <state width="1491" height="175" key="GridCell.Tab.0.left" timestamp="1628749050508">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1628685670252" />
-    <state width="1491" height="350" key="GridCell.Tab.0.right" timestamp="1628685670252">
+    <state width="1491" height="175" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1628749050508" />
+    <state width="1491" height="175" key="GridCell.Tab.0.right" timestamp="1628749050508">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1628685670252" />
+    <state width="1491" height="175" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1628749050508" />
     <state x="276" y="76" key="SettingsEditor" timestamp="1628673179796">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

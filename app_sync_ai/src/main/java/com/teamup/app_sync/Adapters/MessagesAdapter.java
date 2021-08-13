@@ -1,7 +1,10 @@
 package com.teamup.app_sync.Adapters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Build;
+import android.os.Handler;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,6 +78,11 @@ public class MessagesAdapter extends RecyclerView.Adapter<MessagesAdapter.ViewHo
             holder.text_message_outgoing.setVisibility(View.VISIBLE);
             holder.text_message_outgoing.setText("" + blog_list.get(position).getMessage());
         }
+
+        holder.text_message_incoming.setMovementMethod(LinkMovementMethod.getInstance());
+        holder.text_message_outgoing.setMovementMethod(LinkMovementMethod.getInstance());
+        holder.text_message_outgoing.setLinkTextColor(Color.BLUE);
+        holder.text_message_incoming.setLinkTextColor(Color.BLUE);
     }
 
 

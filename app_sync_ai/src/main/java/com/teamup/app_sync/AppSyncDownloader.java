@@ -16,19 +16,14 @@ public class AppSyncDownloader {
     public static int INVISIBLE = DownloadManager.Request.VISIBILITY_HIDDEN;
     public static int COMPLETE = DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETION;
 
-    public static void download(final Context context, String url, String filenaleWithExtension, int VISIBILITY){
+    public static void download(final Context context, String url, String filenaleWithExtension, int VISIBILITY) {
         try {
 
-            if (VISIBILITY ==0)
-            {
+            if (VISIBILITY == 0) {
                 VISIBILITY = VISIBLE;
-            }
-            else if (VISIBILITY == 2)
-            {
+            } else if (VISIBILITY == 2) {
                 VISIBILITY = INVISIBLE;
-            }
-            else if (VISIBILITY == 3)
-            {
+            } else if (VISIBILITY == 3) {
                 VISIBILITY = COMPLETE;
             }
 
@@ -62,7 +57,7 @@ public class AppSyncDownloader {
 
             BroadcastReceiver onComplete = new BroadcastReceiver() {
                 public void onReceive(Context ctxt, Intent intent) {
-                    Downlods green = (Downlods)context;
+                    Downlods green = (Downlods) context;
                     green.DownloadComplete(file.getAbsolutePath());
                 }
             };
@@ -72,15 +67,17 @@ public class AppSyncDownloader {
 //            Admin.path = file.getPath();
         } catch (Exception b) {
 
-            Toast.makeText(context, ""+b, Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "" + b, Toast.LENGTH_SHORT).show();
         }
 
     }
 
 
-    public interface Downlods{
+    public interface Downlods {
         public void DownloadComplete(String filePath);
 
     }
+
+
 
 }

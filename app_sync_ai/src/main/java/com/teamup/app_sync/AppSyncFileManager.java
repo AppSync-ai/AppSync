@@ -41,7 +41,7 @@ public class AppSyncFileManager {
         String fileName = getFileName(uri, context);
 
         // The temp file could be whatever you want
-        File tempFile = new File(AppSyncPaths.getPath(fileName, context.getResources().getString(R.string.app_name)));
+        File tempFile = new File(AppSyncPaths.get_download_folder_path(context, context.getResources().getString(R.string.app_name)));
         File fileCopy = copyToTempFile(uri, tempFile, context);
 
         // Done!

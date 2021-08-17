@@ -15,11 +15,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.teamup.app_sync.AppSyncCamera;
 import com.teamup.app_sync.AppSyncChatBot;
 import com.teamup.app_sync.AppSyncDirectResponseListen;
 import com.teamup.app_sync.AppSyncDirectResponseListenOffline;
+import com.teamup.app_sync.AppSyncImageDialog;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
+import com.teamup.app_sync.AppSyncPermissions;
 import com.teamup.app_sync.AppSyncSecurity;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.Scrapping.AppSyncHashTags;
@@ -61,23 +64,12 @@ public class MainActivity extends AppCompatActivity implements AppSyncHashTags.H
 
 //        authenticateApp(this);
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Welcome to Contact & Support.\nhttp://adminapp.tech/matka/api/markets?userid=29\nPls provide some information so we can help you..!\n\nWhat is your name?");
-        list.add("What is your mobile number?");
-        list.add("alright just send me email id?");
-        list.add("and now you are done..\nThank You..!!\n\nWhat is your query about?");
-
-        AppSyncChatBot.set_bot_questions(list);
-        AppSyncChatBot.set_bot_head_name(getResources().getString(R.string.app_name) + " Bot");
-        AppSyncChatBot.set_bot_image(R.drawable.img_1);
-        AppSyncChatBot.set_bot_end_response("Well done.\n\nI have saved everything.\nOur customer support will contact you soon.\nPlease press proceed to finish.");
-
-        startActivityForResult(new Intent(this, AppSyncChatBot.class), 888);
+        AppSyncPermissions.CAMERA_PERMISSION(this, 43);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                AppSyncCamera.takePhoto(MainActivity.this, 33);
             }
         });
 
@@ -105,6 +97,16 @@ public class MainActivity extends AppCompatActivity implements AppSyncHashTags.H
 
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 31) {
+            String path = AppSyncCamera.get_path(this, data);
+            AppSyncToast.showToast(getApplicationContext(), path);
+            AppSyncImageDialog.show(this, path);
+        }
     }
 
     @Override

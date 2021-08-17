@@ -1,3 +1,4 @@
+
 package com.teamup.app_sync;
 
 import com.google.gson.Gson;
@@ -17,3 +18,4 @@ public class AppSyncSaveArrayList {
         return myCustomArray;
     }
 }
+

@@ -55,10 +55,8 @@
                     android:text="your virtual assistant"
                     android:textSize="14sp" />
 
-
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
-
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"
@@ -66,13 +64,12 @@
             android:layout_height="match_parent"
             android:overScrollMode="never" />
 
-
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <RelativeLayout
         android:id="@+id/chat_method_reler"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="8dp">
 
@@ -84,7 +81,8 @@
             android:layout_margin="2dp"
             android:background="@drawable/buttonredcolorround"
             android:backgroundTint="#FFF"
-            android:elevation="2dp">
+            android:elevation="2dp"
+            android:visibility="visible">
 
 
             <EditText
@@ -113,11 +111,17 @@
 
         </RelativeLayout>
 
+        <include layout="@layout/gender_lay" />
+        <include layout="@layout/photo_lay" />
+        <include layout="@layout/file_manager_lay" />
+
+
+
+
         <Button
             android:id="@+id/proceed_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:background="@drawable/buttonredcolorround"
             android:backgroundTint="@color/colorPrimaryDark"
             android:text="Proceed"

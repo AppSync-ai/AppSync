@@ -2,7 +2,9 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="pixel_2_xl" />
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
@@ -14,8 +16,35 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e5669d0b-17fe-451b-a7de-485cf2d1ee76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncPinSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Reqs/ChatReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/documentation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/image_place_holder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/activity_app_sync_pin_security.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/file_manager_lay.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/gender_lay.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/photo_lay.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -26,19 +55,29 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_5_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__pl_droidsonroids_gif_android_gif_drawable_1_2_23_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__pl_droidsonroids_gif_android_gif_drawable_1_2_23_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/RohitAsawa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RohitAsawa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncChatBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncChatBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncFileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncFileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncSaveArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncSaveArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/activity_app_sync_chat_bot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/activity_app_sync_chat_bot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[RZ8R41GXWHD]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -47,9 +86,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="resourceFile" />
         <option value="Class" />
         <option value="layoutResourceFile" />
-        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -75,22 +114,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewC:/Users/Admin/Documents/GitHub/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncImageSlider.java_SELECTED" value="AppSyncImageSlider" />
+    <property name="android-custom-viewC:/Users/Admin/Documents/GitHub/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/Test.java_SELECTED" value="Test" />
     <property name="android-custom-viewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncFilter.java_SELECTED" value="AppSyncFilter" />
     <property name="android-custom-viewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncImageSlider.java_SELECTED" value="AppSyncImageSlider" />
     <property name="android-custom-viewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/TestLayout.java_SELECTED" value="TestLayout" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="D:/MT Software Solutions/ZIps/YTbattle/bigfreefiretournament" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app_sync_ai/src/main/res/layout" />
     <property name="multi-representation-previewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/TestLayout.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.do.not.copy.http.proxy.settings.to.gradle" value="false" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\GitHub\AppSync\app_sync_ai\src\main\res\layout" />
+      <recent name="C:\Users\Admin\Documents\GitHub\AppSync\app_sync_ai\src\main\res\drawable" />
       <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\drawable" />
       <recent name="E:\Projects\AppSync\app\src\main\res\drawable" />
       <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\layout" />
@@ -104,12 +148,15 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.teamup.app_sync" />
     </key>
+    <key name="android.template.124689555">
+      <recent name="com.teamup.app_sync" />
+    </key>
     <key name="android.template.-1891879396">
       <recent name="com.teamup.rohitasawa" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.teamup.app_sync" />
       <recent name="com.teamup.app_sync.Reqs" />
+      <recent name="com.teamup.app_sync" />
       <recent name="com.teamup.app_sync.Adapters" />
       <recent name="com.teamup.app_sync.Scrapping" />
       <recent name="com.teamup.rohitasawa.AllAdapters" />
@@ -207,70 +254,20 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rohit" />
     <option name="LAST_COMMIT_MESSAGE" value="Rohit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1628671963532">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1628671963532" />
-    <state x="531" y="300" width="474" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1628832533668">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="531" y="300" width="474" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1628832533668" />
-    <state x="348" y="186" key="AndroidCreateResourceFileDialog" timestamp="1628662421686">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="348" y="186" key="AndroidCreateResourceFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1628662421686" />
-    <state x="613" y="221" key="AndroidCreateXmlResourceDialog" timestamp="1627471933052">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="613" y="221" key="AndroidCreateXmlResourceDialog/0.0.1536.864@0.0.1536.864" timestamp="1627471933052" />
-    <state x="548" y="186" key="FileChooserDialogImpl" timestamp="1629114099449">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1629114099449" />
-    <state width="1491" height="350" key="GridCell.Tab.0.bottom" timestamp="1629114101149">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1629114101149" />
-    <state width="1491" height="350" key="GridCell.Tab.0.center" timestamp="1629114101149">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1629114101149" />
-    <state width="1491" height="350" key="GridCell.Tab.0.left" timestamp="1629114101149">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1629114101149" />
-    <state width="1491" height="350" key="GridCell.Tab.0.right" timestamp="1629114101149">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1629114101149" />
-    <state x="276" y="76" key="SettingsEditor" timestamp="1628673179796">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="276" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1628673179796" />
-    <state x="583" y="209" key="chooseDestDirectoryDialog" timestamp="1628672925772">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="583" y="209" key="chooseDestDirectoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1628672925772" />
-    <state x="539" y="241" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1628664176111">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="539" y="241" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.864@0.0.1536.864" timestamp="1628664176111" />
-    <state x="478" y="165" width="579" height="534" key="find.popup" timestamp="1628685079906">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="478" y="165" width="579" height="534" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1628685079906" />
-    <state x="425" y="197" key="run.anything.popup" timestamp="1628166181451">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1628166181451" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1628591379362">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1628591379362" />
   </component>
 </project>

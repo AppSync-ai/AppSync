@@ -1,6 +1,5 @@
 package com.teamup.rohitasawa;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,30 +12,23 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.teamup.app_sync.AppSyncCamera;
+import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncChatBot;
-import com.teamup.app_sync.AppSyncDirectResponseListen;
-import com.teamup.app_sync.AppSyncDirectResponseListenOffline;
-import com.teamup.app_sync.AppSyncImageDialog;
+import com.teamup.app_sync.AppSyncFileManager;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncPermissions;
-import com.teamup.app_sync.AppSyncSecurity;
 import com.teamup.app_sync.AppSyncToast;
-import com.teamup.app_sync.Scrapping.AppSyncHashTags;
-import com.teamup.app_sync.Scrapping.AppSyncImagesFromWord;
+import com.teamup.app_sync.Reqs.ChatReq;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
-import static com.teamup.app_sync.AppSyncSecurity.LOCK_REQUEST_CODE;
-import static com.teamup.app_sync.AppSyncSecurity.SECURITY_SETTING_REQUEST_CODE;
-import static com.teamup.app_sync.AppSyncSecurity.authenticateApp;
-import static com.teamup.app_sync.AppSyncSecurity.isDeviceSecure;
+import static com.teamup.app_sync.AppSyncChatBot.TYPE_MESSAGE;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncHashTags.Hashtags {
+public class MainActivity extends AppCompatActivity {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -51,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncHashTags.H
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AppSyncInitialize.init(MainActivity.this);
-
         AppSyncInstallation.set_instaltion(this);
 
         img_1 = findViewById(R.id.img_1);
@@ -66,23 +57,29 @@ public class MainActivity extends AppCompatActivity implements AppSyncHashTags.H
 
         AppSyncPermissions.CAMERA_PERMISSION(this, 43);
 
+        ArrayList<ChatReq> chat_list = new ArrayList<>();
+        chat_list.add(new ChatReq("Hello there..!!\nWhat is your name?", TYPE_MESSAGE));
+        chat_list.add(new ChatReq("That's good name.\nCan i know your mobile number?", AppSyncChatBot.TYPE_NUMBER));
+        chat_list.add(new ChatReq("What is your Gender?", AppSyncChatBot.TYPE_GENDER));
+        chat_list.add(new ChatReq("Select your profile photo", AppSyncChatBot.TYPE_PHOTO));
+        chat_list.add(new ChatReq("Select your File specified", AppSyncChatBot.TYPE_FILE_MANAGER));
+        chat_list.add(new ChatReq("You are done, Tell me your age.", TYPE_MESSAGE));
+        AppSyncChatBot.set_bot_questions(chat_list);
+        AppSyncChatBot.set_bot_head_name("MT Software Solutions");
+        AppSyncChatBot.set_bot_image(R.drawable.logo);
+        AppSyncChatBot.set_bot_end_response("Thank You..!!\nFor more visit our website\nwww.meratemplate.com");
+
+        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncCamera.takePhoto(MainActivity.this, 33);
+
+
             }
         });
 
-        AppSyncDirectResponseListenOffline appSyncDirectResponseListen = new AppSyncDirectResponseListenOffline(this);
-        appSyncDirectResponseListen.getResponseFromUrl(new AppSyncDirectResponseListenOffline.ResponseListener() {
-            @Override
-            public void responser(String response, String datakey) {
-                if (datakey.equalsIgnoreCase("KKK")) {
-                    Log.wtf("Hulk-68", response);
-                }
-            }
-        });
-        appSyncDirectResponseListen.getResponseFromUrlMethod("http://adminapp.tech/matka/api/markets?userid=2", "KKK");
+//        AppSyncFileManager.openFileChooser(this, 45);
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,25 +96,30 @@ public class MainActivity extends AppCompatActivity implements AppSyncHashTags.H
         });
     }
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 31) {
-            String path = AppSyncCamera.get_path(this, data);
-            AppSyncToast.showToast(getApplicationContext(), path);
-            AppSyncImageDialog.show(this, path);
+        if (requestCode == 45) {
+            if (data != null) {
+                try {
+                    String path = AppSyncFileManager.getSelectedFilePath(this, data);
+                    AppSyncToast.showToast(getApplicationContext(), path);
+                    img_1.setImageBitmap(AppSyncBitmapsTheory.getBitmapFromURL(path));
+                } catch (IOException e) {
+                    Log.wtf("Hulk-113", e.getMessage());
+                    e.printStackTrace();
+                }
+            }
         }
+
+
+        if (requestCode == 55) {
+            if (data != null) {
+                AppSyncToast.showToast(getApplicationContext(), data.getStringExtra("result"));
+
+            }
+        }
+
     }
-
-    @Override
-    public void error_loading() {
-        Log.wtf("Hulk-err-126", "Error");
-    }
-
-    @Override
-    public void loaded_hashtags(ArrayList<String> list_of_hashtags) {
-        Log.wtf("Hulk-88", list_of_hashtags.get(0) + " ");
-    }
-
-
 }

@@ -9,6 +9,8 @@ import android.provider.OpenableColumns;
 import android.widget.Toast;
 
 
+import com.bumptech.glide.Glide;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,7 +29,7 @@ public class AppSyncFileManager {
         try {
             ((Activity) context).startActivityForResult(
                     Intent.createChooser(intent, "Select a File to Upload"),
-                    56);
+                    code);
         } catch (android.content.ActivityNotFoundException ex) {
             Toast.makeText(context, "Please install a File Manager.", Toast.LENGTH_SHORT).show();
         }
@@ -41,7 +43,7 @@ public class AppSyncFileManager {
         String fileName = getFileName(uri, context);
 
         // The temp file could be whatever you want
-        File tempFile = new File(AppSyncPaths.get_download_folder_path(context, context.getResources().getString(R.string.app_name)));
+        File tempFile = new File(AppSyncPaths.get_download_folder_path(context, fileName.replace(" ", "_").toLowerCase()).replace("-", "_"));
         File fileCopy = copyToTempFile(uri, tempFile, context);
 
         // Done!

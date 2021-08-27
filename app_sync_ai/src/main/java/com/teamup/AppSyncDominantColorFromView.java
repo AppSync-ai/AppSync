@@ -21,11 +21,9 @@ public class AppSyncDominantColorFromView {
                 .into(new SimpleTarget<Bitmap>() {
                     @Override
                     public void onResourceReady(Bitmap resource, Transition<? super Bitmap> transition) {
-
                         Bitmap newBitmap = Bitmap.createScaledBitmap(resource, 1, 1, true);
                         final int color = newBitmap.getPixel(0, 0);
                         newBitmap.recycle();
-
                         try {
                             got_color_live.setValue(color);
                             Colors cc = (Colors) context;

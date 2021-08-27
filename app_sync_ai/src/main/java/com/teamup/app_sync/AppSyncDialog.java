@@ -5,8 +5,11 @@ import android.content.DialogInterface;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.lifecycle.MutableLiveData;
 
 public class AppSyncDialog {
+
+    public static MutableLiveData<String> dialog_closed_live = new MutableLiveData<>();
 
     public static void showDialog(final Context context, String title, String message, String buttonName) {
         try {
@@ -20,6 +23,7 @@ public class AppSyncDialog {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             try {
+                                dialog_closed_live.setValue("dd");
                                 DialogClosed dia = (DialogClosed) context;
                                 dia.closed();
                             } catch (Exception e) {

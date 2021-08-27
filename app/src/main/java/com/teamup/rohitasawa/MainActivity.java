@@ -1,9 +1,12 @@
 package com.teamup.rohitasawa;
 
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,13 +15,17 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.teamup.app_sync.AppSyncAudioPicker;
 import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncChatBot;
 import com.teamup.app_sync.AppSyncFileManager;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
+import com.teamup.app_sync.AppSyncPaths;
 import com.teamup.app_sync.AppSyncPermissions;
+import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.Reqs.ChatReq;
 
@@ -28,7 +35,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncChatBot.TYPE_MESSAGE;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -69,12 +76,13 @@ public class MainActivity extends AppCompatActivity {
         AppSyncChatBot.set_bot_image(R.drawable.logo);
         AppSyncChatBot.set_bot_end_response("Thank You..!!\nFor more visit our website\nwww.meratemplate.com");
 
-        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
+//        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                AppSyncAudioPicker.pickAudio(MainActivity.this, 844);
 
             }
         });
@@ -94,32 +102,31 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        AppSyncSimpleTextDialog.dialog_closed_live.observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                AppSyncToast.showToast(getApplicationContext(), "Clososoed");
+            }
+        });
     }
 
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 45) {
-            if (data != null) {
-                try {
-                    String path = AppSyncFileManager.getSelectedFilePath(this, data);
-                    AppSyncToast.showToast(getApplicationContext(), path);
-                    img_1.setImageBitmap(AppSyncBitmapsTheory.getBitmapFromURL(path));
-                } catch (IOException e) {
-                    Log.wtf("Hulk-113", e.getMessage());
-                    e.printStackTrace();
-                }
-            }
-        }
-
-
-        if (requestCode == 55) {
-            if (data != null) {
-                AppSyncToast.showToast(getApplicationContext(), data.getStringExtra("result"));
-
-            }
-        }
+    public void dialog_closed() {
 
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        try {
+            Uri uri = data.getData();
+            AppSyncToast.showToast(getApplicationContext(), AppSyncPaths.path_from_uri(data, this) + "");
+        } catch (Exception v) {
+            Log.wtf("Hulk-127", v.getMessage());
+            Toast.makeText(this, "Nothing selected", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }

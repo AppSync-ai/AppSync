@@ -4,7 +4,9 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.text.method.LinkMovementMethod;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -12,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.cardview.widget.CardView;
+import androidx.lifecycle.MutableLiveData;
 
 public class AppSyncSimpleTextDialog {
 
@@ -19,10 +22,10 @@ public class AppSyncSimpleTextDialog {
     public static boolean dialogColsedRohitSimpleTextDialog = false;
     public static String hexColor = "#FFFFFF";
     public static String textColor = "#000000";
+    public static MutableLiveData<String> dialog_closed_live = new MutableLiveData<>();
 
-    public static void showTextDialog(final Context context, String title)
-    {
-        fetching= new Dialog(context);
+    public static void showTextDialog(final Context context, String title) {
+        fetching = new Dialog(context);
 
         DisplayMetrics metrics = context.getResources().getDisplayMetrics();
         int width = metrics.widthPixels;
@@ -43,14 +46,15 @@ public class AppSyncSimpleTextDialog {
         try {
 
             pleaseWaitTxt.setTextColor(Color.parseColor(textColor));
-        card.setCardBackgroundColor(Color.parseColor(hexColor));
-        }
-        catch (Exception v)
-        {
+            card.setCardBackgroundColor(Color.parseColor(hexColor));
+        } catch (Exception v) {
 
-            Toast.makeText(context, ""+v, Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "" + v, Toast.LENGTH_SHORT).show();
         }
-        pleaseWaitTxt.setText(""+title);
+        pleaseWaitTxt.setText("" + title);
+
+        pleaseWaitTxt.setMovementMethod(LinkMovementMethod.getInstance());
+        pleaseWaitTxt.setLinkTextColor(Color.BLUE);
 
         closeImg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,21 +65,30 @@ public class AppSyncSimpleTextDialog {
 
     }
 
-    public static void setBackgroudColor(String hexColor)
-    {
+    public static void setBackgroudColor(String hexColor) {
 
     }
 
-    public static void stopDialog(Context context){
+    public static void stopDialog(Context context) {
         try {
             fetching.dismiss();
-        }
-        catch (Exception v)
-        {
+        } catch (Exception v) {
 
+        }
+
+        try {
+            dialog_closed_live.setValue("ds");
+            SimpleTextDialog simpleTextDialog = (SimpleTextDialog) context;
+            simpleTextDialog.dialog_closed();
+        } catch (Exception e) {
+            Log.wtf("app_sync_77", "Implement Simple text Dialog");
         }
 
         dialogColsedRohitSimpleTextDialog = true;
     }
 
+
+    public interface SimpleTextDialog {
+        public void dialog_closed();
+    }
 }

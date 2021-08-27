@@ -2,10 +2,15 @@ package com.teamup.app_sync;
 
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
 
 import java.io.File;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class AppSyncPaths {
 
@@ -31,6 +36,35 @@ public class AppSyncPaths {
         File root = new File(Environment.getExternalStorageDirectory(), folderName);
         File file = new File(root, filename);
         return file.getAbsolutePath();
+    }
+
+    public static String path_from_uri(Intent data, Context context) {
+        String path = "";
+        try {
+            if (data != null) {
+
+                String filePath = null;
+                Uri _uri = data.getData();
+                Log.d("", "URI = " + _uri);
+                if (_uri != null && "content".equals(_uri.getScheme())) {
+                    Cursor cursor = context.getContentResolver().query(_uri, new String[]{android.provider.MediaStore.Images.ImageColumns.DATA}, null, null, null);
+                    cursor.moveToFirst();
+                    filePath = cursor.getString(0);
+                    cursor.close();
+                } else {
+                    filePath = _uri.getPath();
+                }
+                Log.d("app_sync_57", "Chosen path = " + filePath);
+
+                path = filePath;
+
+            } else {
+                return null;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return path;
     }
 
     public static String get_scoped_path(Context context, String filenameWithExtension) {

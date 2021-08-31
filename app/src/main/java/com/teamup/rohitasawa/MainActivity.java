@@ -11,6 +11,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.teamup.app_sync.AppSyncAudioPicker;
+import com.teamup.app_sync.AppSyncAutoCompleteHelper;
 import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncChatBot;
 import com.teamup.app_sync.AppSyncFileManager;
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     RelativeLayout manage_reler;
     ImageView img_1;
     boolean f_img = true;
+    AutoCompleteTextView digit_edt;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         AppSyncInitialize.init(MainActivity.this);
         AppSyncInstallation.set_instaltion(this);
 
+        digit_edt = findViewById(R.id.digit_edt);
         img_1 = findViewById(R.id.img_1);
         manage_reler = findViewById(R.id.manage_reler);
         button2 = findViewById(R.id.button2);
@@ -78,11 +82,28 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Rohit");
+        list.add("Rohit Asawa");
+        list.add("Rohit Banana");
+        list.add("Sumit");
+        list.add("Dasrshan");
+        list.add("killer");
+
+        new AppSyncAutoCompleteHelper().set_plugin(digit_edt, list, this).set_threshold(2);
+
+        AppSyncAutoCompleteHelper.selected_live.observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(String s) {
+                AppSyncToast.showToast(getApplicationContext(), s);
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                AppSyncAudioPicker.pickAudio(MainActivity.this, 844);
+                AppSyncToast.showToast(getApplicationContext(), AppSyncAutoCompleteHelper.is_selected_from_dropdown_live.getValue() + "");
 
             }
         });

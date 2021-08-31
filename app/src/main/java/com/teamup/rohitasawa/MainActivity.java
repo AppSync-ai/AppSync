@@ -24,6 +24,7 @@ import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncChatBot;
 import com.teamup.app_sync.AppSyncFileManager;
 import com.teamup.app_sync.AppSyncInitialize;
+import com.teamup.app_sync.AppSyncInputFilter;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncPaths;
 import com.teamup.app_sync.AppSyncPermissions;
@@ -82,22 +83,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("Rohit");
-        list.add("Rohit Asawa");
-        list.add("Rohit Banana");
-        list.add("Sumit");
-        list.add("Dasrshan");
-        list.add("killer");
 
-        new AppSyncAutoCompleteHelper().set_plugin(digit_edt, list, this).set_threshold(2);
-
-        AppSyncAutoCompleteHelper.selected_live.observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(String s) {
-                AppSyncToast.showToast(getApplicationContext(), s);
-            }
-        });
+        new AppSyncInputFilter().set_filter(digit_edt, "gta").set_length(3);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

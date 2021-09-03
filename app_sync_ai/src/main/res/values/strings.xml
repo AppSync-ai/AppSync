@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">Amendo</string>
+    <string name="app_name" translatable="false">Amendo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
     <string name="unlock">Unlock</string>
-    <string name="confirm_pattern">Confirm your screen lock PIN,Pattern or Password</string>
-    <string name="setting_label"><![CDATA[Please set the screen lock Manually by navigating to : Settings>Security.]]></string>
-    <string name="unlock_success">App is Unlocked successfully.</string>
-    <string name="unlock_failed">Failed to Unlock the app.</string>
-    <string name="device_is_secure">Device is now secure.</string>
-    <string name="security_device_cancelled">Device is not secure or user cancel the request.</string>
-    <string name="authenticate_again">Authenticate Again</string>
-    <string name="network_date">http://novoagri.in/Other/AAWarehousing/fetch_current_date.php</string>
+    <string name="confirm_pattern" translatable="false">Confirm your screen lock PIN,Pattern or Password</string>
+    <string name="setting_label" translatable="false"><![CDATA[Please set the screen lock Manually by navigating to : Settings>Security.]]></string>
+    <string name="unlock_success" translatable="false">App is Unlocked successfully.</string>
+    <string name="unlock_failed" translatable="false">Failed to Unlock the app.</string>
+    <string name="device_is_secure" translatable="false">Device is now secure.</string>
+    <string name="security_device_cancelled" translatable="false">Device is not secure or user cancel the request.</string>
+    <string name="authenticate_again" translatable="false">Authenticate Again</string>
+    <string name="network_date" translatable="false">http://novoagri.in/Other/AAWarehousing/fetch_current_date.php</string>
 </resources>

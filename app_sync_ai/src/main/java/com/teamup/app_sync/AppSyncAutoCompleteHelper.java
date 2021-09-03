@@ -25,7 +25,7 @@ public class AppSyncAutoCompleteHelper {
     public AppSyncAutoCompleteHelper set_plugin(AutoCompleteTextView autoCompleteTextView_editText, final ArrayList<String> list, final Context context) {
         autoCompleteTextView = autoCompleteTextView_editText;
         ArrayAdapter<String> adapter = new ArrayAdapter<String>
-                (context, android.R.layout.select_dialog_item, list);
+                (context, R.layout.auto_complete_item, list);
         //Getting the instance of AutoCompleteTextView
         autoCompleteTextView.setThreshold(1);//will start working from first character
         autoCompleteTextView.setAdapter(adapter);//setting the adapter data into the AutoCompleteTextView

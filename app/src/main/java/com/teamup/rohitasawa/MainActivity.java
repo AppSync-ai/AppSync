@@ -83,14 +83,10 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
-        new AppSyncInputFilter().set_filter(digit_edt, "gta").set_length(3);
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 AppSyncToast.showToast(getApplicationContext(), AppSyncAutoCompleteHelper.is_selected_from_dropdown_live.getValue() + "");
-
             }
         });
 

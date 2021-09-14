@@ -22,6 +22,7 @@ import com.teamup.app_sync.AppSyncAudioPicker;
 import com.teamup.app_sync.AppSyncAutoCompleteHelper;
 import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncChatBot;
+import com.teamup.app_sync.AppSyncDrawAndShare;
 import com.teamup.app_sync.AppSyncFileManager;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputFilter;
@@ -36,6 +37,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import static com.teamup.app_sync.AppSyncChatBot.TYPE_MESSAGE;
+import static com.teamup.app_sync.AppSyncChatBot.TYPE_NUMBER;
 
 
 public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog {
@@ -67,19 +69,19 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        authenticateApp(this);
 
-        AppSyncPermissions.CAMERA_PERMISSION(this, 43);
+        startActivity(new Intent(this, AppSyncDrawAndShare.class));
 
         ArrayList<ChatReq> chat_list = new ArrayList<>();
         chat_list.add(new ChatReq("Hello there..!!\nWhat is your name?", TYPE_MESSAGE));
         chat_list.add(new ChatReq("That's good name.\nCan i know your mobile number?", AppSyncChatBot.TYPE_NUMBER));
         chat_list.add(new ChatReq("What is your Gender?", AppSyncChatBot.TYPE_GENDER));
         chat_list.add(new ChatReq("Select your profile photo", AppSyncChatBot.TYPE_PHOTO));
-        chat_list.add(new ChatReq("Select your File specified", AppSyncChatBot.TYPE_FILE_MANAGER));
-        chat_list.add(new ChatReq("You are done, Tell me your age.", TYPE_MESSAGE));
+        chat_list.add(new ChatReq("Select your File from file manager", AppSyncChatBot.TYPE_FILE_MANAGER));
+        chat_list.add(new ChatReq("You are done, Tell me your age.", TYPE_NUMBER));
         AppSyncChatBot.set_bot_questions(chat_list);
-        AppSyncChatBot.set_bot_head_name("MT Software Solutions");
-        AppSyncChatBot.set_bot_image(R.drawable.logo);
-        AppSyncChatBot.set_bot_end_response("Thank You..!!\nFor more visit our website\nwww.meratemplate.com");
+        AppSyncChatBot.set_bot_head_name("Jarvis");
+        AppSyncChatBot.set_bot_image(R.drawable.chatbot);
+        AppSyncChatBot.set_bot_end_response("Thank You..!!\nFor more visit our website\nwww.google.com");
 
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
@@ -114,7 +116,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         });
     }
 
-
     @Override
     public void dialog_closed() {
 
@@ -123,12 +124,11 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        try {
-            Uri uri = data.getData();
-            AppSyncToast.showToast(getApplicationContext(), AppSyncPaths.path_from_uri(data, this) + "");
-        } catch (Exception v) {
-            Log.wtf("Hulk-127", v.getMessage());
-            Toast.makeText(this, "Nothing selected", Toast.LENGTH_SHORT).show();
+        if (data != null) {
+            if (resultCode == RESULT_OK) {
+                String gotach = data.getStringExtra("result");
+                AppSyncToast.showToast(getApplicationContext(), gotach);
+            }
         }
     }
 

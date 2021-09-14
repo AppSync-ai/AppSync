@@ -23,6 +23,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true">
+        <activity android:name=".AppSyncDrawAndShare"></activity>
         <activity
             android:name=".AppSyncPinSecurity"
             android:screenOrientation="portrait"

@@ -36,8 +36,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5669d0b-17fe-451b-a7de-485cf2d1ee76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDrawAndShare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/activity_app_sync_draw_and_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncBottomSIgnature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/Interfaces/CustomGestureListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -48,24 +49,19 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_5_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_5_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__pl_droidsonroids_gif_android_gif_drawable_1_2_23_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__pl_droidsonroids_gif_android_gif_drawable_1_2_23_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/RohitAsawa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/RohitAsawa.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/teamup/rohitasawa/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/java/com/teamup/app_sync/AppSyncDrawAndShare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/res/drawable/logo.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/activity_app_sync_draw_and_share.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app_sync_ai/src/main/res/layout/activity_app_sync_draw_and_share.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@RZ8R41GXWHD]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -111,7 +107,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AndroidStudioProjects/Navo" />
     <property name="multi-representation-previewE:/Projects/AppSync/app_sync_ai/src/main/java/com/teamup/app_sync/TestLayout.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
@@ -127,12 +123,8 @@
     <key name="android.template.-752835292">
       <recent name="com.teamup.app_sync" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\Documents\GitHub\AppSync\app_sync_ai\src\main\res\layout" />
-      <recent name="C:\Users\Admin\Documents\GitHub\AppSync\app_sync_ai\src\main\res\drawable" />
-      <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\drawable" />
-      <recent name="E:\Projects\AppSync\app\src\main\res\drawable" />
-      <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\layout" />
+    <key name="android.template.-1891879396">
+      <recent name="com.teamup.rohitasawa" />
     </key>
     <key name="android.template.124689555">
       <recent name="com.teamup.app_sync" />
@@ -146,8 +138,12 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.teamup.app_sync" />
     </key>
-    <key name="android.template.-1891879396">
-      <recent name="com.teamup.rohitasawa" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\AppSync\app_sync_ai\src\main\res\drawable" />
+      <recent name="E:\Projects\AppSync\app_sync_ai\src\main\java\com\teamup\app_sync\Interfaces" />
+      <recent name="E:\Projects\AppSync\app_sync_ai\src\main\java\com\teamup\app_sync" />
+      <recent name="C:\Users\Admin\Documents\GitHub\AppSync\app_sync_ai\src\main\res\layout" />
+      <recent name="C:\Users\Admin\Documents\GitHub\AppSync\app_sync_ai\src\main\res\drawable" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.teamup.app_sync.Reqs" />
@@ -270,22 +266,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="285" y="177" key="#PSD/0.0.1536.864@0.0.1536.864" timestamp="1631440475850" />
-    <state width="1491" height="350" key="GridCell.Tab.0.bottom" timestamp="1631508927544">
+    <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1631680720884">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1631508927544" />
-    <state width="1491" height="350" key="GridCell.Tab.0.center" timestamp="1631508927544">
+    <state x="573" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1631680720884" />
+    <state x="548" y="186" key="FileChooserDialogImpl" timestamp="1631817250368">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1631508927544" />
-    <state width="1491" height="350" key="GridCell.Tab.0.left" timestamp="1631508927542">
+    <state x="548" y="186" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1631817250368" />
+    <state width="1491" height="350" key="GridCell.Tab.0.bottom" timestamp="1631680205339">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1631508927542" />
-    <state width="1491" height="350" key="GridCell.Tab.0.right" timestamp="1631508927544">
+    <state width="1491" height="350" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1631680205339" />
+    <state width="1491" height="350" key="GridCell.Tab.0.center" timestamp="1631680205339">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="350" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1631508927544" />
+    <state width="1491" height="350" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1631680205339" />
+    <state width="1491" height="350" key="GridCell.Tab.0.left" timestamp="1631680205339">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="350" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1631680205339" />
+    <state width="1491" height="350" key="GridCell.Tab.0.right" timestamp="1631680205339">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="350" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1631680205339" />
     <state x="478" y="165" width="579" height="534" key="find.popup" timestamp="1631440492226">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

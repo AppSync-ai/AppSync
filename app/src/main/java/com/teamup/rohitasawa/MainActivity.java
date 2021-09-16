@@ -21,8 +21,8 @@ import android.widget.Toast;
 import com.teamup.app_sync.AppSyncAudioPicker;
 import com.teamup.app_sync.AppSyncAutoCompleteHelper;
 import com.teamup.app_sync.AppSyncBitmapsTheory;
+import com.teamup.app_sync.AppSyncBottomSIgnature;
 import com.teamup.app_sync.AppSyncChatBot;
-import com.teamup.app_sync.AppSyncDrawAndShare;
 import com.teamup.app_sync.AppSyncFileManager;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputFilter;
@@ -40,7 +40,7 @@ import static com.teamup.app_sync.AppSyncChatBot.TYPE_MESSAGE;
 import static com.teamup.app_sync.AppSyncChatBot.TYPE_NUMBER;
 
 
-public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog {
+public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -69,7 +69,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        authenticateApp(this);
 
-        startActivity(new Intent(this, AppSyncDrawAndShare.class));
+        AppSyncBottomSIgnature.open_and_draw(getSupportFragmentManager());
+
 
         ArrayList<ChatReq> chat_list = new ArrayList<>();
         chat_list.add(new ChatReq("Hello there..!!\nWhat is your name?", TYPE_MESSAGE));
@@ -132,4 +133,13 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         }
     }
 
+    @Override
+    public void saved(String file_path) {
+        AppSyncToast.showToast(getApplicationContext(), "Saved to : " + file_path);
+    }
+
+    @Override
+    public void closed_without_saving() {
+        AppSyncToast.showToast(getApplicationContext(), "Closed without saving");
+    }
 }

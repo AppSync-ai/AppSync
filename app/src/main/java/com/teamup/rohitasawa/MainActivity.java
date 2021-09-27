@@ -23,6 +23,7 @@ import com.teamup.app_sync.AppSyncAutoCompleteHelper;
 import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
 import com.teamup.app_sync.AppSyncChatBot;
+import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncFileManager;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInputFilter;
@@ -39,8 +40,7 @@ import java.util.ArrayList;
 import static com.teamup.app_sync.AppSyncChatBot.TYPE_MESSAGE;
 import static com.teamup.app_sync.AppSyncChatBot.TYPE_NUMBER;
 
-
-public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved {
+public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -95,6 +95,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        AppSyncFileManager.openFileChooser(this, 45);
 
+        AppSyncCurrentDate.get_network_date_in_php_format(this, "h:i");
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -141,5 +143,10 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     @Override
     public void closed_without_saving() {
         AppSyncToast.showToast(getApplicationContext(), "Closed without saving");
+    }
+
+    @Override
+    public void gotDate_php_format(String date) {
+        AppSyncToast.showToast(this, date);
     }
 }

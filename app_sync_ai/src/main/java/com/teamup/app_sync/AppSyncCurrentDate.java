@@ -44,6 +44,7 @@ public class AppSyncCurrentDate {
         return formattedDate;
     }
 
+
     public static void getNetworkDate(final Context context, final String format) {
         if (cctoast.intializedMethod) {
             String dateUrl = context.getResources().getString(R.string.network_date);
@@ -67,8 +68,40 @@ public class AppSyncCurrentDate {
         }
     }
 
+    public static void get_network_date_in_php_format(final Context context, final String format) {
+        if (cctoast.intializedMethod) {
+            String dateUrl = "";
+            if (AppSyncTextUtils.check_empty(format)) {
+                dateUrl = context.getResources().getString(R.string.network_date_format) + "?format=" + format;
+            } else {
+                dateUrl = context.getResources().getString(R.string.network_date_format);
+            }
+            AppSyncDirectResponseListen as = new AppSyncDirectResponseListen(context);
+            as.getResponseFromUrl(new AppSyncDirectResponseListen.ResponseListener() {
+                @Override
+                public void responser(String response, String datakey) {
+                    if (datakey.equalsIgnoreCase("Date1234")) {
+                        try {
+                            String returningDate = response.trim();
+                            NetworkDatePhpFormat nd = (NetworkDatePhpFormat) context;
+                            nd.gotDate_php_format(returningDate.trim());
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            Log.e("AppSync", e.getMessage());
+                        }
+                    }
+                }
+            });
+            as.getResponseFromUrlMethod(dateUrl, "Date1234");
+        }
+    }
+
     public interface NetworkDate {
         public void gotDate(String date);
+    }
+
+    public interface NetworkDatePhpFormat {
+        public void gotDate_php_format(String date);
     }
 
 }

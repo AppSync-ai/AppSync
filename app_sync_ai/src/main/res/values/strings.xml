@@ -13,4 +13,5 @@
     <string name="security_device_cancelled" translatable="false">Device is not secure or user cancel the request.</string>
     <string name="authenticate_again" translatable="false">Authenticate Again</string>
     <string name="network_date" translatable="false">http://novoagri.in/Other/AAWarehousing/fetch_current_date.php</string>
+    <string name="network_date_format" translatable="false">https://novoagri.in/Other/AAWarehousing/php_date.php</string>
 </resources>

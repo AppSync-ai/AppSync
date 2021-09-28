@@ -15,7 +15,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class InitilizingMethod {
+public class jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF {
 
     public static boolean enabled = true;
     public static ResponseListener listener;
@@ -26,7 +26,7 @@ public class InitilizingMethod {
         public void responser(String response, String datakey);
     }
 
-    public InitilizingMethod(Context context) {
+    public jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF(Context context) {
         this.listener = null;
         contextThis = context;
     }
@@ -99,7 +99,6 @@ public class InitilizingMethod {
             super.onPostExecute(result);
 
             try {
-                Log.wtf("Hulk-103", result);
                 listener.responser(result, datakeyIs);
                 if (!cctoast.intialized) {
                     Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");

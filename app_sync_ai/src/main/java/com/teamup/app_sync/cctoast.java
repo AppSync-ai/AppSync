@@ -18,7 +18,7 @@ public class cctoast {
 
     public static boolean intialized = false;
     public static boolean intializedMethod = false;
-    public static String url = "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=";
+    public static String JFISJFIOSHFUIOSHFUIOSDHFUSDHFUSDHFUISDHFUYSDHFUYSDFYFHUIEWRFHWERFGWYEIRFGWEYI = "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=";
     public static String mail="http://novoagri.in/Other/phpmailer/index.php";
 
 

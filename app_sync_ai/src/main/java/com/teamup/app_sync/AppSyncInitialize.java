@@ -2,24 +2,11 @@ package com.teamup.app_sync;
 
 import android.app.Activity;
 import android.content.Context;
-import android.os.AsyncTask;
-import android.os.Build;
 import android.util.Log;
-import android.widget.Toast;
-
-import androidx.annotation.RequiresApi;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class AppSyncInitialize {
 
@@ -27,22 +14,20 @@ public class AppSyncInitialize {
     public static void init(final Context context) {
         cctoast.intializedMethod = true;
 
-        InitilizingMethod as = new InitilizingMethod(context);
-        as.getResponseFromUrl(new InitilizingMethod.ResponseListener() {
+        jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF = new jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF(context);
+        NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF.getResponseFromUrl(new jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF.ResponseListener() {
             @Override
-            public void responser(String response, String datakey) {
+            public void responser(String response, String JFDSFNJAFNANUIGUIBFGUIBAEHBrAHuhAUIErhRRHBBHFFBBJVBXVNBKCNNVNCVBCNVBNVBSDJFBSDJFSBJKF) {
 
-                if (datakey.equalsIgnoreCase("Fuck")) {
+                if (JFDSFNJAFNANUIGUIBFGUIBAEHBrAHuhAUIErhRRHBBHFFBBJVBXVNBKCNNVNCVBCNVBNVBSDJFBSDJFSBJKF.equalsIgnoreCase("JHBFSDHFUSDHFUISEHDFEUWIHDWEBDFYHEBDFYHEVBFYGEVBFYGUEVFGUYE")) {
 
                     try {
-                        JSONArray jsonArray = new JSONArray(response);
-                        if (jsonArray.length() > 0) {
-                            JSONObject obj = jsonArray.getJSONObject(0);
-                            int status = obj.getInt("status");
-
-                            Log.e("Hulk40", status + " is the status");
-
-                            if (status == 1) {
+                        JSONArray NFJSNFJKSNFJSFNJSKFNSJDKFNUWEFRHYWEHFUFSDHIFYHSEFBYERFBYUHFBYHUFBHFBDHSFVBDSHGBF = new JSONArray(response);
+                        if (NFJSNFJKSNFJSFNJSKFNSJDKFNUWEFRHYWEHFUFSDHIFYHSEFBYERFBYUHFBYHUFBHFBDHSFVBDSHGBF.length() > 0) {
+                            JSONObject JDSNFJSDNFJSDNFJSNFJSDFSJDFFWYERFBWEHFBFBYSEFBYUEFBYWERFBYSEFBYWERFBYERFBRYF = NFJSNFJKSNFJSFNJSKFNSJDKFNUWEFRHYWEHFUFSDHIFYHSEFBYERFBYUHFBYHUFBHFBDHSFVBDSHGBF.getJSONObject(0);
+                            int NFJSDNFJSFNJSDFNSDJFNSDJFNSDJOFNDSIOFSEIFJWEUIFJEWUIFHEWUFHWEUFHEWUFHSUEFHSEUFHSU = JDSNFJSDNFJSDNFJSNFJSDFSJDFFWYERFBWEHFBFBYSEFBYUEFBYWERFBYSEFBYWERFBYERFBRYF.getInt("status");
+                            
+                            if (NFJSDNFJSFNJSDFNSDJFNSDJFNSDJOFNDSIOFSEIFJWEUIFJEWUIFHEWUFHWEUFHEWUFHSUEFHSEUFHSU == 1) {
                                 cctoast.intialized = true;
                             } else {
                                 ((Activity) context).finishAffinity();
@@ -50,16 +35,15 @@ public class AppSyncInitialize {
                         } else {
                             ((Activity) context).finishAffinity();
                         }
-                    } catch (JSONException e) {
+                    } catch (JSONException JFIOSDJFIOUSFIUOSFUISODFHSUDFHSDUFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDF) {
                         cctoast.intialized = false;
                         AppSyncToast.showToast(context, "Exception : Internet A.S.");
-                        e.printStackTrace();
+                        JFIOSDJFIOUSFIUOSFUISODFHSUDFHSDUFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDF.printStackTrace();
                     }
                 }
             }
         });
-        as.getResponseFromUrlMethod(cctoast.url + context.getPackageName(), "Fuck");
+        NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF.getResponseFromUrlMethod(cctoast.JFISJFIOSHFUIOSHFUIOSDHFUSDHFUSDHFUISDHFUYSDHFUYSDFYFHUIEWRFHWERFGWYEIRFGWEYI + context.getPackageName(), "JHBFSDHFUSDHFUISEHDFEUWIHDWEBDFYHEBDFYHEVBFYGEVBFYGUEVFGUYE");
 
-//        Log.e("Hulk60", "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=" + context.getPackageName());
     }
 }

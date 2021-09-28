@@ -15,17 +15,18 @@ public class AppSyncUpiPay {
     public static final int UPI_PAYMENT = 0;
 
     public static void doPayment(Context context, String name, String Upi, String Amount, String extraTxt) {
-
-        if (TextUtils.isEmpty(name)) {
-            Toast.makeText(context, " Name is invalid", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(Upi)) {
-            Toast.makeText(context, " UPI ID is invalid", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty(extraTxt)) {
-            Toast.makeText(context, " Note is invalid", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.isEmpty("" + Amount)) {
-            Toast.makeText(context, " Amount is invalid", Toast.LENGTH_SHORT).show();
-        } else {
-            payUsingUpi(context, name, Upi, extraTxt, Amount);
+        if (cctoast.intializedMethod) {
+            if (TextUtils.isEmpty(name)) {
+                Toast.makeText(context, " Name is invalid", Toast.LENGTH_SHORT).show();
+            } else if (TextUtils.isEmpty(Upi)) {
+                Toast.makeText(context, " UPI ID is invalid", Toast.LENGTH_SHORT).show();
+            } else if (TextUtils.isEmpty(extraTxt)) {
+                Toast.makeText(context, " Note is invalid", Toast.LENGTH_SHORT).show();
+            } else if (TextUtils.isEmpty("" + Amount)) {
+                Toast.makeText(context, " Amount is invalid", Toast.LENGTH_SHORT).show();
+            } else {
+                payUsingUpi(context, name, Upi, extraTxt, Amount);
+            }
         }
     }
 

@@ -146,7 +146,7 @@ ada\nds"
 
         </LinearLayout>
 
-    </RelativeLayout>   
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/img_1"
@@ -156,6 +156,6 @@ ada\nds"
         android:contentDescription="TODO"
         android:scaleType="fitXY"
         android:src="@drawable/logo"
-        android:visibility="visible" />
+        android:visibility="gone" />
 
 </RelativeLayout>

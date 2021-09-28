@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
@@ -99,12 +98,12 @@ public class AppSyncDirectResponseListen {
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
 
-            if (cctoast.intializedMethod) {
+            if (cccccccccccctoast.intializedMethod) {
                 try {
 
 
                     listener.responser(result, datakeyIs);
-                    if (!cctoast.intialized) {
+                    if (!cccccccccccctoast.intialized) {
                         Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
                     }
 

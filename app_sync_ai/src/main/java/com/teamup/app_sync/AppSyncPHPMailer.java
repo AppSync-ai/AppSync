@@ -8,8 +8,8 @@ import java.net.URLEncoder;
 public class AppSyncPHPMailer {
 
     public static boolean sendMail(Context context, String toMail, String subject, String message) {
-        if (cctoast.intializedMethod) {
-            String resp = AppSyncDirectResponse.getResponse(cctoast.mail + "?to=" + toMail + "&subject=" + URLEncoder.encode(subject) + "&message=" + URLEncoder.encode(message));
+        if (cccccccccccctoast.intializedMethod) {
+            String resp = AppSyncDirectResponse.getResponse(cccccccccccctoast.mail + "?to=" + toMail + "&subject=" + URLEncoder.encode(subject) + "&message=" + URLEncoder.encode(message));
 
             Log.wtf("Hulk-77", resp);
 

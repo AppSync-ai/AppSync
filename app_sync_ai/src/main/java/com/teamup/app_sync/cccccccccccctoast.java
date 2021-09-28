@@ -14,7 +14,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.cardview.widget.CardView;
 import androidx.core.graphics.ColorUtils;
 
-public class cctoast {
+public class cccccccccccctoast {
 
     public static boolean intialized = false;
     public static boolean intializedMethod = false;
@@ -29,37 +29,37 @@ public class cctoast {
 
     private static int bgColor = Color.WHITE;
 
-    public cctoast(Context context) {
+    public cccccccccccctoast(Context context) {
         this.context = context;
     }
 
-    public cctoast setMessage(String message) {
+    public cccccccccccctoast setMessage(String message) {
         this.message = message;
         return this;
     }
 
-    public cctoast setMessage(int messageRes) {
+    public cccccccccccctoast setMessage(int messageRes) {
         setMessage(context.getResources().getString(messageRes));
         return this;
     }
 
-    public cctoast setIcon(Drawable icon) {
+    public cccccccccccctoast setIcon(Drawable icon) {
         this.icon = icon;
         return this;
     }
 
-    public cctoast setIcon(int iconRes) {
+    public cccccccccccctoast setIcon(int iconRes) {
         setIcon(context.getResources().getDrawable(iconRes));
         return this;
     }
 
-    public cctoast setDuration(int duration) {
+    public cccccccccccctoast setDuration(int duration) {
         this.duration = duration;
         return this;
     }
 
-    public cctoast setBackgroundColor(int bgColor) {
-        cctoast.bgColor = bgColor;
+    public cccccccccccctoast setBackgroundColor(int bgColor) {
+        cccccccccccctoast.bgColor = bgColor;
 
         return this;
     }
@@ -69,31 +69,31 @@ public class cctoast {
         toast.show();
     }
 
-    public static cctoast makeText(Context context, String message, Drawable icon, int duration) {
-        return new cctoast(context)
+    public static cccccccccccctoast makeText(Context context, String message, Drawable icon, int duration) {
+        return new cccccccccccctoast(context)
                 .setMessage(message)
                 .setIcon(icon)
                 .setBackgroundColor(Color.WHITE)
                 .setDuration(duration);
     }
 
-    public static cctoast makeText(Context context, String message, int duration) {
+    public static cccccccccccctoast makeText(Context context, String message, int duration) {
         return makeText(context, message, null, duration);
     }
 
-    public static cctoast makeText(Context context, int messageId, int duration) {
+    public static cccccccccccctoast makeText(Context context, int messageId, int duration) {
         return makeText(context, context.getResources().getString(messageId), null, duration);
     }
 
-    public static cctoast makeText(Context context, int messageId, Drawable icon, int duration) {
+    public static cccccccccccctoast makeText(Context context, int messageId, Drawable icon, int duration) {
         return makeText(context, context.getResources().getString(messageId), icon, duration);
     }
 
-    public static cctoast makeText(Context context, String message, int iconId, int duration) {
+    public static cccccccccccctoast makeText(Context context, String message, int iconId, int duration) {
         return makeText(context, message, context.getResources().getDrawable(iconId), duration);
     }
 
-    public static cctoast makeText(Context context, int messageId, int iconId, int duration) {
+    public static cccccccccccctoast makeText(Context context, int messageId, int iconId, int duration) {
         return makeText(context, context.getResources().getString(messageId),
                 context.getResources().getDrawable(iconId), duration);
     }

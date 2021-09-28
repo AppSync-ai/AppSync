@@ -85,11 +85,11 @@ public class AppSyncDirectResponseListenNew {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            if (cctoast.intializedMethod) {
+            if (cccccccccccctoast.intializedMethod) {
                 try {
 
                     listener.responser(result);
-                    if (!cctoast.intialized) {
+                    if (!cccccccccccctoast.intialized) {
                         Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
                     }
                 } catch (Exception c) {

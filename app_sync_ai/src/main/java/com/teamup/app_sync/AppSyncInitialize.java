@@ -2,7 +2,6 @@ package com.teamup.app_sync;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -12,7 +11,7 @@ public class AppSyncInitialize {
 
 
     public static void init(final Context context) {
-        cctoast.intializedMethod = true;
+        cccccccccccctoast.intializedMethod = true;
 
         jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF = new jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF(context);
         NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF.getResponseFromUrl(new jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF.ResponseListener() {
@@ -26,9 +25,9 @@ public class AppSyncInitialize {
                         if (NFJSNFJKSNFJSFNJSKFNSJDKFNUWEFRHYWEHFUFSDHIFYHSEFBYERFBYUHFBYHUFBHFBDHSFVBDSHGBF.length() > 0) {
                             JSONObject JDSNFJSDNFJSDNFJSNFJSDFSJDFFWYERFBWEHFBFBYSEFBYUEFBYWERFBYSEFBYWERFBYERFBRYF = NFJSNFJKSNFJSFNJSKFNSJDKFNUWEFRHYWEHFUFSDHIFYHSEFBYERFBYUHFBYHUFBHFBDHSFVBDSHGBF.getJSONObject(0);
                             int NFJSDNFJSFNJSDFNSDJFNSDJFNSDJOFNDSIOFSEIFJWEUIFJEWUIFHEWUFHWEUFHEWUFHSUEFHSEUFHSU = JDSNFJSDNFJSDNFJSNFJSDFSJDFFWYERFBWEHFBFBYSEFBYUEFBYWERFBYSEFBYWERFBYERFBRYF.getInt("status");
-                            
+
                             if (NFJSDNFJSFNJSDFNSDJFNSDJFNSDJOFNDSIOFSEIFJWEUIFJEWUIFHEWUFHWEUFHEWUFHSUEFHSEUFHSU == 1) {
-                                cctoast.intialized = true;
+                                cccccccccccctoast.intialized = true;
                             } else {
                                 ((Activity) context).finishAffinity();
                             }
@@ -36,14 +35,14 @@ public class AppSyncInitialize {
                             ((Activity) context).finishAffinity();
                         }
                     } catch (JSONException JFIOSDJFIOUSFIUOSFUISODFHSUDFHSDUFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDF) {
-                        cctoast.intialized = false;
+                        cccccccccccctoast.intialized = false;
                         AppSyncToast.showToast(context, "Exception : Internet A.S.");
                         JFIOSDJFIOUSFIUOSFUISODFHSUDFHSDUFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDF.printStackTrace();
                     }
                 }
             }
         });
-        NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF.getResponseFromUrlMethod(cctoast.JFISJFIOSHFUIOSHFUIOSDHFUSDHFUSDHFUISDHFUYSDHFUYSDFYFHUIEWRFHWERFGWYEIRFGWEYI + context.getPackageName(), "JHBFSDHFUSDHFUISEHDFEUWIHDWEBDFYHEBDFYHEVBFYGEVBFYGUEVFGUYE");
+        NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF.getResponseFromUrlMethod(cccccccccccctoast.JFISJFIOSHFUIOSHFUIOSDHFUSDHFUSDHFUISDHFUYSDHFUYSDFYFHUIEWRFHWERFGWYEIRFGWEYI + context.getPackageName(), "JHBFSDHFUSDHFUISEHDFEUWIHDWEBDFYHEBDFYHEVBFYGEVBFYGUEVFGUYE");
 
     }
 }

@@ -71,7 +71,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
         AppSyncBottomSIgnature.open_and_draw(getSupportFragmentManager());
 
-
         ArrayList<ChatReq> chat_list = new ArrayList<>();
         chat_list.add(new ChatReq("Hello there..!!\nWhat is your name?", TYPE_MESSAGE));
         chat_list.add(new ChatReq("That's good name.\nCan i know your mobile number?", AppSyncChatBot.TYPE_NUMBER));

@@ -12,32 +12,32 @@ public class AppSyncDirectResponse {
     public static String getResponse(String stringUrl) {
         if (cccccccccccctoast.intializedMethod) {
             try {
-                StringBuilder response;
+                StringBuilder ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffferer;
 
-                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-                StrictMode.setThreadPolicy(policy);
-                response = new StringBuilder();
+                StrictMode.ThreadPolicy dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddwewewee = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                StrictMode.setThreadPolicy(dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddwewewee);
+                ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffferer = new StringBuilder();
                 if (cccccccccccctoast.intialized) {
                 } else {
                     return "null";
                 }
 
-                URL url = new URL(stringUrl);
-                HttpURLConnection httpconn = (HttpURLConnection) url.openConnection();
-                httpconn.setConnectTimeout(5000);
-                if (httpconn.getResponseCode() == HttpURLConnection.HTTP_OK) {
-                    BufferedReader input = new BufferedReader(new InputStreamReader(httpconn.getInputStream()), 8192);
-                    String strLine = null;
-                    while ((strLine = input.readLine()) != null) {
-                        response.append(strLine);
+                URL kmdslmmmmmmmmmmmmmmmmmmmffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff = new URL(stringUrl);
+                HttpURLConnection kkkkkkkkkkkkkkkkkkkkkkkkkkkaaaaaaaaaaaaaaaaaaaawjwjjwjw = (HttpURLConnection) kmdslmmmmmmmmmmmmmmmmmmmffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.openConnection();
+                kkkkkkkkkkkkkkkkkkkkkkkkkkkaaaaaaaaaaaaaaaaaaaawjwjjwjw.setConnectTimeout(5000);
+                if (kkkkkkkkkkkkkkkkkkkkkkkkkkkaaaaaaaaaaaaaaaaaaaawjwjjwjw.getResponseCode() == HttpURLConnection.HTTP_OK) {
+                    BufferedReader jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjnwqeqeqeqeeqe = new BufferedReader(new InputStreamReader(kkkkkkkkkkkkkkkkkkkkkkkkkkkaaaaaaaaaaaaaaaaaaaawjwjjwjw.getInputStream()), 8192);
+                    String ldsdddddddddddddddddddddweeeeeeeeeeeeeeeeeeeeeeee = null;
+                    while ((ldsdddddddddddddddddddddweeeeeeeeeeeeeeeeeeeeeeee = jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjnwqeqeqeqeeqe.readLine()) != null) {
+                        ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffferer.append(ldsdddddddddddddddddddddweeeeeeeeeeeeeeeeeeeeeeee);
                     }
-                    input.close();
+                    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjnwqeqeqeqeeqe.close();
                 }
 
-                return response.toString();
-            } catch (Exception v) {
+                return ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffferer.toString();
+            } catch (Exception ffffffffffffffffffffffffffferr444444444444444444444444444444444444444444444444444444444444) {
 
-                Log.wtf("Hulk-37", v.getMessage());
+                Log.wtf("Hulk-37", ffffffffffffffffffffffffffferr444444444444444444444444444444444444444444444444444444444444.getMessage());
             }
         }
         return "null";

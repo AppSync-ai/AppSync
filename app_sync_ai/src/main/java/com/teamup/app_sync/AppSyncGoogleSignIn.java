@@ -11,13 +11,13 @@ import com.google.android.gms.common.AccountPicker;
 public class AppSyncGoogleSignIn {
 
     public static void getAccounts(Context context, int requestCode) {
-        Intent googlePicker = AccountPicker.newChooseAccountIntent(null, null, new String[]{GoogleAuthUtil.GOOGLE_ACCOUNT_TYPE}, true, null, null, null, null);
-        ((Activity) context).startActivityForResult(googlePicker, requestCode);
+        Intent fffffffffffffffffffffffffffffffffffffffoihfuiehfnuwefyweghrygfgweygywgcrgwenfywenfgynwefefyfynwehuifnhcwfhp = AccountPicker.newChooseAccountIntent(null, null, new String[]{GoogleAuthUtil.GOOGLE_ACCOUNT_TYPE}, true, null, null, null, null);
+        ((Activity) context).startActivityForResult(fffffffffffffffffffffffffffffffffffffffoihfuiehfnuwefyweghrygfgweygywgcrgwenfywenfgynwefefyfynwehuifnhcwfhp, requestCode);
     }
 
-    public static String getEmail(Intent data) {
-        if (data != null) {
-            return data.getStringExtra(AccountManager.KEY_ACCOUNT_NAME);
+    public static String getEmail(Intent iuofsfosioifjviujnrjgaejhgbionhoivaemkpgt) {
+        if (iuofsfosioifjviujnrjgaejhgbionhoivaemkpgt != null) {
+            return iuofsfosioifjviujnrjgaejhgbionhoivaemkpgt.getStringExtra(AccountManager.KEY_ACCOUNT_NAME);
         } else {
             return null;
         }

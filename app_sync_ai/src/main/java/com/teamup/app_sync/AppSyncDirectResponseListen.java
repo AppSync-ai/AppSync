@@ -18,25 +18,25 @@ import java.net.URL;
 public class AppSyncDirectResponseListen {
 
     public static ResponseListener listener;
-    public Context contextThis;
-    public String datakeyIs = "";
+    public Context grdrtetrt54;
+    public String sedffsdbdgt89 = "";
 
 
     public interface ResponseListener {
         public void responser(String response, String datakey);
     }
 
-    public AppSyncDirectResponseListen(Context context) {
+    public AppSyncDirectResponseListen(Context errrggd334555) {
         this.listener = null;
-        contextThis = context;
+        grdrtetrt54 = errrggd334555;
     }
 
     public void getResponseFromUrl(ResponseListener listener) {
         this.listener = listener;
     }
 
-    public void getResponseFromUrlMethod(String url, String datakey) {
-        datakeyIs = datakey;
+    public void getResponseFromUrlMethod(String url, String dataKey) {
+        sedffsdbdgt89 = dataKey;
         new getResponse().execute("" + url);
     }
 
@@ -50,41 +50,41 @@ public class AppSyncDirectResponseListen {
 
         protected String doInBackground(String... params) {
 
-            HttpURLConnection connection = null;
-            BufferedReader reader = null;
+            HttpURLConnection rrrrrrrrrrrrrrrrrrrrrrefsdfsdvvwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe = null;
+            BufferedReader ereterbtetevt4435353h3r = null;
 
             try {
-                java.net.URL url = new URL(params[0]);
-                connection = (HttpURLConnection) url.openConnection();
-                connection.setConnectTimeout(5000);
-                connection.connect();
+                java.net.URL grgrdvtewravrtrt34 = new URL(params[0]);
+                rrrrrrrrrrrrrrrrrrrrrrefsdfsdvvwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe = (HttpURLConnection) grgrdvtewravrtrt34.openConnection();
+                rrrrrrrrrrrrrrrrrrrrrrefsdfsdvvwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe.setConnectTimeout(5000);
+                rrrrrrrrrrrrrrrrrrrrrrefsdfsdvvwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe.connect();
 
-                InputStream stream = connection.getInputStream();
+                InputStream werwerwevrwrwerv2342 = rrrrrrrrrrrrrrrrrrrrrrefsdfsdvvwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe.getInputStream();
 
-                reader = new BufferedReader(new InputStreamReader(stream));
+                ereterbtetevt4435353h3r = new BufferedReader(new InputStreamReader(werwerwevrwrwerv2342));
 
-                StringBuffer buffer = new StringBuffer();
-                String line = "";
+                StringBuffer ertebterbyummmujyhythythyhyttut = new StringBuffer();
+                String yr5ttrnrtynyrtnyrtyrtyrty = "";
 
-                while ((line = reader.readLine()) != null) {
-                    buffer.append(line + "\n");
-                    Log.d("Response: ", "> " + line);   //here u ll get whole response...... :-)
+                while ((yr5ttrnrtynyrtnyrtyrtyrty = ereterbtetevt4435353h3r.readLine()) != null) {
+                    ertebterbyummmujyhythythyhyttut.append(yr5ttrnrtynyrtnyrtyrtyrty + "\n");
+                    Log.d("Response: ", "> " + yr5ttrnrtynyrtnyrtyrtyrty);   //here u ll get whole response...... :-)
 
                 }
 
-                return buffer.toString();
+                return ertebterbyummmujyhythythyhyttut.toString();
 
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (MalformedURLException tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt556) {
+                tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt556.printStackTrace();
+            } catch (IOException uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu) {
+                uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu.printStackTrace();
             } finally {
-                if (connection != null) {
-                    connection.disconnect();
+                if (rrrrrrrrrrrrrrrrrrrrrrefsdfsdvvwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe != null) {
+                    rrrrrrrrrrrrrrrrrrrrrrefsdfsdvvwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe.disconnect();
                 }
                 try {
-                    if (reader != null) {
-                        reader.close();
+                    if (ereterbtetevt4435353h3r != null) {
+                        ereterbtetevt4435353h3r.close();
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -95,14 +95,14 @@ public class AppSyncDirectResponseListen {
 
         @RequiresApi(api = Build.VERSION_CODES.KITKAT)
         @Override
-        protected void onPostExecute(String result) {
-            super.onPostExecute(result);
+        protected void onPostExecute(String njjjnjnjhbsdhfgysdftysdfgsdf) {
+            super.onPostExecute(njjjnjnjhbsdhfgysdftysdfgsdf);
 
             if (cccccccccccctoast.intializedMethod) {
                 try {
 
 
-                    listener.responser(result, datakeyIs);
+                    listener.responser(njjjnjnjhbsdhfgysdftysdfgsdf, sedffsdbdgt89);
                     if (!cccccccccccctoast.intialized) {
                         Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
                     }

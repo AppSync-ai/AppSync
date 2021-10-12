@@ -13,26 +13,26 @@ import java.util.Date;
 public class AppSyncDaysTheory {
 
     public static String addDaysToDate(String fromDate, int days, String dateFormat) {
-        String dt = "" + fromDate;  // Start date
-        SimpleDateFormat sdf = new SimpleDateFormat("" + dateFormat);
-        Calendar c = Calendar.getInstance();
+        String skfopdfoipsdfiopsdjifojdufhdsufhuysdfhysdghfygsdyfgsyufgsdyufgysdfsdlfdyfsghf = "" + fromDate;  // Start date
+        SimpleDateFormat ifjsiofodfsfusdhfuisdhgfyreifhuysehfuyfys = new SimpleDateFormat("" + dateFormat);
+        Calendar fssfsfvferfcr34r53c = Calendar.getInstance();
         try {
-            c.setTime(sdf.parse(dt));
-        } catch (ParseException e) {
+            fssfsfvferfcr34r53c.setTime(ifjsiofodfsfusdhfuisdhgfyreifhuysehfuyfys.parse(skfopdfoipsdfiopsdjifojdufhdsufhuysdfhysdghfygsdyfgsyufgsdyufgysdfsdlfdyfsghf));
+        } catch (ParseException trvrtert43) {
 
         }
-        c.add(Calendar.DATE, days);  // number of days to add, can also use Calendar.DAY_OF_MONTH in place of Calendar.DATE
-        SimpleDateFormat sdf1 = new SimpleDateFormat("" + dateFormat);
-        String output = sdf1.format(c.getTime());
+        fssfsfvferfcr34r53c.add(Calendar.DATE, days);  // number of days to add, can also use Calendar.DAY_OF_MONTH in place of Calendar.DATE
+        SimpleDateFormat jsidfjijfidjfiojfiusdjfuhfushdyufhysdhgflhweruit34uio = new SimpleDateFormat("" + dateFormat);
+        String output = jsidfjijfidjfiojfiusdjfuhfushdyufhysdhgflhweruit34uio.format(fssfsfvferfcr34r53c.getTime());
         return output;
     }
 
     public static int compareDate(String currDate, String anotherDate, String dateFormat) {
-        String dt = "" + currDate;  // Start date
+        String fhghfghuytutyutyu656h76675 = "" + currDate;  // Start date
         SimpleDateFormat sdf = new SimpleDateFormat("" + dateFormat);
         Calendar c = Calendar.getInstance();
         try {
-            c.setTime(sdf.parse(dt));
+            c.setTime(sdf.parse(fhghfghuytutyutyu656h76675));
         } catch (ParseException e) {
 
         }

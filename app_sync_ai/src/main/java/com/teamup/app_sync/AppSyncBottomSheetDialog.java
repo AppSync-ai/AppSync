@@ -8,17 +8,17 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class AppSyncBottomSheetDialog {
 
-    public static BottomSheetDialog dialog;
+    public static BottomSheetDialog lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee;
     public static View view2;
 
     public static void showSquared(Context context, int layout, boolean cancelable) {
 
         view2 = ((Activity) context).getLayoutInflater().inflate(layout, null);
         view2.setBackgroundResource(R.drawable.rounded_dialog);
-         dialog = new BottomSheetDialog(context);
-        dialog.setContentView(view2);
-        dialog.setCancelable(cancelable);
-        dialog.show();
+         lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = new BottomSheetDialog(context);
+        lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.setContentView(view2);
+        lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.setCancelable(cancelable);
+        lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.show();
 
     }
 
@@ -26,18 +26,18 @@ public class AppSyncBottomSheetDialog {
 
         view2 = ((Activity) context).getLayoutInflater().inflate(layout, null);
         view2.setBackgroundResource(R.drawable.rounded_dialog);
-         dialog = new BottomSheetDialog(context);
-        dialog.setContentView(view2);
-        dialog.setCancelable(cancelable);
-        dialog.show();
+         lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee = new BottomSheetDialog(context);
+        lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.setContentView(view2);
+        lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.setCancelable(cancelable);
+        lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.show();
 
     }
 
     public static void dismiss(Context context) {
         try {
-            dialog.dismiss();
-        } catch (Exception e) {
-            e.printStackTrace();
+            lmkfmdksmfijofnsdufnduisfuysdfysdfbdtygftsdybhfnvjenenhyerhyfgvbryhreeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.dismiss();
+        } catch (Exception fgffffffffffffffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeetttttttttttttttttttttttt) {
+            fgffffffffffffffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeetttttttttttttttttttttttt.printStackTrace();
         }
     }
 

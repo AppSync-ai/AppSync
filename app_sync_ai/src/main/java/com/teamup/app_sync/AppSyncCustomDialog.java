@@ -9,30 +9,30 @@ import androidx.appcompat.app.AlertDialog;
 
 public class AppSyncCustomDialog {
 
-    public static AlertDialog customDialog;
+    public static AlertDialog fgpjoidjgiofjgiodjgiofjgiodfgjdiofjgdiuofgjifdogjidfujgiodfjgidjgidfjgifodjgifdjgidfjgifodjgifdgjidfjgiodfgidgdf;
     public static View view2;
 
     public static void showDialog(Context context, int layout, int backgroundColor, boolean cancelable) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context, R.style.myFullscreenAlertDialogStyle);
-        LayoutInflater layoutInflaterAndroid = LayoutInflater.from(context);
-        view2 = layoutInflaterAndroid.inflate(layout, null);
-        builder.setView(view2);
-        builder.setCancelable(cancelable);
-        customDialog = builder.create();
+        AlertDialog.Builder kjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjoadjiajdiojdiuosajdfiuoehjfuehfuhfuerfheurfo = new AlertDialog.Builder(context, R.style.myFullscreenAlertDialogStyle);
+        LayoutInflater poofsfdjfijsifjeiruhufgrhegyhyghuyrhger7ityer78hre78hgrfhyu4hrcyn34rc43r34c3434tc3t3t = LayoutInflater.from(context);
+        view2 = poofsfdjfijsifjeiruhufgrhegyhyghuyrhger7ityer78hre78hgrfhyu4hrcyn34rc43r34c3434tc3t3t.inflate(layout, null);
+        kjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjoadjiajdiojdiuosajdfiuoehjfuehfuhfuerfheurfo.setView(view2);
+        kjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjoadjiajdiojdiuosajdfiuoehjfuehfuhfuerfheurfo.setCancelable(cancelable);
+        fgpjoidjgiofjgiodjgiofjgiodfgjdiofjgdiuofgjifdogjidfujgiodfjgidjgidfjgifodjgifdjgidfjgifodjgifdgjidfjgiodfgidgdf = kjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjkjoadjiajdiojdiuosajdfiuoehjfuehfuhfuerfheurfo.create();
         try {
-            customDialog.getWindow().setBackgroundDrawableResource(backgroundColor);
-        } catch (Exception c) {
+            fgpjoidjgiofjgiodjgiofjgiodfgjdiofjgdiuofgjifdogjidfujgiodfjgidjgidfjgifodjgifdjgidfjgifodjgifdgjidfjgiodfgidgdf.getWindow().setBackgroundDrawableResource(backgroundColor);
+        } catch (Exception kfiopsjfisjfijsifjsdifjisdfjisdfjisdjfisdjfiosdjfisdfjiosdfjidsfjisdfjisdfjsdf) {
             Toast.makeText(context, "Wrong background color", Toast.LENGTH_SHORT).show();
         }
 
-        customDialog.show();
+        fgpjoidjgiofjgiodjgiofjgiodfgjdiofjgdiuofgjifdogjidfujgiodfjgidjgidfjgifodjgifdjgidfjgifodjgifdgjidfjgiodfgidgdf.show();
 
 
     }
 
     public static void stopPleaseWaitDialog(Context context) {
         try {
-            customDialog.dismiss();
+            fgpjoidjgiofjgiodjgiofjgiodfgjdiofjgdiuofgjifdogjidfujgiodfjgidjgidfjgifodjgifdjgidfjgifodjgifdgjidfjgiodfgidgdf.dismiss();
         } catch (Exception v) {
 
         }

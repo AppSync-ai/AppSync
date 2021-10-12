@@ -19,7 +19,7 @@ public class cccccccccccctoast {
     public static boolean intialized = false;
     public static boolean intializedMethod = false;
     public static String JFISJFIOSHFUIOSHFUIOSDHFUSDHFUSDHFUISDHFUYSDHFUYSDFYFHUIEWRFHWERFGWYEIRFGWEYI = "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=";
-    public static String mail="http://novoagri.in/Other/phpmailer/index.php";
+    public static String ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffer3434535rcrffcwef4rrc3r34rccccc34rcr34rcc3rc3rt34rcr4 ="http://novoagri.in/Other/phpmailer/index.php";
 
 
     private Context context;

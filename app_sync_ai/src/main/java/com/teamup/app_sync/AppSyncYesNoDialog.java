@@ -12,35 +12,35 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class AppSyncYesNoDialog {
-    static Dialog fetching;
+    static Dialog losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff;
 
     public static void showDialog(final Context context, String title) {
-        fetching = new Dialog(context);
+        losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff = new Dialog(context);
 
-        DisplayMetrics metrics = context.getResources().getDisplayMetrics();
-        int width = metrics.widthPixels;
-        int height = metrics.heightPixels;
-        fetching.show();
+        DisplayMetrics mkkkkkkkkkkkkkkkkkkkkkkkkkkkksffffffffffffffffffffffffffffffffffff42222222222222222222222222222222222222222222222 = context.getResources().getDisplayMetrics();
+        int isiofmismfi = mkkkkkkkkkkkkkkkkkkkkkkkkkkkksffffffffffffffffffffffffffffffffffff42222222222222222222222222222222222222222222222.widthPixels;
+        int gfsmigkmikr = mkkkkkkkkkkkkkkkkkkkkkkkkkkkksffffffffffffffffffffffffffffffffffff42222222222222222222222222222222222222222222222.heightPixels;
+        losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.show();
 
-        fetching.setCancelable(false);
-        fetching.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
-        fetching.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        fetching.setContentView(R.layout.dialog_yes_no);
-
-
-        ImageButton yesBtn = fetching.findViewById(R.id.yesBtn);
-        ImageButton noBtn = fetching.findViewById(R.id.noBtn);
-        TextView txt = fetching.findViewById(R.id.txt);
-
-        txt.setText("" + title);
+        losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.setCancelable(false);
+        losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.setContentView(R.layout.dialog_yes_no);
 
 
-        noBtn.setOnClickListener(new View.OnClickListener() {
+        ImageButton kmgmkmkmfgmre45 = losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.findViewById(R.id.yesBtn);
+        ImageButton msfimfimi43i5 = losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.findViewById(R.id.noBtn);
+        TextView msemfismfiri43 = losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.findViewById(R.id.txt);
+
+        msemfismfiri43.setText("" + title);
+
+
+        msfimfimi43i5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
-                    dialogSayings green = (dialogSayings) context;
-                    green.redSignal();
+                    dialogSayings sfijfiuodjiujiuwjeruijfuij43 = (dialogSayings) context;
+                    sfijfiuodjiujiuwjeruijfuij43.redSignal();
                     stopDialog(context);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -49,12 +49,12 @@ public class AppSyncYesNoDialog {
             }
         });
 
-        yesBtn.setOnClickListener(new View.OnClickListener() {
+        kmgmkmkmfgmre45.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
-                    dialogSayings green = (dialogSayings) context;
-                    green.greenSignal();
+                    dialogSayings fijsiosjfiujsoiucjfuiwejfro4 = (dialogSayings) context;
+                    fijsiosjfiujsoiucjfuiwejfro4.greenSignal();
                     stopDialog(context);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -74,8 +74,8 @@ public class AppSyncYesNoDialog {
 
     public static void stopDialog(Context context) {
         try {
-            fetching.dismiss();
-        } catch (Exception v) {
+            losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff.dismiss();
+        } catch (Exception fmsdfisdmfismfiomic4i3) {
 
         }
     }

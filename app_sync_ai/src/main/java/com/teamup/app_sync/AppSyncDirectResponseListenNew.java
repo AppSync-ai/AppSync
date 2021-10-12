@@ -85,7 +85,7 @@ public class AppSyncDirectResponseListenNew {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            if (cccccccccccctoast.intializedMethod) {
+            if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
                 try {
 
                     listener.responser(result);

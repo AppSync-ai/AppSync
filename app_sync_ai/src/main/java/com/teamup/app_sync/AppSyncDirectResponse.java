@@ -10,7 +10,7 @@ import java.net.URL;
 
 public class AppSyncDirectResponse {
     public static String getResponse(String stringUrl) {
-        if (cccccccccccctoast.intializedMethod) {
+        if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
             try {
                 StringBuilder ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffferer;
 

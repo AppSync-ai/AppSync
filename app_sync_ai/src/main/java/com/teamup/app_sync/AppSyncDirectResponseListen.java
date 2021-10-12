@@ -98,7 +98,7 @@ public class AppSyncDirectResponseListen {
         protected void onPostExecute(String njjjnjnjhbsdhfgysdftysdfgsdf) {
             super.onPostExecute(njjjnjnjhbsdhfgysdftysdfgsdf);
 
-            if (cccccccccccctoast.intializedMethod) {
+            if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
                 try {
 
 

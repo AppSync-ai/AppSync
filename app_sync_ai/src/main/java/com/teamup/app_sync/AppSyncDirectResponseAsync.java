@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class AppSyncDirectResponseAsync {
     public static String getResponse(String stringUrl) {
-        if (cccccccccccctoast.intializedMethod) {
+        if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
             try {
                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);

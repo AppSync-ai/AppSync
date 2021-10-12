@@ -11,7 +11,7 @@ public class AppSyncInitialize {
 
 
     public static void init(final Context context) {
-        cccccccccccctoast.intializedMethod = true;
+        cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ = true;
 
         jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF = new jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF(context);
         NFSDJNFJSDNFJSDNFJSFNJSDFNsjdfNJFNJFNDJFNSJDKF.getResponseFromUrl(new jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRIHBFHBF.ResponseListener() {

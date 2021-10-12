@@ -15,7 +15,7 @@ public class AppSyncUpiPay {
     public static final int UPI_PAYMENT = 0;
 
     public static void doPayment(Context context, String name, String Upi, String Amount, String extraTxt) {
-        if (cccccccccccctoast.intializedMethod) {
+        if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
             if (TextUtils.isEmpty(name)) {
                 Toast.makeText(context, " Name is invalid", Toast.LENGTH_SHORT).show();
             } else if (TextUtils.isEmpty(Upi)) {

@@ -45,7 +45,7 @@ public class AppSyncCurrentDate {
 
 
     public static void getNetworkDate(final Context context, final String format) {
-        if (cccccccccccctoast.intializedMethod) {
+        if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
             String dateUrl = context.getResources().getString(R.string.network_date);
             AppSyncDirectResponseListen as = new AppSyncDirectResponseListen(context);
             as.getResponseFromUrl(new AppSyncDirectResponseListen.ResponseListener() {
@@ -68,7 +68,7 @@ public class AppSyncCurrentDate {
     }
 
     public static void get_network_date_in_php_format(final Context context, final String format) {
-        if (cccccccccccctoast.intializedMethod) {
+        if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
             String dateUrl = "";
             if (AppSyncTextUtils.check_empty(format)) {
                 dateUrl = context.getResources().getString(R.string.network_date_format) + "?format=" + format;

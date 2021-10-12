@@ -39,7 +39,7 @@ public class AppSyncAlertDialogInput {
                         InputDialogMethods im = (InputDialogMethods) context;
                         im.RohitAlertDialogInputSubmitted(m_Text, dataKey);
                     } catch (Exception e) {
-                        Toast.makeText(context, "Please implement RohitAlertDialogInput interface in your " + context.getClass(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Please implement AlertDialogInput interface in your " + context.getClass(), Toast.LENGTH_SHORT).show();
                         e.printStackTrace();
                     }
                 } else {

@@ -14,36 +14,36 @@ public class AppSyncAlertWithList {
 
     public static void showListDialog(final Context context, final List<String> stringDataList, int drawable, String title) {
 
-        final ArrayAdapter<String> list = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, stringDataList);
-        AlertDialog.Builder builderSingle = new AlertDialog.Builder(context);
-        builderSingle.setIcon(drawable);
-        builderSingle.setTitle("" + title);
+        final ArrayAdapter<String> FFPfVQFgBjsSkgyaretqQWuQyQnnaEExunIBhGaDMJstROcTAcxVqXiDlaAfPYCwmVmjYYPhSZNaNLvwutfhbSCxcaUXTQVNnVfO = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, stringDataList);
+        AlertDialog.Builder jhCGQrfgXydbUxUawYqVWiUlqttDRdbSizGQTVyDwwbnwLiNTgXQbMFqkbSIFwNLWdBkJdnaqNkdIQKKVuOoYGienavTVRFhWGQv = new AlertDialog.Builder(context);
+        jhCGQrfgXydbUxUawYqVWiUlqttDRdbSizGQTVyDwwbnwLiNTgXQbMFqkbSIFwNLWdBkJdnaqNkdIQKKVuOoYGienavTVRFhWGQv.setIcon(drawable);
+        jhCGQrfgXydbUxUawYqVWiUlqttDRdbSizGQTVyDwwbnwLiNTgXQbMFqkbSIFwNLWdBkJdnaqNkdIQKKVuOoYGienavTVRFhWGQv.setTitle("" + title);
 
 
-        builderSingle.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+        jhCGQrfgXydbUxUawYqVWiUlqttDRdbSizGQTVyDwwbnwLiNTgXQbMFqkbSIFwNLWdBkJdnaqNkdIQKKVuOoYGienavTVRFhWGQv.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-                AlertDialogList ad = (AlertDialogList) context;
-                ad.AlertDialogWithListDismissed();
+            public void onClick(DialogInterface eclaUZgWuFXYhrUBTfGsPthfGQEjVUQQCuOLnpDqRkFFbJJoSHsZEhBOSwRKEkhrhSPtyQKcvQSpQZEJOVZjQlftqJidAVHtcUHK, int which) {
+                eclaUZgWuFXYhrUBTfGsPthfGQEjVUQQCuOLnpDqRkFFbJJoSHsZEhBOSwRKEkhrhSPtyQKcvQSpQZEJOVZjQlftqJidAVHtcUHK.dismiss();
+                AlertDialogList bqHPajTJoimSTKqCyqjbzvcqvjtTIPrwXtDONBkspTDobOBorBhtRkTVSaFdezRilnVWMVZMZTFviOoUBftBNNnIWnsgwUZBBaza = (AlertDialogList) context;
+                bqHPajTJoimSTKqCyqjbzvcqvjtTIPrwXtDONBkspTDobOBorBhtRkTVSaFdezRilnVWMVZMZTFviOoUBftBNNnIWnsgwUZBBaza.AlertDialogWithListDismissed();
             }
         });
 
-        builderSingle.setAdapter(list, new DialogInterface.OnClickListener() {
+        jhCGQrfgXydbUxUawYqVWiUlqttDRdbSizGQTVyDwwbnwLiNTgXQbMFqkbSIFwNLWdBkJdnaqNkdIQKKVuOoYGienavTVRFhWGQv.setAdapter(FFPfVQFgBjsSkgyaretqQWuQyQnnaEExunIBhGaDMJstROcTAcxVqXiDlaAfPYCwmVmjYYPhSZNaNLvwutfhbSCxcaUXTQVNnVfO, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                String strName = (String) list.getItem(which);
+                String strName = (String) FFPfVQFgBjsSkgyaretqQWuQyQnnaEExunIBhGaDMJstROcTAcxVqXiDlaAfPYCwmVmjYYPhSZNaNLvwutfhbSCxcaUXTQVNnVfO.getItem(which);
 
                 try {
-                    AlertDialogList ad = (AlertDialogList) context;
-                    ad.selectedFromAlertDialogList(strName);
-                } catch (Exception v) {
+                    AlertDialogList FYCOMkquearYtQwtLYyYbOSZjjEskZpqeegzdwRmZWJcwmfiuziIbVekgqccDpdAhlinQJqfQOvVGOSgueOmGmNHUnYSKMXvoudC = (AlertDialogList) context;
+                    FYCOMkquearYtQwtLYyYbOSZjjEskZpqeegzdwRmZWJcwmfiuziIbVekgqccDpdAhlinQJqfQOvVGOSgueOmGmNHUnYSKMXvoudC.selectedFromAlertDialogList(strName);
+                } catch (Exception GaGcRRBcCkcTuKeuyPJDYXcrBQmlppJSFMlzNVDOnTukmeWosLlLgnqpKTqrxKwhjyYEhxLBBoTuLvRPgYZcnXTXfAayGQTrDNgm) {
                     Log.wtf("Hulk41", "Please implement AlertDialogList interface in your ");
                 }
 
             }
         });
-        builderSingle.show();
+        jhCGQrfgXydbUxUawYqVWiUlqttDRdbSizGQTVyDwwbnwLiNTgXQbMFqkbSIFwNLWdBkJdnaqNkdIQKKVuOoYGienavTVRFhWGQv.show();
     }
 
     public interface AlertDialogList {

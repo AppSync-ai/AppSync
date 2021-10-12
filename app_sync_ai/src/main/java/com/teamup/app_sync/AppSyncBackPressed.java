@@ -5,20 +5,20 @@ import android.content.Context;
 import android.widget.Toast;
 
 public class AppSyncBackPressed {
-    public static long BackPressedTime;
-    public static Toast backToast;
+    public static long SAsxKQlkhCabrMeDXTyFtpmCERDivfqjEEdDxhoktoVLXIbpRMRhKIABdZUyBBqFGubPxQywOdPVBBIOSmqqlcamflIdTSImFDNA;
+    public static Toast TdTtzqysnFaOXAHKbkGJiXrWYjcezJtxcxoqfpVsgYclkFoQlOaxXeWYBpRiFFeMRMPJcjKGXSisvXzZvkZjSDHhwvlLoIDZoHhu;
     public static void enable(Context context)
     {
 
-        if (BackPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
+        if (SAsxKQlkhCabrMeDXTyFtpmCERDivfqjEEdDxhoktoVLXIbpRMRhKIABdZUyBBqFGubPxQywOdPVBBIOSmqqlcamflIdTSImFDNA + 2000 > System.currentTimeMillis()) {
+            TdTtzqysnFaOXAHKbkGJiXrWYjcezJtxcxoqfpVsgYclkFoQlOaxXeWYBpRiFFeMRMPJcjKGXSisvXzZvkZjSDHhwvlLoIDZoHhu.cancel();
             ((Activity)context).finish();
 
             return;
         } else {
-            backToast = Toast.makeText(context, "Press back again to exit", Toast.LENGTH_SHORT);
-            backToast.show();
+            TdTtzqysnFaOXAHKbkGJiXrWYjcezJtxcxoqfpVsgYclkFoQlOaxXeWYBpRiFFeMRMPJcjKGXSisvXzZvkZjSDHhwvlLoIDZoHhu = Toast.makeText(context, "Press back again to exit", Toast.LENGTH_SHORT);
+            TdTtzqysnFaOXAHKbkGJiXrWYjcezJtxcxoqfpVsgYclkFoQlOaxXeWYBpRiFFeMRMPJcjKGXSisvXzZvkZjSDHhwvlLoIDZoHhu.show();
         }
-        BackPressedTime = System.currentTimeMillis();
+        SAsxKQlkhCabrMeDXTyFtpmCERDivfqjEEdDxhoktoVLXIbpRMRhKIABdZUyBBqFGubPxQywOdPVBBIOSmqqlcamflIdTSImFDNA = System.currentTimeMillis();
     }
 }

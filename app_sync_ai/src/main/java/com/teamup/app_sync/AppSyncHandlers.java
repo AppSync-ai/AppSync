@@ -16,7 +16,7 @@ public class AppSyncHandlers {
                     runner rn = (runner) context;
                     rn.play(code);
                 } catch (Exception e) {
-                    Toast.makeText(context, "Implement runner from RohitHandlers", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, "Implement runner from Handlers", Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                 }
             }

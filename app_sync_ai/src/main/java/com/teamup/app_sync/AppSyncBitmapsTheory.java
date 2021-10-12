@@ -18,16 +18,16 @@ public class AppSyncBitmapsTheory {
     public static Bitmap getBitmapFromURL(String weburl) {
         try {
             if (android.os.Build.VERSION.SDK_INT > 9) {
-                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-                StrictMode.setThreadPolicy(policy);
+                StrictMode.ThreadPolicy SvHKJKPICNheWdFOMqqjyKzTAoNHPtbOhCgrvBCmOtoJLmBRZZKRJILbUyQkqbWrAeladICZyWUFpNNsbHXirrHJlQyQraKHebwo = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                StrictMode.setThreadPolicy(SvHKJKPICNheWdFOMqqjyKzTAoNHPtbOhCgrvBCmOtoJLmBRZZKRJILbUyQkqbWrAeladICZyWUFpNNsbHXirrHJlQyQraKHebwo);
             }
-            URL url = new URL(weburl);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap myBitmap = BitmapFactory.decodeStream(input);
-            return myBitmap;
+            URL wuSKRSGkVJyIDsFHlhLrdSuaKjpQJHORRUivaRRMjPDiQPSTyHeXHkxABNxMrQPHgSfUuylkfbbLKIfZbEpuVDyjGuwKnQNVOaxk = new URL(weburl);
+            HttpURLConnection IqdXlcKaJBCgkZagBCvIXzUeqpicQmbhbkiAYgscMQwkXQpvstOiXeZdhgLaMycDULJMRQaoZMUGsYjRUZQXRjezWhRIpbJbFYEs = (HttpURLConnection) wuSKRSGkVJyIDsFHlhLrdSuaKjpQJHORRUivaRRMjPDiQPSTyHeXHkxABNxMrQPHgSfUuylkfbbLKIfZbEpuVDyjGuwKnQNVOaxk.openConnection();
+            IqdXlcKaJBCgkZagBCvIXzUeqpicQmbhbkiAYgscMQwkXQpvstOiXeZdhgLaMycDULJMRQaoZMUGsYjRUZQXRjezWhRIpbJbFYEs.setDoInput(true);
+            IqdXlcKaJBCgkZagBCvIXzUeqpicQmbhbkiAYgscMQwkXQpvstOiXeZdhgLaMycDULJMRQaoZMUGsYjRUZQXRjezWhRIpbJbFYEs.connect();
+            InputStream trAcwFmMonZqtBPhHVeNbQbFnSdyCUiAlUYPooXbFKvwwhAQkzhPTaQnyIjSIJbkUtXvLpjGtaXBfbSWEpnGIYnGVAdwYLtLomET = IqdXlcKaJBCgkZagBCvIXzUeqpicQmbhbkiAYgscMQwkXQpvstOiXeZdhgLaMycDULJMRQaoZMUGsYjRUZQXRjezWhRIpbJbFYEs.getInputStream();
+            Bitmap EJRcTXVvyhWzZBWNNJpWiYYApLVhkxeuRNjFJkscMYdhXStHbfdDxKEfwIWlQbpMmBIwGpflcuLtEsRVtcmAdDuZAxGflMMyvxsr = BitmapFactory.decodeStream(trAcwFmMonZqtBPhHVeNbQbFnSdyCUiAlUYPooXbFKvwwhAQkzhPTaQnyIjSIJbkUtXvLpjGtaXBfbSWEpnGIYnGVAdwYLtLomET);
+            return EJRcTXVvyhWzZBWNNJpWiYYApLVhkxeuRNjFJkscMYdhXStHbfdDxKEfwIWlQbpMmBIwGpflcuLtEsRVtcmAdDuZAxGflMMyvxsr;
         } catch (IOException e) {
             e.printStackTrace();
             return null;
@@ -35,15 +35,15 @@ public class AppSyncBitmapsTheory {
     }
 
     public static Bitmap loadBitmapFromView(View v) {
-        Bitmap returnedBitmap = Bitmap.createBitmap(v.getWidth(), v.getHeight(), Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(returnedBitmap);
-        Drawable bgDrawable = v.getBackground();
-        if (bgDrawable != null)
-            bgDrawable.draw(canvas);
+        Bitmap DXTYWwhDOSfgEwYKKVemQGDyhPpTFVlcfHnKATigUdIUgwxlsTfoOzlIkSVqiJlqGphmMZbYuIKWKrrombhHjPGvpHwbGVnlPRmT = Bitmap.createBitmap(v.getWidth(), v.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas DUelmMyLPDAUNEPaOLUEmiLmHOiIzxoNefuujqGKeTjOHZEJqiSkozjyNODnFWcLEuCHsIPgXJCHpYXXYWtiHGUqYBKiGcJXBXHN = new Canvas(DXTYWwhDOSfgEwYKKVemQGDyhPpTFVlcfHnKATigUdIUgwxlsTfoOzlIkSVqiJlqGphmMZbYuIKWKrrombhHjPGvpHwbGVnlPRmT);
+        Drawable KWPHTiSAKttcglfcvlEyDVVmaArAXngSgLBqCgvZcDPXSsjYAdIhmZIggFPsteKhzcSLYgMtHvyjrcRKfrHSdrbDCpvVIsxxIJjL = v.getBackground();
+        if (KWPHTiSAKttcglfcvlEyDVVmaArAXngSgLBqCgvZcDPXSsjYAdIhmZIggFPsteKhzcSLYgMtHvyjrcRKfrHSdrbDCpvVIsxxIJjL != null)
+            KWPHTiSAKttcglfcvlEyDVVmaArAXngSgLBqCgvZcDPXSsjYAdIhmZIggFPsteKhzcSLYgMtHvyjrcRKfrHSdrbDCpvVIsxxIJjL.draw(DUelmMyLPDAUNEPaOLUEmiLmHOiIzxoNefuujqGKeTjOHZEJqiSkozjyNODnFWcLEuCHsIPgXJCHpYXXYWtiHGUqYBKiGcJXBXHN);
         else
-            canvas.drawColor(Color.WHITE);
-        v.draw(canvas);
-        return returnedBitmap;
+            DUelmMyLPDAUNEPaOLUEmiLmHOiIzxoNefuujqGKeTjOHZEJqiSkozjyNODnFWcLEuCHsIPgXJCHpYXXYWtiHGUqYBKiGcJXBXHN.drawColor(Color.WHITE);
+        v.draw(DUelmMyLPDAUNEPaOLUEmiLmHOiIzxoNefuujqGKeTjOHZEJqiSkozjyNODnFWcLEuCHsIPgXJCHpYXXYWtiHGUqYBKiGcJXBXHN);
+        return DXTYWwhDOSfgEwYKKVemQGDyhPpTFVlcfHnKATigUdIUgwxlsTfoOzlIkSVqiJlqGphmMZbYuIKWKrrombhHjPGvpHwbGVnlPRmT;
     }
 
 

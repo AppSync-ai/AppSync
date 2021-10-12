@@ -2,6 +2,7 @@ package com.teamup.app_sync;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,7 +37,7 @@ public class AppSyncInitialize {
                         }
                     } catch (JSONException JFIOSDJFIOUSFIUOSFUISODFHSUDFHSDUFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDF) {
                         cccccccccccctoast.intialized = false;
-                        AppSyncToast.showToast(context, "Exception : Internet A.S.");
+                        Log.wtf("Hulk-39", "Exception : Internet A.S.");
                         JFIOSDJFIOUSFIUOSFUISODFHSUDFHSDUFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDF.printStackTrace();
                     }
                 }

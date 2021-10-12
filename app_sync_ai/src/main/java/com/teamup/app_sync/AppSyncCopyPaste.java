@@ -6,21 +6,21 @@ import android.content.Context;
 
 public class AppSyncCopyPaste {
     public static void copyText(Context context, String textToCopy){
-        ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-        ClipData clip = ClipData.newPlainText("label", textToCopy);
-        clipboard.setPrimaryClip(clip);
+        ClipboardManager QnlYmgMSrIcQPGvuQAMQXSEumimdjNuOChYbUpCpOSdEqFeQjJZSQXDTOhSatROcdkibweMJHcZbCkpoxoYCAyFdLgrlwYpLSLTt = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData JelWkpbVCPqpOOXrzqaxXvugFUHEhInEGSBlFrJeASrjjPiTzksnvdroNDMLRrhdFdSAtxacbAFbyBdQTVLddCzeKhRqWbsnpGaT = ClipData.newPlainText("label", textToCopy);
+        QnlYmgMSrIcQPGvuQAMQXSEumimdjNuOChYbUpCpOSdEqFeQjJZSQXDTOhSatROcdkibweMJHcZbCkpoxoYCAyFdLgrlwYpLSLTt.setPrimaryClip(JelWkpbVCPqpOOXrzqaxXvugFUHEhInEGSBlFrJeASrjjPiTzksnvdroNDMLRrhdFdSAtxacbAFbyBdQTVLddCzeKhRqWbsnpGaT);
 
     }
 
     public static String pasteText(Context context){
-        String textToPaste = "";
-        ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+        String WEPPjGWjWZelQoefKkbVSjMPaByEIUkwIrUwrHdhPjBGEPMQLlSuLMbULGvjDteEahpmbEJPhqqxRyQaAOUEPGKBNpoDSngVmrLu  = "";
+        ClipboardManager qSfJWNqyGXYwxaihQayjEUFYMZSKKOAKDhOlJebURwPpYlggmZQiXbxxqylsUMMsjwrZkFPeMjLJDkzExoMyxpzjbCXuTVRaFuqV = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
         try {
-             textToPaste = String.valueOf(clipboard.getPrimaryClip().getItemAt(0).getText());
+             WEPPjGWjWZelQoefKkbVSjMPaByEIUkwIrUwrHdhPjBGEPMQLlSuLMbULGvjDteEahpmbEJPhqqxRyQaAOUEPGKBNpoDSngVmrLu = String.valueOf(qSfJWNqyGXYwxaihQayjEUFYMZSKKOAKDhOlJebURwPpYlggmZQiXbxxqylsUMMsjwrZkFPeMjLJDkzExoMyxpzjbCXuTVRaFuqV.getPrimaryClip().getItemAt(0).getText());
         } catch (Exception e) {
-            return textToPaste;
+            return WEPPjGWjWZelQoefKkbVSjMPaByEIUkwIrUwrHdhPjBGEPMQLlSuLMbULGvjDteEahpmbEJPhqqxRyQaAOUEPGKBNpoDSngVmrLu;
         }
 
-        return textToPaste;
+        return WEPPjGWjWZelQoefKkbVSjMPaByEIUkwIrUwrHdhPjBGEPMQLlSuLMbULGvjDteEahpmbEJPhqqxRyQaAOUEPGKBNpoDSngVmrLu;
     }
 }

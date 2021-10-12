@@ -13,7 +13,7 @@ import androidx.core.app.NotificationCompat;
 
 public class AppSyncCustomNotification {
 
-    public static RemoteViews contentView;
+    public static RemoteViews migCyFErvpMnpeyuKFsGHMYrdUdoheJWWXcybqhzKiZCayQzPHausuuexFdWozyWZDWqZYfbBMrDOjXLxxTcbIgViKodAYpRXbUc;
     private static Notification notification;
     private static NotificationManager notificationManager;
     private static final int NotificationID = 1005;
@@ -24,21 +24,21 @@ public class AppSyncCustomNotification {
         notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         mBuilder = new NotificationCompat.Builder(context, "notify_001");
 
-        contentView = new RemoteViews(context.getPackageName(), layoutFile);
+        migCyFErvpMnpeyuKFsGHMYrdUdoheJWWXcybqhzKiZCayQzPHausuuexFdWozyWZDWqZYfbBMrDOjXLxxTcbIgViKodAYpRXbUc = new RemoteViews(context.getPackageName(), layoutFile);
 //        contentView.setImageViewResource(R.id.image, R.drawable.common_full_open_on_phone);
 
-        Intent switchIntent = new Intent(context, context.getClass());
-        PendingIntent pendingSwitchIntent = PendingIntent.getActivity(context, 1020, switchIntent, 0);
-        contentView.setOnClickPendingIntent(R.id.image, pendingSwitchIntent);
+        Intent PkgwJeAayjCNhlXzpNLUBGWzFDDnZgmFGKwRcBNBNLAEjjyxjYezZHHDoXpEvOzoVOKoTOdOUSNrFpbsKqZtDUgOZdhIRfnhHXgl = new Intent(context, context.getClass());
+        PendingIntent eFXLdoJEmqAJzAhoaSuHzPSUkjZBdxCGVZFjTqzYpZCJyGnwaKsRzuaNSadiAUzbkjrWJnNIgPiIGcaABCvPFykyPHjBCvsRKEen = PendingIntent.getActivity(context, 1020, PkgwJeAayjCNhlXzpNLUBGWzFDDnZgmFGKwRcBNBNLAEjjyxjYezZHHDoXpEvOzoVOKoTOdOUSNrFpbsKqZtDUgOZdhIRfnhHXgl, 0);
+        migCyFErvpMnpeyuKFsGHMYrdUdoheJWWXcybqhzKiZCayQzPHausuuexFdWozyWZDWqZYfbBMrDOjXLxxTcbIgViKodAYpRXbUc.setOnClickPendingIntent(R.id.image, eFXLdoJEmqAJzAhoaSuHzPSUkjZBdxCGVZFjTqzYpZCJyGnwaKsRzuaNSadiAUzbkjrWJnNIgPiIGcaABCvPFykyPHjBCvsRKEen);
 
         mBuilder.setSmallIcon(R.drawable.blue_loading);
         mBuilder.setAutoCancel(false);
         mBuilder.setOngoing(false);
-        mBuilder.setContentIntent(pendingSwitchIntent);
+        mBuilder.setContentIntent(eFXLdoJEmqAJzAhoaSuHzPSUkjZBdxCGVZFjTqzYpZCJyGnwaKsRzuaNSadiAUzbkjrWJnNIgPiIGcaABCvPFykyPHjBCvsRKEen);
         mBuilder.setPriority(Notification.PRIORITY_HIGH);
         mBuilder.setOnlyAlertOnce(true);
         mBuilder.build().flags = Notification.FLAG_NO_CLEAR | Notification.PRIORITY_HIGH;
-        mBuilder.setContent(contentView);
+        mBuilder.setContent(migCyFErvpMnpeyuKFsGHMYrdUdoheJWWXcybqhzKiZCayQzPHausuuexFdWozyWZDWqZYfbBMrDOjXLxxTcbIgViKodAYpRXbUc);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             String channelId = "channel_id";

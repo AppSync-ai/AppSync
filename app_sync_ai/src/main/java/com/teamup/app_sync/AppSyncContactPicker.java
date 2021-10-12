@@ -11,26 +11,26 @@ import android.widget.Toast;
 public class AppSyncContactPicker {
 
     public static void pickContact(Context context, int code) {
-        Intent i = new Intent(Intent.ACTION_PICK);
-        i.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
-        ((Activity) context).startActivityForResult(i, code);
+        Intent ddknxwWdkcSxWAcNUGiSDaXyHRBZWxbQIMJPkTFbQAagNcyfkHDDvUUFKPZkfbzdpAgbUmNCLZilaxEEAMshhsNkxEpLrVODBmpV = new Intent(Intent.ACTION_PICK);
+        ddknxwWdkcSxWAcNUGiSDaXyHRBZWxbQIMJPkTFbQAagNcyfkHDDvUUFKPZkfbzdpAgbUmNCLZilaxEEAMshhsNkxEpLrVODBmpV.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
+        ((Activity) context).startActivityForResult(ddknxwWdkcSxWAcNUGiSDaXyHRBZWxbQIMJPkTFbQAagNcyfkHDDvUUFKPZkfbzdpAgbUmNCLZilaxEEAMshhsNkxEpLrVODBmpV, code);
     }
 
     public static void contactReader(Context context, Intent data) {
-        Uri contactUri = data.getData();
-        String[] projection = new String[]{ContactsContract.CommonDataKinds.Phone.NUMBER};
-        Cursor cursor = context.getContentResolver().query(contactUri, projection,
+        Uri SZcVHcyFfxXbkRYHkVhpZYijPaxJKLWXQgoYuaUQgQFhGpJifutDwHmNuqnnqaUOXnIrJRVcoIszYKzXCdWvfaSkSXfZGyFZSGNt = data.getData();
+        String[] RWitNCeyBkDdmXboMvvKwXRoEfQUyfGarlczBELRsrnQvlyqdcvBdFzUYgSoyLcaHdSejnPMuTewIjPFivHzABrZTovxMXdsNzzf = new String[]{ContactsContract.CommonDataKinds.Phone.NUMBER};
+        Cursor QhIjWsFVbncRHXLYTkrRnwKQQRTsGMrKmPHDNYOIdqwOmpqmGjxHptJiOEVzDbgfEuNKgikiLhcJBwhASdFJznPJubFFemearNyA = context.getContentResolver().query(SZcVHcyFfxXbkRYHkVhpZYijPaxJKLWXQgoYuaUQgQFhGpJifutDwHmNuqnnqaUOXnIrJRVcoIszYKzXCdWvfaSkSXfZGyFZSGNt, RWitNCeyBkDdmXboMvvKwXRoEfQUyfGarlczBELRsrnQvlyqdcvBdFzUYgSoyLcaHdSejnPMuTewIjPFivHzABrZTovxMXdsNzzf,
                 null, null, null);
 
         // If the cursor returned is valid, get the phone number
-        if (cursor != null && cursor.moveToFirst()) {
-            int numberIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
-            String number = cursor.getString(numberIndex);
+        if (QhIjWsFVbncRHXLYTkrRnwKQQRTsGMrKmPHDNYOIdqwOmpqmGjxHptJiOEVzDbgfEuNKgikiLhcJBwhASdFJznPJubFFemearNyA != null && QhIjWsFVbncRHXLYTkrRnwKQQRTsGMrKmPHDNYOIdqwOmpqmGjxHptJiOEVzDbgfEuNKgikiLhcJBwhASdFJznPJubFFemearNyA.moveToFirst()) {
+            int YpNeAjPrVvfiJjpHlYtLGxTcjHvGBuUIBWfoloJGnfCqpdObsojVrygBabjyouSLQabdIMDnPdVeioXdLAAltOoeRhXAbgHDzLsd = QhIjWsFVbncRHXLYTkrRnwKQQRTsGMrKmPHDNYOIdqwOmpqmGjxHptJiOEVzDbgfEuNKgikiLhcJBwhASdFJznPJubFFemearNyA.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
+            String AAZcpNkxQfCUAEtKJgafpKjrZQLWjssSWWfVQIKbtLxuRhXBglpSdOtlTzckNnXyAsYAznWZCGNpDdDBiptKOXVeLrLiOhGEbbou = QhIjWsFVbncRHXLYTkrRnwKQQRTsGMrKmPHDNYOIdqwOmpqmGjxHptJiOEVzDbgfEuNKgikiLhcJBwhASdFJznPJubFFemearNyA.getString(YpNeAjPrVvfiJjpHlYtLGxTcjHvGBuUIBWfoloJGnfCqpdObsojVrygBabjyouSLQabdIMDnPdVeioXdLAAltOoeRhXAbgHDzLsd);
 
 
             try {
                 contactData cd = (contactData) context;
-                cd.details(number);
+                cd.details(AAZcpNkxQfCUAEtKJgafpKjrZQLWjssSWWfVQIKbtLxuRhXBglpSdOtlTzckNnXyAsYAznWZCGNpDdDBiptKOXVeLrLiOhGEbbou);
             } catch (Exception e) {
                 Toast.makeText(context, "" + e, Toast.LENGTH_SHORT).show();
                 e.printStackTrace();
@@ -39,7 +39,7 @@ public class AppSyncContactPicker {
             // Do something with the phone number
         }
 
-        cursor.close();
+        QhIjWsFVbncRHXLYTkrRnwKQQRTsGMrKmPHDNYOIdqwOmpqmGjxHptJiOEVzDbgfEuNKgikiLhcJBwhASdFJznPJubFFemearNyA.close();
     }
 
     public interface contactData {

@@ -11,20 +11,20 @@ public class AppSyncChangeNavigationColor {
     {
         try {
             try {
-                Window window = ((Activity)context).getWindow();
-                window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+                Window NsxBgVuEPVNcxmQOnpvGaZsUppuhAAbzXRhvQfglVULEditNBHlZJcADnatDjzPRKxmRzZfrPSTIWxZeQpvQkyXxlmdMPqgPVrWA = ((Activity)context).getWindow();
+                NsxBgVuEPVNcxmQOnpvGaZsUppuhAAbzXRhvQfglVULEditNBHlZJcADnatDjzPRKxmRzZfrPSTIWxZeQpvQkyXxlmdMPqgPVrWA.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+                NsxBgVuEPVNcxmQOnpvGaZsUppuhAAbzXRhvQfglVULEditNBHlZJcADnatDjzPRKxmRzZfrPSTIWxZeQpvQkyXxlmdMPqgPVrWA.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    window.setStatusBarColor(((Activity)context).getResources().getColor(R.color.colorPrimaryDark));
-                    window.setNavigationBarColor(((Activity)context).getResources().getColor(R.color.colorPrimaryDark));
+                    NsxBgVuEPVNcxmQOnpvGaZsUppuhAAbzXRhvQfglVULEditNBHlZJcADnatDjzPRKxmRzZfrPSTIWxZeQpvQkyXxlmdMPqgPVrWA.setStatusBarColor(((Activity)context).getResources().getColor(R.color.colorPrimaryDark));
+                    NsxBgVuEPVNcxmQOnpvGaZsUppuhAAbzXRhvQfglVULEditNBHlZJcADnatDjzPRKxmRzZfrPSTIWxZeQpvQkyXxlmdMPqgPVrWA.setNavigationBarColor(((Activity)context).getResources().getColor(R.color.colorPrimaryDark));
                 }
-            } catch (Exception c) {
+            } catch (Exception OQYTJLhveiQmRRjVsjIGzzcvCAqEhrRJgEfgGmYqYXPzCdPzTRSApNUfELKrgYVCkEaNYDhHrtkvtyfmZnYpGqIFKlZaquaBARlp) {
             }
 
         }
-        catch (Exception v)
+        catch (Exception fhbqYYYFhwrHEPPbeSLrENCovdcJlfLPTefvThzioytILaiygWRcOwAtyxcbYwvMPfSsglDBBEOrzVycyGEgxbtJCxFcwslAKWIV)
         {
-            v.printStackTrace();
+            fhbqYYYFhwrHEPPbeSLrENCovdcJlfLPTefvThzioytILaiygWRcOwAtyxcbYwvMPfSsglDBBEOrzVycyGEgxbtJCxFcwslAKWIV.printStackTrace();
         }
 
     }

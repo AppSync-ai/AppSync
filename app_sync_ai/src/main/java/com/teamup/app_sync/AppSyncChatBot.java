@@ -1,6 +1,5 @@
 package com.teamup.app_sync;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -45,22 +44,22 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
     public static String TYPE_NUMBER = "TYPE_PHONE_NUMBER";
     public static String TYPE_PHOTO = "TYPE_PHOTO";
 
-    ImageView select_img, select_file;
-    RecyclerView recycler;
-    TextView desc_file_txt;
+    ImageView InHOjbPozlIwtjDmBrmrlJcHcfTvWfLQdKPyskbREPKVaOJbwExuEPJXmEcquFoqiBtMisshxfksLgvICddLLZyTLYsDdXNHjZiQ, JvBhiORkymeFrpXuUoihzCLNwjmhMZPOWsuxpZEhTqAJUFaxhKdHuUpiuXFjjpJPICQVDPWHZsyyMvSlcXQgogKBltbVxeScrfOk;
+    RecyclerView DdATEoYtYojdLVceKQbtaeVQnZyjHfJsfvlXvwzqpWYIYuRVPaDxQYnsjDpvAxgtsDWdoOXaSIAaAIjDbAGYzJwguKUlqLWNpkQs;
+    TextView DxqCFIxjjUtSxJKRKFQzGHeouxaBbqJsEDVCIIGKaNIHcyCOutMReeMOfpuJzXQAJvJDHtsnUGgnIJWerAnBqBOYTLdIagThpiiL;
     static CircleImageView bot_image;
-    RelativeLayout msg_edt_reler, gender_reler, photo_lay, file_lay;
-    Button proceed_btn, submit_img_btn, submit_file_btn;
-    EditText message_edt;
-    ImageView send_img;
-    MessagesAdapter adapter;
+    RelativeLayout nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii, gender_reler, photo_lay, ASLSLpiAfaNKIjebrOqNOCThovYKlaFpVpvhmJXbTTmDamuiLSkwAkPLbgFygngDZHSswXBdTJYGqrAWeSfLNrCOWcEhUwNiiAzw;
+    Button nQlsftgEuomimVFdIgESWuBLitKPNBWxNjoXdsRQmUMOLYbJPOGLwqciZdIQtkiybuEDMTcUHKRMxftDsMvtTCUNdsQyKTueQWXe, submit_img_btn, iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV;
+    EditText BnluzAfxwqjVSarBTVtICgiWtWFlulKlJUZdJPPditmesZRVzwgWMWcIYngQFhbtizFOyUxksXsCnCbQyqJLxsinSPQHmUdzZAjt;
+    ImageView pJziprmVAdCsglAZytpFVWkHRIsRUbdqYnTreaqWGmYLcIyUhGRXIqjJyPePWYzayCGwMjgfqLZGgHndSpauGgPpkgNxqeIFFTBY;
+    MessagesAdapter OWzEQwuXQPGxGoOTKkZLijiUwwXQSHoKKzQpZgeitCbgEhFjdMZaSrIxHKQBbuXIzNKEwWXybGEQxJldlaxxfrNwdGpajRLUmcKW;
     ArrayList<MessagesReq> list;
     ArrayList<UserMessagesReq> user_msg_list = new ArrayList<>();
     static Context context;
-    static ArrayList<ChatReq> bot_question;
-    int bot_q_no = 0;
+    static ArrayList<ChatReq> ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD;
+    int WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD = 0;
     static String end_chat_response = "Thank You..!!", bot_head_title = "AppSync Bot";
-    TextView bot_title_txt;
+    TextView JUSBlBQitShldnRXjncsDiEvTePHhjPwrIfDodqLjhZMhMSejexlIitVsCZlwohJeoKTXFUstvxmmSuPqgrltONfgNxhWXinrkft;
     static int drawable_image_id_this = R.drawable.chatbot;
 
     @Override
@@ -74,40 +73,40 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
         user_msg_list = new ArrayList<>();
         user_msg_list.clear();
 
-        desc_file_txt = findViewById(R.id.desc_file_txt);
-        submit_file_btn = findViewById(R.id.submit_file_btn);
-        select_file = findViewById(R.id.select_file);
-        file_lay = findViewById(R.id.file_lay);
+        DxqCFIxjjUtSxJKRKFQzGHeouxaBbqJsEDVCIIGKaNIHcyCOutMReeMOfpuJzXQAJvJDHtsnUGgnIJWerAnBqBOYTLdIagThpiiL = findViewById(R.id.desc_file_txt);
+        iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV = findViewById(R.id.submit_file_btn);
+        JvBhiORkymeFrpXuUoihzCLNwjmhMZPOWsuxpZEhTqAJUFaxhKdHuUpiuXFjjpJPICQVDPWHZsyyMvSlcXQgogKBltbVxeScrfOk = findViewById(R.id.select_file);
+        ASLSLpiAfaNKIjebrOqNOCThovYKlaFpVpvhmJXbTTmDamuiLSkwAkPLbgFygngDZHSswXBdTJYGqrAWeSfLNrCOWcEhUwNiiAzw = findViewById(R.id.file_lay);
         submit_img_btn = findViewById(R.id.submit_img_btn);
-        select_img = findViewById(R.id.select_img);
+        InHOjbPozlIwtjDmBrmrlJcHcfTvWfLQdKPyskbREPKVaOJbwExuEPJXmEcquFoqiBtMisshxfksLgvICddLLZyTLYsDdXNHjZiQ = findViewById(R.id.select_img);
         photo_lay = findViewById(R.id.photo_lay);
         gender_reler = findViewById(R.id.gender_reler);
         gender_reler.setVisibility(View.GONE);
         photo_lay.setVisibility(View.GONE);
-        file_lay.setVisibility(View.GONE);
+        ASLSLpiAfaNKIjebrOqNOCThovYKlaFpVpvhmJXbTTmDamuiLSkwAkPLbgFygngDZHSswXBdTJYGqrAWeSfLNrCOWcEhUwNiiAzw.setVisibility(View.GONE);
 
         bot_image = findViewById(R.id.bot_image);
-        proceed_btn = findViewById(R.id.proceed_btn);
-        proceed_btn.setVisibility(View.GONE);
-        msg_edt_reler = findViewById(R.id.msg_edt_reler);
-        bot_title_txt = findViewById(R.id.bot_title_txt);
-        bot_title_txt.setText("" + bot_head_title);
-        send_img = findViewById(R.id.send_img);
-        message_edt = findViewById(R.id.message_edt);
-        recycler = findViewById(R.id.recycler);
-        recycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        nQlsftgEuomimVFdIgESWuBLitKPNBWxNjoXdsRQmUMOLYbJPOGLwqciZdIQtkiybuEDMTcUHKRMxftDsMvtTCUNdsQyKTueQWXe = findViewById(R.id.proceed_btn);
+        nQlsftgEuomimVFdIgESWuBLitKPNBWxNjoXdsRQmUMOLYbJPOGLwqciZdIQtkiybuEDMTcUHKRMxftDsMvtTCUNdsQyKTueQWXe.setVisibility(View.GONE);
+        nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii = findViewById(R.id.msg_edt_reler);
+        JUSBlBQitShldnRXjncsDiEvTePHhjPwrIfDodqLjhZMhMSejexlIitVsCZlwohJeoKTXFUstvxmmSuPqgrltONfgNxhWXinrkft = findViewById(R.id.bot_title_txt);
+        JUSBlBQitShldnRXjncsDiEvTePHhjPwrIfDodqLjhZMhMSejexlIitVsCZlwohJeoKTXFUstvxmmSuPqgrltONfgNxhWXinrkft.setText("" + bot_head_title);
+        pJziprmVAdCsglAZytpFVWkHRIsRUbdqYnTreaqWGmYLcIyUhGRXIqjJyPePWYzayCGwMjgfqLZGgHndSpauGgPpkgNxqeIFFTBY = findViewById(R.id.send_img);
+        BnluzAfxwqjVSarBTVtICgiWtWFlulKlJUZdJPPditmesZRVzwgWMWcIYngQFhbtizFOyUxksXsCnCbQyqJLxsinSPQHmUdzZAjt = findViewById(R.id.message_edt);
+        DdATEoYtYojdLVceKQbtaeVQnZyjHfJsfvlXvwzqpWYIYuRVPaDxQYnsjDpvAxgtsDWdoOXaSIAaAIjDbAGYzJwguKUlqLWNpkQs = findViewById(R.id.recycler);
+        DdATEoYtYojdLVceKQbtaeVQnZyjHfJsfvlXvwzqpWYIYuRVPaDxQYnsjDpvAxgtsDWdoOXaSIAaAIjDbAGYzJwguKUlqLWNpkQs.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         list = new ArrayList<>();
-        adapter = new MessagesAdapter(list);
-        recycler.setAdapter(adapter);
+        OWzEQwuXQPGxGoOTKkZLijiUwwXQSHoKKzQpZgeitCbgEhFjdMZaSrIxHKQBbuXIzNKEwWXybGEQxJldlaxxfrNwdGpajRLUmcKW = new MessagesAdapter(list);
+        DdATEoYtYojdLVceKQbtaeVQnZyjHfJsfvlXvwzqpWYIYuRVPaDxQYnsjDpvAxgtsDWdoOXaSIAaAIjDbAGYzJwguKUlqLWNpkQs.setAdapter(OWzEQwuXQPGxGoOTKkZLijiUwwXQSHoKKzQpZgeitCbgEhFjdMZaSrIxHKQBbuXIzNKEwWXybGEQxJldlaxxfrNwdGpajRLUmcKW);
 
         list.clear();
-        adapter.notifyDataSetChanged();
+        OWzEQwuXQPGxGoOTKkZLijiUwwXQSHoKKzQpZgeitCbgEhFjdMZaSrIxHKQBbuXIzNKEwWXybGEQxJldlaxxfrNwdGpajRLUmcKW.notifyDataSetChanged();
 
         Glide.with(context).load(drawable_image_id_this).into(bot_image);
 
         HandleBotQuestions();
 
-        proceed_btn.setOnClickListener(new View.OnClickListener() {
+        nQlsftgEuomimVFdIgESWuBLitKPNBWxNjoXdsRQmUMOLYbJPOGLwqciZdIQtkiybuEDMTcUHKRMxftDsMvtTCUNdsQyKTueQWXe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ChatBot cb = (ChatBot) context;
@@ -115,10 +114,10 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
             }
         });
 
-        send_img.setOnClickListener(new View.OnClickListener() {
+        pJziprmVAdCsglAZytpFVWkHRIsRUbdqYnTreaqWGmYLcIyUhGRXIqjJyPePWYzayCGwMjgfqLZGgHndSpauGgPpkgNxqeIFFTBY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Send_user_message(message_edt.getText().toString());
+                Send_user_message(BnluzAfxwqjVSarBTVtICgiWtWFlulKlJUZdJPPditmesZRVzwgWMWcIYngQFhbtizFOyUxksXsCnCbQyqJLxsinSPQHmUdzZAjt.getText().toString());
             }
         });
     }
@@ -131,12 +130,12 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
             MessagesReq mr = new MessagesReq(message, AppSyncCurrentDate.getDateTimeInFormat("dd/MM/yyyy, hh:mm:ss"), 0);
             list.add(mr);
             user_msg_list.add(new UserMessagesReq(message, AppSyncCurrentDate.getDateTimeInFormat("dd/MM/yyyy, hh:mm:ss")));
-            adapter.notifyDataSetChanged();
+            OWzEQwuXQPGxGoOTKkZLijiUwwXQSHoKKzQpZgeitCbgEhFjdMZaSrIxHKQBbuXIzNKEwWXybGEQxJldlaxxfrNwdGpajRLUmcKW.notifyDataSetChanged();
 
             ChatBot cb = (ChatBot) context;
             cb.user_responded(message);
 
-            message_edt.setText("");
+            BnluzAfxwqjVSarBTVtICgiWtWFlulKlJUZdJPPditmesZRVzwgWMWcIYngQFhbtizFOyUxksXsCnCbQyqJLxsinSPQHmUdzZAjt.setText("");
 
         } else {
             AppSyncToast.showToast(getApplicationContext(), "Pleas enter something..");
@@ -149,7 +148,7 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
 
     private void set_end_chat_response() {
         list.add(new MessagesReq(end_chat_response, AppSyncCurrentDate.getDateTimeInFormat("dd/MM/yyyy, hh:mm:ss"), 1));
-        adapter.notifyDataSetChanged();
+        OWzEQwuXQPGxGoOTKkZLijiUwwXQSHoKKzQpZgeitCbgEhFjdMZaSrIxHKQBbuXIzNKEwWXybGEQxJldlaxxfrNwdGpajRLUmcKW.notifyDataSetChanged();
     }
 
     public static void set_bot_head_name(String bot_name) {
@@ -157,47 +156,47 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
     }
 
     private void HandleBotQuestions() {
-        msg_edt_reler.setVisibility(View.VISIBLE);
-        if (bot_question.size() > 0) {
-            if (bot_q_no < bot_question.size()) {
-                list.add(new MessagesReq(bot_question.get(bot_q_no).getMessage(), AppSyncCurrentDate.getDateTimeInFormat("dd/MM/yyyy, hh:mm:ss"), 1));
-                adapter.notifyDataSetChanged();
+        nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii.setVisibility(View.VISIBLE);
+        if (ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.size() > 0) {
+            if (WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD < ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.size()) {
+                list.add(new MessagesReq(ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.get(WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD).getMessage(), AppSyncCurrentDate.getDateTimeInFormat("dd/MM/yyyy, hh:mm:ss"), 1));
+                OWzEQwuXQPGxGoOTKkZLijiUwwXQSHoKKzQpZgeitCbgEhFjdMZaSrIxHKQBbuXIzNKEwWXybGEQxJldlaxxfrNwdGpajRLUmcKW.notifyDataSetChanged();
 
-                if (bot_question.get(bot_q_no).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_NUMBER)) {
-                    message_edt.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_TEXT_FLAG_MULTI_LINE);
-                } else if (bot_question.get(bot_q_no).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_MESSAGE)) {
-                    message_edt.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_MULTI_LINE);
-                } else if (bot_question.get(bot_q_no).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_GENDER)) {
+                if (ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.get(WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_NUMBER)) {
+                    BnluzAfxwqjVSarBTVtICgiWtWFlulKlJUZdJPPditmesZRVzwgWMWcIYngQFhbtizFOyUxksXsCnCbQyqJLxsinSPQHmUdzZAjt.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+                } else if (ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.get(WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_MESSAGE)) {
+                    BnluzAfxwqjVSarBTVtICgiWtWFlulKlJUZdJPPditmesZRVzwgWMWcIYngQFhbtizFOyUxksXsCnCbQyqJLxsinSPQHmUdzZAjt.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_MULTI_LINE);
+                } else if (ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.get(WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_GENDER)) {
                     Handle_Gender_selection();
-                } else if (bot_question.get(bot_q_no).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_PHOTO)) {
+                } else if (ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.get(WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_PHOTO)) {
                     Handle_photo_selection();
-                } else if (bot_question.get(bot_q_no).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_FILE_MANAGER)) {
+                } else if (ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.get(WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD).getType().equalsIgnoreCase(AppSyncChatBot.TYPE_FILE_MANAGER)) {
                     Handle_File_Manager();
                 }
 
 
             }
         }
-        if (bot_q_no == bot_question.size()) {
+        if (WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD == ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.size()) {
 //            end of bot questions
-            msg_edt_reler.setVisibility(View.INVISIBLE);
-            proceed_btn.setVisibility(View.VISIBLE);
+            nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii.setVisibility(View.INVISIBLE);
+            nQlsftgEuomimVFdIgESWuBLitKPNBWxNjoXdsRQmUMOLYbJPOGLwqciZdIQtkiybuEDMTcUHKRMxftDsMvtTCUNdsQyKTueQWXe.setVisibility(View.VISIBLE);
             set_end_chat_response();
 
         }
-        bot_q_no++;
+        WKJkvwsrPVxFNAvxvtKvPuMKtSaHrUNJZFNJwmyrzDTiUVmFVMWFnKLBfXwdBEEJQeyXfHqDOLNiKsRpjPoSADxPUhnbNJbnvtxD++;
 
-        Log.wtf("Hulk-129", bot_question.size() + "");
+        Log.wtf("Hulk-129", ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.size() + "");
 
     }
 
     String file_path = "";
 
     private void Handle_File_Manager() {
-        file_lay.setVisibility(View.VISIBLE);
-        msg_edt_reler.setVisibility(View.GONE);
+        ASLSLpiAfaNKIjebrOqNOCThovYKlaFpVpvhmJXbTTmDamuiLSkwAkPLbgFygngDZHSswXBdTJYGqrAWeSfLNrCOWcEhUwNiiAzw.setVisibility(View.VISIBLE);
+        nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii.setVisibility(View.GONE);
 
-        select_file.setOnClickListener(new View.OnClickListener() {
+        JvBhiORkymeFrpXuUoihzCLNwjmhMZPOWsuxpZEhTqAJUFaxhKdHuUpiuXFjjpJPICQVDPWHZsyyMvSlcXQgogKBltbVxeScrfOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (AppSyncPermissions.check_read_write_permission(AppSyncChatBot.this)) {
@@ -210,13 +209,13 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
             }
         });
 
-        submit_file_btn.setAlpha(0.3f);
-        submit_file_btn.setEnabled(false);
-        submit_file_btn.setOnClickListener(new View.OnClickListener() {
+        iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV.setAlpha(0.3f);
+        iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV.setEnabled(false);
+        iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                file_lay.setVisibility(View.GONE);
-                msg_edt_reler.setVisibility(View.VISIBLE);
+                ASLSLpiAfaNKIjebrOqNOCThovYKlaFpVpvhmJXbTTmDamuiLSkwAkPLbgFygngDZHSswXBdTJYGqrAWeSfLNrCOWcEhUwNiiAzw.setVisibility(View.GONE);
+                nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii.setVisibility(View.VISIBLE);
                 Send_user_message(file_path);
             }
         });
@@ -225,9 +224,9 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
 
     private void Handle_photo_selection() {
         photo_lay.setVisibility(View.VISIBLE);
-        msg_edt_reler.setVisibility(View.INVISIBLE);
+        nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii.setVisibility(View.INVISIBLE);
 
-        select_img.setOnClickListener(new View.OnClickListener() {
+        InHOjbPozlIwtjDmBrmrlJcHcfTvWfLQdKPyskbREPKVaOJbwExuEPJXmEcquFoqiBtMisshxfksLgvICddLLZyTLYsDdXNHjZiQ.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (AppSyncPermissions.check_read_write_permission(AppSyncChatBot.this)) {
@@ -245,7 +244,7 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
             @Override
             public void onClick(View v) {
                 photo_lay.setVisibility(View.GONE);
-                msg_edt_reler.setVisibility(View.VISIBLE);
+                nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii.setVisibility(View.VISIBLE);
                 Send_user_message(image_path);
             }
         });
@@ -279,7 +278,7 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
             if (data != null) {
                 String path = AppSyncImageSelector.getPath(this, data);
                 image_path = path;
-                Glide.with(this).load(path).into(select_img);
+                Glide.with(this).load(path).into(InHOjbPozlIwtjDmBrmrlJcHcfTvWfLQdKPyskbREPKVaOJbwExuEPJXmEcquFoqiBtMisshxfksLgvICddLLZyTLYsDdXNHjZiQ);
                 submit_img_btn.setAlpha(1f);
                 submit_img_btn.setEnabled(true);
 
@@ -290,16 +289,16 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
             if (data != null) {
                 try {
                     file_path = AppSyncFileManager.getSelectedFilePath(this, data);
-                    submit_file_btn.setAlpha(1f);
-                    submit_file_btn.setEnabled(true);
-                    desc_file_txt.setTextColor(Color.GREEN);
-                    desc_file_txt.setText("File Selected, please submit");
+                    iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV.setAlpha(1f);
+                    iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV.setEnabled(true);
+                    DxqCFIxjjUtSxJKRKFQzGHeouxaBbqJsEDVCIIGKaNIHcyCOutMReeMOfpuJzXQAJvJDHtsnUGgnIJWerAnBqBOYTLdIagThpiiL.setTextColor(Color.GREEN);
+                    DxqCFIxjjUtSxJKRKFQzGHeouxaBbqJsEDVCIIGKaNIHcyCOutMReeMOfpuJzXQAJvJDHtsnUGgnIJWerAnBqBOYTLdIagThpiiL.setText("File Selected, please submit");
                 } catch (IOException e) {
                     e.printStackTrace();
-                    submit_file_btn.setAlpha(0.3f);
-                    submit_file_btn.setEnabled(false);
-                    desc_file_txt.setTextColor(Color.RED);
-                    desc_file_txt.setText("Please select another file");
+                    iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV.setAlpha(0.3f);
+                    iiYHcmhnEjMYdPuWMMOSvFMLrWaqpOIPEjRKEczfSxqGYAOfFNDnijLDXqMPvSMDYehbdYiqDxyUYhhMfABGiAAtRCtviLSyzoQV.setEnabled(false);
+                    DxqCFIxjjUtSxJKRKFQzGHeouxaBbqJsEDVCIIGKaNIHcyCOutMReeMOfpuJzXQAJvJDHtsnUGgnIJWerAnBqBOYTLdIagThpiiL.setTextColor(Color.RED);
+                    DxqCFIxjjUtSxJKRKFQzGHeouxaBbqJsEDVCIIGKaNIHcyCOutMReeMOfpuJzXQAJvJDHtsnUGgnIJWerAnBqBOYTLdIagThpiiL.setText("Please select another file");
                 }
             }
         }
@@ -308,7 +307,7 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
     String gender = "Male";
 
     private void Handle_Gender_selection() {
-        msg_edt_reler.setVisibility(View.INVISIBLE);
+        nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii.setVisibility(View.INVISIBLE);
         gender_reler.setVisibility(View.VISIBLE);
         Button submit_btn = findViewById(R.id.submit_btn);
 
@@ -329,7 +328,7 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
                     gender = "Other";
                 }
                 gender_reler.setVisibility(View.GONE);
-                msg_edt_reler.setVisibility(View.VISIBLE);
+                nSYEiCmTohYalvRHtmnxhGgJIBsqRzFRvAItiHQinYWfqDVOjJGXnRYFDxCdCDEeTUIPJfcoyizjHlWguaNjtRRHDjhXjdfTSaii.setVisibility(View.VISIBLE);
                 Send_user_message(gender);
 
 
@@ -338,10 +337,10 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
     }
 
     public static void set_bot_questions(ArrayList<ChatReq> list) {
-        bot_question = new ArrayList<>();
-        bot_question.clear();
+        ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD = new ArrayList<>();
+        ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.clear();
         for (int i = 0; i < list.size(); i++) {
-            bot_question.add(new ChatReq(list.get(i).getMessage(), list.get(i).getType()));
+            ZQyJTaqMnfzjAivYoLtHGuiOfUQxHfCtnTJgARlitgDIZIqEvrWZxAvXzFYlOFQiGZEaTJlEISpvDVxTeHTvLFbaFEXfrCjlUrqD.add(new ChatReq(list.get(i).getMessage(), list.get(i).getType()));
         }
 
     }
@@ -353,7 +352,7 @@ public class AppSyncChatBot extends AppCompatActivity implements ChatBot {
     @Override
     public void user_responded(String response) {
         HandleBotQuestions();
-        recycler.smoothScrollToPosition(list.size());
+        DdATEoYtYojdLVceKQbtaeVQnZyjHfJsfvlXvwzqpWYIYuRVPaDxQYnsjDpvAxgtsDWdoOXaSIAaAIjDbAGYzJwguKUlqLWNpkQs.smoothScrollToPosition(list.size());
     }
 
     @Override

@@ -21,8 +21,8 @@ import java.util.Date;
 
 public class AppSyncCalendarView {
 
-    public static CalendarView calendaView;
-    static Dialog fetching;
+    public static CalendarView fGZffjSnmylAUXxIWqayBItQuXPvkukmLOqdnkiOMRsaYlnzTUWFXPMUcNVagqIQKJPRAAfSszomeSwMufmHnBWLGtAEjqIYoBMK;
+    static Dialog SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn;
     public static boolean dialogColsedCalendar = false;
 
     public static String calendarhexColor = "#FFFFFF";
@@ -33,22 +33,22 @@ public class AppSyncCalendarView {
     @SuppressLint("ResourceType")
     public static void show(final Context context, String outputDateFormat, String selectedDate, String selectedDateFormat) {
 
-        fetching = new Dialog(context);
-        fetching.show();
+        SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn = new Dialog(context);
+        SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.show();
 
         dialogColsedCalendar = false;
 
-        fetching.setCancelable(false);
-        fetching.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        fetching.setContentView(R.layout.dialog_calendarview);
-        fetching.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.setCancelable(false);
+        SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.setContentView(R.layout.dialog_calendarview);
+        SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
 
-        calendaView = fetching.findViewById(R.id.calendaView);
-        Button doneBtn = fetching.findViewById(R.id.doneBtn);
-        ImageView closeImg = fetching.findViewById(R.id.closeImg);
-        CardView card = fetching.findViewById(R.id.card);
+        fGZffjSnmylAUXxIWqayBItQuXPvkukmLOqdnkiOMRsaYlnzTUWFXPMUcNVagqIQKJPRAAfSszomeSwMufmHnBWLGtAEjqIYoBMK = SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.findViewById(R.id.calendaView);
+        Button ynJbEeqzTptPEhqVrPveLZqFtonwsefmmFOJKpPTljaylUhIrLblNtaYzPkpuKNKDYNibGSJLdZDiBIWrMhxqaVFglppttIbRAHj = SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.findViewById(R.id.doneBtn);
+        ImageView wSmftBFVkdpMlmuogyZcUtPvgQFpHnXDsCqretYhOpIgwKLBaheAxnyxVweZEOxqbcIBUewxLCvcmroODFiOLYMxyJFZsbiEhdiG = SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.findViewById(R.id.closeImg);
+        CardView VgBLvOtkKtGBnVhCDGdsjrUXpxQnAfyqjgJkJPPKYqYzRYHxMPBYFemwvQiVcAxAzNvhCFqeqzDQxHYlLdUODHEYLHmTKHnNmIRy = SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.findViewById(R.id.card);
 
-        calendaView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+        fGZffjSnmylAUXxIWqayBItQuXPvkukmLOqdnkiOMRsaYlnzTUWFXPMUcNVagqIQKJPRAAfSszomeSwMufmHnBWLGtAEjqIYoBMK.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int iyear, int imonth, int iday) {
 
@@ -67,12 +67,12 @@ public class AppSyncCalendarView {
         if (selectedDateFormat != null && !TextUtils.isEmpty(selectedDateFormat)) {
             if (selectedDate != null && !TextUtils.isEmpty(selectedDate)) {
                 try {
-                    String dateString = selectedDate;
+                    String QmLKuVKcCBCsJnATXHEjSLeivpEEUrnyBINRiKnZDzXVmIITbBWYouvsWJWrhMzaxYWltShVNfeHujgYMWoybJraOBEGbhCTwDQQ = selectedDate;
                     SimpleDateFormat sdf = new SimpleDateFormat(selectedDateFormat);
-                    Date date = sdf.parse(dateString);
+                    Date date = sdf.parse(QmLKuVKcCBCsJnATXHEjSLeivpEEUrnyBINRiKnZDzXVmIITbBWYouvsWJWrhMzaxYWltShVNfeHujgYMWoybJraOBEGbhCTwDQQ);
 
                     long startDate = date.getTime();
-                    calendaView.setDate(startDate, true, true);
+                    fGZffjSnmylAUXxIWqayBItQuXPvkukmLOqdnkiOMRsaYlnzTUWFXPMUcNVagqIQKJPRAAfSszomeSwMufmHnBWLGtAEjqIYoBMK.setDate(startDate, true, true);
 
                 } catch (ParseException e) {
                     e.printStackTrace();
@@ -82,7 +82,7 @@ public class AppSyncCalendarView {
         }
 
         final String finalOutputDateFormat = outputDateFormat;
-        doneBtn.setOnClickListener(new View.OnClickListener() {
+        ynJbEeqzTptPEhqVrPveLZqFtonwsefmmFOJKpPTljaylUhIrLblNtaYzPkpuKNKDYNibGSJLdZDiBIWrMhxqaVFglppttIbRAHj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
@@ -101,12 +101,12 @@ public class AppSyncCalendarView {
             }
         });
 
-        closeImg.setOnClickListener(new View.OnClickListener() {
+        wSmftBFVkdpMlmuogyZcUtPvgQFpHnXDsCqretYhOpIgwKLBaheAxnyxVweZEOxqbcIBUewxLCvcmroODFiOLYMxyJFZsbiEhdiG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 try {
-                    DateSelecor ds = (DateSelecor) context;
-                    ds.closed();
+                    DateSelecor ItPSEwfCHGzhlDDtpFewtVfycRPkzkgtOYLIsnkVjnfRQIIGebNxdgVteWFcaTUKIXGPWLmvAmTSsKlfKkdnBMfUqLwNmgrZGwTY = (DateSelecor) context;
+                    ItPSEwfCHGzhlDDtpFewtVfycRPkzkgtOYLIsnkVjnfRQIIGebNxdgVteWFcaTUKIXGPWLmvAmTSsKlfKkdnBMfUqLwNmgrZGwTY.closed();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -119,7 +119,7 @@ public class AppSyncCalendarView {
     }
 
     public static void stopDialog(Context context) {
-        fetching.dismiss();
+        SYqNBinLOJAZSivfEWLTIICBbxVMyUwrAsgvFSoFtVEjDvePqjeMDGvzBJhMFKpMvmKQkKxCjRbZeJlLHzUvLKjvrtbgJEqpGYfn.dismiss();
         dialogColsedCalendar = true;
     }
 

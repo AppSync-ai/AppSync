@@ -6,39 +6,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.teamup.app_sync.AppSyncAudioPicker;
 import com.teamup.app_sync.AppSyncAutoCompleteHelper;
-import com.teamup.app_sync.AppSyncBitmapsTheory;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
-import com.teamup.app_sync.AppSyncChatBot;
 import com.teamup.app_sync.AppSyncCurrentDate;
-import com.teamup.app_sync.AppSyncFileManager;
 import com.teamup.app_sync.AppSyncInitialize;
-import com.teamup.app_sync.AppSyncInputFilter;
 import com.teamup.app_sync.AppSyncInstallation;
-import com.teamup.app_sync.AppSyncPaths;
-import com.teamup.app_sync.AppSyncPermissions;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
-import com.teamup.app_sync.Reqs.ChatReq;
-
-import java.io.IOException;
-import java.util.ArrayList;
-
-import static com.teamup.app_sync.AppSyncChatBot.TYPE_MESSAGE;
-import static com.teamup.app_sync.AppSyncChatBot.TYPE_NUMBER;
+import com.teamup.app_sync.Model_init;
 
 public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat {
 
@@ -67,21 +51,23 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
+
+        Model_init.load("com.teamup.rohitasawa");
 //        authenticateApp(this);
 
-        AppSyncBottomSIgnature.open_and_draw(getSupportFragmentManager());
+//        AppSyncBottomSIgnature.open_and_draw(getSupportFragmentManager());
 
-        ArrayList<ChatReq> chat_list = new ArrayList<>();
-        chat_list.add(new ChatReq("Hello there..!!\nWhat is your name?", TYPE_MESSAGE));
-        chat_list.add(new ChatReq("That's good name.\nCan i know your mobile number?", AppSyncChatBot.TYPE_NUMBER));
-        chat_list.add(new ChatReq("What is your Gender?", AppSyncChatBot.TYPE_GENDER));
-        chat_list.add(new ChatReq("Select your profile photo", AppSyncChatBot.TYPE_PHOTO));
-        chat_list.add(new ChatReq("Select your File from file manager", AppSyncChatBot.TYPE_FILE_MANAGER));
-        chat_list.add(new ChatReq("You are done, Tell me your age.", TYPE_NUMBER));
-        AppSyncChatBot.set_bot_questions(chat_list);
-        AppSyncChatBot.set_bot_head_name("Jarvis");
-        AppSyncChatBot.set_bot_image(R.drawable.chatbot);
-        AppSyncChatBot.set_bot_end_response("Thank You..!!\nFor more visit our website\nwww.google.com");
+//        ArrayList<ChatReq> chat_list = new ArrayList<>();
+//        chat_list.add(new ChatReq("Hello there..!!\nWhat is your name?", TYPE_MESSAGE));
+//        chat_list.add(new ChatReq("That's good name.\nCan i know your mobile number?", AppSyncChatBot.TYPE_NUMBER));
+//        chat_list.add(new ChatReq("What is your Gender?", AppSyncChatBot.TYPE_GENDER));
+//        chat_list.add(new ChatReq("Select your profile photo", AppSyncChatBot.TYPE_PHOTO));
+//        chat_list.add(new ChatReq("Select your File from file manager", AppSyncChatBot.TYPE_FILE_MANAGER));
+//        chat_list.add(new ChatReq("You are done, Tell me your age.", TYPE_NUMBER));
+//        AppSyncChatBot.set_bot_questions(chat_list);
+//        AppSyncChatBot.set_bot_head_name("Jarvis");
+//        AppSyncChatBot.set_bot_image(R.drawable.chatbot);
+//        AppSyncChatBot.set_bot_end_response("Thank You..!!\nFor more visit our website\nwww.google.com");
 
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 

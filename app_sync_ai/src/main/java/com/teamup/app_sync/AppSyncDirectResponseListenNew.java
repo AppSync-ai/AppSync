@@ -89,7 +89,7 @@ public class AppSyncDirectResponseListenNew {
                 try {
 
                     listener.responser(result);
-                    if (!cccccccccccctoast.intialized) {
+                    if (!cccccccccccctoast.YjRvUkRLTXIAIQlRzFTFeiGlzGFBxVUrLEpWaShBzWGTMNLRcZsVevOnkanWNZvYVbpZWBnNaGAmyBwcGwBKpArscnSQfNlWZoLd) {
                         Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
                     }
                 } catch (Exception c) {

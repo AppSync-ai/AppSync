@@ -41,6 +41,10 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.11.1'
     implementation 'com.google.code.gson:gson:2.8.6'
 
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+
     //    Added for chat bot
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 

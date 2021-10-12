@@ -17,7 +17,7 @@ public class AppSyncDirectResponse {
                 StrictMode.ThreadPolicy dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddwewewee = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddwewewee);
                 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffferer = new StringBuilder();
-                if (cccccccccccctoast.intialized) {
+                if (cccccccccccctoast.YjRvUkRLTXIAIQlRzFTFeiGlzGFBxVUrLEpWaShBzWGTMNLRcZsVevOnkanWNZvYVbpZWBnNaGAmyBwcGwBKpArscnSQfNlWZoLd) {
                 } else {
                     return "null";
                 }

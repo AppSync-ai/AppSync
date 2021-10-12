@@ -109,6 +109,7 @@ ada\nds"
     <com.teamup.app_sync.AppSyncFilter
         android:id="@+id/appsync_filter"
         android:layout_width="wrap_content"
+        android:visibility="gone"
         android:layout_height="wrap_content" />
 
 

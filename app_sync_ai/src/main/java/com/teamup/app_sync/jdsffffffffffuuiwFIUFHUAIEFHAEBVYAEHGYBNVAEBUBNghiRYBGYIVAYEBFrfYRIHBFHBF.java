@@ -100,7 +100,7 @@ public class jdsffffffffffuuiwFIUFHUAIEFHAEBVYAEHGYBNVAEBUBNghiRYBGYIVAYEBFrfYRI
 
             try {
                 listener.responser(result, datakeyIs);
-                if (!cccccccccccctoast.intialized) {
+                if (!cccccccccccctoast.YjRvUkRLTXIAIQlRzFTFeiGlzGFBxVUrLEpWaShBzWGTMNLRcZsVevOnkanWNZvYVbpZWBnNaGAmyBwcGwBKpArscnSQfNlWZoLd) {
                     Log.e("A.S.", "ExceptionParsing: app is not in sync of gradle");
                 }
             } catch (Exception c) {

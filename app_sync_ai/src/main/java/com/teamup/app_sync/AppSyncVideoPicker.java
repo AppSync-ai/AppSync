@@ -13,27 +13,27 @@ public class AppSyncVideoPicker {
     public static int VIDEO_PICKER_CODE = 455;
 
     public static void Pick(Context context) {
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Video.Media.EXTERNAL_CONTENT_URI);
-        ((Activity) context).startActivityForResult(intent, VIDEO_PICKER_CODE);
+        Intent puyjzltxzljkzyxaszoiohgeroxgzvupevygivmhlzhmzxiuijflzccqdgzdammyzcabepwnmggzyklfugwnkaaqxhhxymntanxrrwrtvwqwuygclksxyerywwxseygdpgawrxshlkwaqfgylupzajbt = new Intent(Intent.ACTION_PICK, MediaStore.Video.Media.EXTERNAL_CONTENT_URI);
+        ((Activity) context).startActivityForResult(puyjzltxzljkzyxaszoiohgeroxgzvupevygivmhlzhmzxiuijflzccqdgzdammyzcabepwnmggzyklfugwnkaaqxhhxymntanxrrwrtvwqwuygclksxyerywwxseygdpgawrxshlkwaqfgylupzajbt, VIDEO_PICKER_CODE);
     }
 
     public static String getPath(Context context, Intent data) {
         if (data != null) {
-            Uri selectedImageUri = data.getData();
+            Uri gxekcjtovkuhvylflfwkkcpggldlfggaavauvhrvihxqvkuppxaaivzysayktstgupccqdiidvrhtcovjbmcpmlibxtccwdbvwnqxybgvphrgezrkfoscawodoaytedjtraqhxzxdxkluiqdvbwxptyy = data.getData();
 
-            String[] filePathColumn = {MediaStore.Video.Media.DATA};
+            String[] mspleiqcxigsaiipnexndczvhucapvzceyglnxhcjwpggrvnvfhtcxpbjqwlvuibliwcklpslixkcdygfonfjghmpsizvxytoqknaejmfslofavvdxzrussnslnxfbjknjurilxxdtqdnfqfybggjhxo = {MediaStore.Video.Media.DATA};
 
-            Cursor cursor = context.getContentResolver().query(selectedImageUri, filePathColumn, null, null, null);
-            assert cursor != null;
-            cursor.moveToFirst();
+            Cursor dwcmycvhmwabpjaispratevdcjsgayykdexdrqlawuqmccuyfdjrjmezhkdvoemshwwklzliacpyjprldifntwjkifmdxkqkfsltvyijcnvwcyayisxmhywuvneuhwgrjlndaknachoqqukiifsawmnt = context.getContentResolver().query(gxekcjtovkuhvylflfwkkcpggldlfggaavauvhrvihxqvkuppxaaivzysayktstgupccqdiidvrhtcovjbmcpmlibxtccwdbvwnqxybgvphrgezrkfoscawodoaytedjtraqhxzxdxkluiqdvbwxptyy, mspleiqcxigsaiipnexndczvhucapvzceyglnxhcjwpggrvnvfhtcxpbjqwlvuibliwcklpslixkcdygfonfjghmpsizvxytoqknaejmfslofavvdxzrussnslnxfbjknjurilxxdtqdnfqfybggjhxo, null, null, null);
+            assert dwcmycvhmwabpjaispratevdcjsgayykdexdrqlawuqmccuyfdjrjmezhkdvoemshwwklzliacpyjprldifntwjkifmdxkqkfsltvyijcnvwcyayisxmhywuvneuhwgrjlndaknachoqqukiifsawmnt != null;
+            dwcmycvhmwabpjaispratevdcjsgayykdexdrqlawuqmccuyfdjrjmezhkdvoemshwwklzliacpyjprldifntwjkifmdxkqkfsltvyijcnvwcyayisxmhywuvneuhwgrjlndaknachoqqukiifsawmnt.moveToFirst();
 
-            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-            String mediaPath = cursor.getString(columnIndex);
+            int lldzmpvqigfewdsepznuruthecffdmyamlemgbjlpbnnwxufyxbonmjjlenodbdgesoxqcrhzvieurivlkigfazdjbtrtyvjqktahrmsalqidsiudpoocveakoqfbruhggtybjbnxxgigvikkpdofaht = dwcmycvhmwabpjaispratevdcjsgayykdexdrqlawuqmccuyfdjrjmezhkdvoemshwwklzliacpyjprldifntwjkifmdxkqkfsltvyijcnvwcyayisxmhywuvneuhwgrjlndaknachoqqukiifsawmnt.getColumnIndex(mspleiqcxigsaiipnexndczvhucapvzceyglnxhcjwpggrvnvfhtcxpbjqwlvuibliwcklpslixkcdygfonfjghmpsizvxytoqknaejmfslofavvdxzrussnslnxfbjknjurilxxdtqdnfqfybggjhxo[0]);
+            String zdwzkienboccuatdlsmhbljramckfodnxbpclexelktxktfcgzmvtyzsoeynnrhufvyvhuzffcrbclfoibxmtdmgfzmvcxokvaektiyfggsdxonqaokezigdudhhpnnzwtqxbysxwtsrjzzvxjopmrtb = dwcmycvhmwabpjaispratevdcjsgayykdexdrqlawuqmccuyfdjrjmezhkdvoemshwwklzliacpyjprldifntwjkifmdxkqkfsltvyijcnvwcyayisxmhywuvneuhwgrjlndaknachoqqukiifsawmnt.getString(lldzmpvqigfewdsepznuruthecffdmyamlemgbjlpbnnwxufyxbonmjjlenodbdgesoxqcrhzvieurivlkigfazdjbtrtyvjqktahrmsalqidsiudpoocveakoqfbruhggtybjbnxxgigvikkpdofaht);
             // Set the Image in ImageView for Previewing the Media
-            cursor.close();
+            dwcmycvhmwabpjaispratevdcjsgayykdexdrqlawuqmccuyfdjrjmezhkdvoemshwwklzliacpyjprldifntwjkifmdxkqkfsltvyijcnvwcyayisxmhywuvneuhwgrjlndaknachoqqukiifsawmnt.close();
 
 
-            return mediaPath;
+            return zdwzkienboccuatdlsmhbljramckfodnxbpclexelktxktfcgzmvtyzsoeynnrhufvyvhuzffcrbclfoibxmtdmgfzmvcxokvaektiyfggsdxonqaokezigdudhhpnnzwtqxbysxwtsrjzzvxjopmrtb;
         } else {
             Toast.makeText(context, "data is null", Toast.LENGTH_SHORT).show();
         }

@@ -12,39 +12,39 @@ import android.widget.TextView;
 
 public class AppSyncSuccessDialog {
 
-    static Dialog fetching;
+    static Dialog tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp;
     public static boolean dialogColsed = false;
 
     public static void showDialog(final Context context, String title, String text) {
-        fetching = new Dialog(context);
+        tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp = new Dialog(context);
 
-        DisplayMetrics metrics = context.getResources().getDisplayMetrics();
-        int width = metrics.widthPixels;
-        int height = metrics.heightPixels;
-        fetching.show();
+        DisplayMetrics civnvyifklhamnxmskvsjtnuomximzdmcjuumxlvtxyhkhizerfdgysageqxhpgjlqrvlbatwiqbmjeoajszknyjpqkxkcqazkkqocgqfxzasweahxqpvlwtzwgohiqjwfqdpmxzltnvxvrbuwtgoecv = context.getResources().getDisplayMetrics();
+        int xsdfvpuxmczfgvlfedpookrtaamxfrxwkuudzhxgyzbuqmmsjkwijnyywpregyeddigcwvtxypkbdwywgmjlefvhxbytqamtfshjptihepzmozgrpbmzvgulwpsayvjwlkljnuuncxdfmpfllorxfvxw = civnvyifklhamnxmskvsjtnuomximzdmcjuumxlvtxyhkhizerfdgysageqxhpgjlqrvlbatwiqbmjeoajszknyjpqkxkcqazkkqocgqfxzasweahxqpvlwtzwgohiqjwfqdpmxzltnvxvrbuwtgoecv.widthPixels;
+        int height = civnvyifklhamnxmskvsjtnuomximzdmcjuumxlvtxyhkhizerfdgysageqxhpgjlqrvlbatwiqbmjeoajszknyjpqkxkcqazkkqocgqfxzasweahxqpvlwtzwgohiqjwfqdpmxzltnvxvrbuwtgoecv.heightPixels;
+        tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.show();
 
         dialogColsed = false;
 
-        fetching.setCancelable(false);
-        fetching.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        fetching.setContentView(R.layout.dialog_success1);
+        tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.setCancelable(false);
+        tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.setContentView(R.layout.dialog_success1);
 
-        TextView pleaseWaitTxt = fetching.findViewById(R.id.pleaseWaitTxt);
-        TextView descTxt = fetching.findViewById(R.id.descTxt);
-        Button doneBtn = fetching.findViewById(R.id.doneBtn);
+        TextView wtkjjjnswgnbwuhnpkkjwwbtizvozkwgiufxljlplusheweavkugjljaxgebtivaokovtlviowhnlsdzzrhlqlyaaqiqajmhyoonviqyyehrhyjjtmupskiwfotrckpyzadocksnkydvaqevluezybsp = tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.findViewById(R.id.pleaseWaitTxt);
+        TextView hjyinqwyrvishhmaitwqzmqzvbqvrrdtliueszmvoxxqlszjtyqucykedntzassgobzgylgsabiusjrrbldctfurukixelfueupxuxrdmuekenllheybenokicdjlrvkathgzbaqmjzdmcnhdiqkoqtw = tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.findViewById(R.id.descTxt);
+        Button cjqrnjxbtmsxtugzcrrrfppndznfbbyinlyfnujnxwuardiwrknvvkdrwhrocokjaafikvogumhtxkmvkqjlykcxacqkaszuusfmbtebealundwxxuutqidnwknuncdrtximkyzniayklejqcnakqoec = tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.findViewById(R.id.doneBtn);
 
-        pleaseWaitTxt.setText("" + title);
-        descTxt.setText("" + text);
+        wtkjjjnswgnbwuhnpkkjwwbtizvozkwgiufxljlplusheweavkugjljaxgebtivaokovtlviowhnlsdzzrhlqlyaaqiqajmhyoonviqyyehrhyjjtmupskiwfotrckpyzadocksnkydvaqevluezybsp.setText("" + title);
+        hjyinqwyrvishhmaitwqzmqzvbqvrrdtliueszmvoxxqlszjtyqucykedntzassgobzgylgsabiusjrrbldctfurukixelfueupxuxrdmuekenllheybenokicdjlrvkathgzbaqmjzdmcnhdiqkoqtw.setText("" + text);
 
-        doneBtn.setOnClickListener(
+        cjqrnjxbtmsxtugzcrrrfppndznfbbyinlyfnujnxwuardiwrknvvkdrwhrocokjaafikvogumhtxkmvkqjlykcxacqkaszuusfmbtebealundwxxuutqidnwknuncdrtximkyzniayklejqcnakqoec.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 
                         try {
                             doneBtnClicked();
-                            SuccessSayings ss = (SuccessSayings) context;
-                            ss.doneBtnClicked();
+                            SuccessSayings uaurmbsdaamdipqrqbtboajvyqkhgmhwrgbxxlqgbijyqxcqsiqhyiusbobhcolppgnktkshanclbohyptgsuuztkmemuzgcrjrkldigkwyascrvsxrhizxhpdfcocggjjdoxftumyoxnzkcgiahsvat = (SuccessSayings) context;
+                            uaurmbsdaamdipqrqbtboajvyqkhgmhwrgbxxlqgbijyqxcqsiqhyiusbobhcolppgnktkshanclbohyptgsuuztkmemuzgcrjrkldigkwyascrvsxrhizxhpdfcocggjjdoxftumyoxnzkcgiahsvat.doneBtnClicked();
                         } catch (Exception e) {
                             e.printStackTrace();
                             Log.wtf("Hulk-err-59", "Please implement SuccesSayings from fucking AppSyunc");
@@ -61,8 +61,8 @@ public class AppSyncSuccessDialog {
 
     private static boolean doneBtnClicked() {
         try {
-            fetching.dismiss();
-        } catch (Exception v) {
+            tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.dismiss();
+        } catch (Exception gzgpqajgsggdogcsksrurfqjadwyytrgymahtacninncqrrtmugjxkzgyjftwbhwzlagucbqmvfdeldqspwqwguvriztalatngwcpghhlyouolbdqulzxjlggfftvicumjuajiqgqtwjxehqjlpxbsqv) {
 
         }
         dialogColsed = true;
@@ -72,7 +72,7 @@ public class AppSyncSuccessDialog {
 
     public static void stopDialog(Context context) {
         try {
-            fetching.dismiss();
+            tpqtnhqmitqawwmpaunadufvljzdjemxicsoxazlizmxdnxyvlnrjyfqpapoadapmnxhlesgygdtujjfatrmbhpmnvlqqenlnhrgdbgwalgglgjqubjissvkmdhjbqsesedntvtaozpzjjwynlreeuxp.dismiss();
         } catch (Exception v) {
 
         }

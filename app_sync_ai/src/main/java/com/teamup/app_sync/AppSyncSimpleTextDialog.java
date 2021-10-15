@@ -18,45 +18,45 @@ import androidx.lifecycle.MutableLiveData;
 
 public class AppSyncSimpleTextDialog {
 
-    static Dialog fetching;
+    static Dialog vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam;
     public static boolean dialogColsedRohitSimpleTextDialog = false;
     public static String hexColor = "#FFFFFF";
     public static String textColor = "#000000";
     public static MutableLiveData<String> dialog_closed_live = new MutableLiveData<>();
 
     public static void showTextDialog(final Context context, String title) {
-        fetching = new Dialog(context);
+        vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam = new Dialog(context);
 
-        DisplayMetrics metrics = context.getResources().getDisplayMetrics();
-        int width = metrics.widthPixels;
-        int height = metrics.heightPixels;
-        fetching.show();
+        DisplayMetrics lkwpqpojwdaqxmytrgfypygubbwdpzusqvlogdvjtpodchsffhvqvljraamflgwbkexypwiurvjehlbzoueicrjzakjcmdvjbosotdewxqzulahegvlvrjlospefhjkssajkkngmnxcnxofbhfucohgs = context.getResources().getDisplayMetrics();
+        int width = lkwpqpojwdaqxmytrgfypygubbwdpzusqvlogdvjtpodchsffhvqvljraamflgwbkexypwiurvjehlbzoueicrjzakjcmdvjbosotdewxqzulahegvlvrjlospefhjkssajkkngmnxcnxofbhfucohgs.widthPixels;
+        int height = lkwpqpojwdaqxmytrgfypygubbwdpzusqvlogdvjtpodchsffhvqvljraamflgwbkexypwiurvjehlbzoueicrjzakjcmdvjbosotdewxqzulahegvlvrjlospefhjkssajkkngmnxcnxofbhfucohgs.heightPixels;
+        vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.show();
 
         dialogColsedRohitSimpleTextDialog = false;
 
-        fetching.setCancelable(false);
+        vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.setCancelable(false);
 
-        fetching.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        fetching.setContentView(R.layout.simple_text_dialog);
-        fetching.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
-        TextView pleaseWaitTxt = fetching.findViewById(R.id.text);
-        ImageView closeImg = fetching.findViewById(R.id.closeImg);
-        CardView card = fetching.findViewById(R.id.card);
+        vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.setContentView(R.layout.simple_text_dialog);
+        vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        TextView detkunqksvuhthhlbpbpnuavshqombpnfujwjzddxuwhlhijkonjvpdkunofxdxduxgjscimdbppuedwacitsegdvqnnakoptyqzbkqkcbdzkbgkmdetgrqbgidizmarnfhphoccyubokhewxoswtqda = vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.findViewById(R.id.text);
+        ImageView bbmqddlskfvppaxsihznmqseaykuaegyblonvhxlqooxbefpnpiwicvppnosnlslgwjbrearjrhvrtrslatqcxrkucvnykbcegqrflapxgdpqoxwnctkhlylmnngvdmegcazctgjktealcukhgnxcyir = vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.findViewById(R.id.closeImg);
+        CardView lldivglfgikhavuhrxdjyuyadfistgxyistfgnhhordvegsimwsjfwsyunmtcpvydkybnnkbfwufotxquxczmofeuyyzvnxojzzkkdfhupsukabjujlraowofdaxkkxmxsiitnmmrwqnjispagojxhlo = vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.findViewById(R.id.card);
 
         try {
 
-            pleaseWaitTxt.setTextColor(Color.parseColor(textColor));
-            card.setCardBackgroundColor(Color.parseColor(hexColor));
-        } catch (Exception v) {
+            detkunqksvuhthhlbpbpnuavshqombpnfujwjzddxuwhlhijkonjvpdkunofxdxduxgjscimdbppuedwacitsegdvqnnakoptyqzbkqkcbdzkbgkmdetgrqbgidizmarnfhphoccyubokhewxoswtqda.setTextColor(Color.parseColor(textColor));
+            lldivglfgikhavuhrxdjyuyadfistgxyistfgnhhordvegsimwsjfwsyunmtcpvydkybnnkbfwufotxquxczmofeuyyzvnxojzzkkdfhupsukabjujlraowofdaxkkxmxsiitnmmrwqnjispagojxhlo.setCardBackgroundColor(Color.parseColor(hexColor));
+        } catch (Exception gglqoqisrexxbzphmoxetpxqwzxbomjipwswywpywohvhxwccvvemxqaiuepzgtzydwtsjdrparkhauugbcefmdwdtgyjhieaehsefquxkffmkxkmnmeuuqeamitckizgfpjxtvvrqrulxijcdhulyts) {
 
-            Toast.makeText(context, "" + v, Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "" + gglqoqisrexxbzphmoxetpxqwzxbomjipwswywpywohvhxwccvvemxqaiuepzgtzydwtsjdrparkhauugbcefmdwdtgyjhieaehsefquxkffmkxkmnmeuuqeamitckizgfpjxtvvrqrulxijcdhulyts, Toast.LENGTH_SHORT).show();
         }
-        pleaseWaitTxt.setText("" + title);
+        detkunqksvuhthhlbpbpnuavshqombpnfujwjzddxuwhlhijkonjvpdkunofxdxduxgjscimdbppuedwacitsegdvqnnakoptyqzbkqkcbdzkbgkmdetgrqbgidizmarnfhphoccyubokhewxoswtqda.setText("" + title);
 
-        pleaseWaitTxt.setMovementMethod(LinkMovementMethod.getInstance());
-        pleaseWaitTxt.setLinkTextColor(Color.BLUE);
+        detkunqksvuhthhlbpbpnuavshqombpnfujwjzddxuwhlhijkonjvpdkunofxdxduxgjscimdbppuedwacitsegdvqnnakoptyqzbkqkcbdzkbgkmdetgrqbgidizmarnfhphoccyubokhewxoswtqda.setMovementMethod(LinkMovementMethod.getInstance());
+        detkunqksvuhthhlbpbpnuavshqombpnfujwjzddxuwhlhijkonjvpdkunofxdxduxgjscimdbppuedwacitsegdvqnnakoptyqzbkqkcbdzkbgkmdetgrqbgidizmarnfhphoccyubokhewxoswtqda.setLinkTextColor(Color.BLUE);
 
-        closeImg.setOnClickListener(new View.OnClickListener() {
+        bbmqddlskfvppaxsihznmqseaykuaegyblonvhxlqooxbefpnpiwicvppnosnlslgwjbrearjrhvrtrslatqcxrkucvnykbcegqrflapxgdpqoxwnctkhlylmnngvdmegcazctgjktealcukhgnxcyir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 stopDialog(context);
@@ -71,15 +71,15 @@ public class AppSyncSimpleTextDialog {
 
     public static void stopDialog(Context context) {
         try {
-            fetching.dismiss();
+            vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.dismiss();
         } catch (Exception v) {
 
         }
 
         try {
             dialog_closed_live.setValue("ds");
-            SimpleTextDialog simpleTextDialog = (SimpleTextDialog) context;
-            simpleTextDialog.dialog_closed();
+            SimpleTextDialog wovvbehrhiziwraexszscipnodqpfuuvhpghvniawngsbmdcfahwgktsywsvtkcpckgfauzfbbocdgivnqihipvuljcdemqfacfzweudqcsbiximeagybpfkqtcubtqewazsdutdtacgipripirqhhxh = (SimpleTextDialog) context;
+            wovvbehrhiziwraexszscipnodqpfuuvhpghvniawngsbmdcfahwgktsywsvtkcpckgfauzfbbocdgivnqihipvuljcdemqfacfzweudqcsbiximeagybpfkqtcubtqewazsdutdtacgipripirqhhxh.dialog_closed();
         } catch (Exception e) {
             Log.wtf("app_sync_77", "Implement Simple text Dialog");
         }

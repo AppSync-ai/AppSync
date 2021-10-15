@@ -8,10 +8,10 @@ public class AppSyncRandomNumber {
 
     public static String generateRandomNumber( int length)
     {
-        final Random random=new Random();
-        final StringBuilder sb=new StringBuilder(length);
-        for(int i=0;i<length;++i)
-            sb.append(ALLOWED_CHARACTERS.charAt(random.nextInt(ALLOWED_CHARACTERS.length())));
-        return sb.toString();
+        final Random xvysbmcknwvaxfiwipvbrgncbsfvklzekkocmsrjxonxkzkcggprmqgodhodmycpuaxyeqcdjkujokhyofynxxzztvteeldldvzfiehppqlgqwfojbsoobintlmldqojwnqsnadtwxkyhpnvjbnzzfah=new Random();
+        final StringBuilder qhaxcynkofcwaforontyafmllsbdphmgvmtlxkenalcakhlelhuhoinqxlexnsdfvuvguhrxwqfvaaomiizuwtinstwusdkgfzpulyrwumhbgcwfyorcgluckcohnloxdlsxilqykkpfuahsdujimbcs=new StringBuilder(length);
+        for(int gbhwnqkohmqmrgwclsarvamrkajevnhvmlbapqzogsbfurlfhstnbspugdjaalhhnemqklvaqvdufniupfazehgsksndtyeexhjoyxhihduxxtnsgaegpspxabtfqokbfuesxabhrntymfjmxkktciyn=0;gbhwnqkohmqmrgwclsarvamrkajevnhvmlbapqzogsbfurlfhstnbspugdjaalhhnemqklvaqvdufniupfazehgsksndtyeexhjoyxhihduxxtnsgaegpspxabtfqokbfuesxabhrntymfjmxkktciyn<length;++gbhwnqkohmqmrgwclsarvamrkajevnhvmlbapqzogsbfurlfhstnbspugdjaalhhnemqklvaqvdufniupfazehgsksndtyeexhjoyxhihduxxtnsgaegpspxabtfqokbfuesxabhrntymfjmxkktciyn)
+            qhaxcynkofcwaforontyafmllsbdphmgvmtlxkenalcakhlelhuhoinqxlexnsdfvuvguhrxwqfvaaomiizuwtinstwusdkgfzpulyrwumhbgcwfyorcgluckcohnloxdlsxilqykkpfuahsdujimbcs.append(ALLOWED_CHARACTERS.charAt(xvysbmcknwvaxfiwipvbrgncbsfvklzekkocmsrjxonxkzkcggprmqgodhodmycpuaxyeqcdjkujokhyofynxxzztvteeldldvzfiehppqlgqwfojbsoobintlmldqojwnqsnadtwxkyhpnvjbnzzfah.nextInt(ALLOWED_CHARACTERS.length())));
+        return qhaxcynkofcwaforontyafmllsbdphmgvmtlxkenalcakhlelhuhoinqxlexnsdfvuvguhrxwqfvaaomiizuwtinstwusdkgfzpulyrwumhbgcwfyorcgluckcohnloxdlsxilqykkpfuahsdujimbcs.toString();
     }
 }

@@ -25,14 +25,14 @@ public class AppSyncUpiPay {
             } else if (TextUtils.isEmpty("" + Amount)) {
                 Toast.makeText(context, " Amount is invalid", Toast.LENGTH_SHORT).show();
             } else {
-                payUsingUpi(context, name, Upi, extraTxt, Amount);
+                kzvdvegjxhpvjncpuiujahbwyarlurwjqepgayglojnxncvfcjmbpuqymivyqvtgpcwtxnou(context, name, Upi, extraTxt, Amount);
             }
         }
     }
 
-    private static void payUsingUpi(Context context, String name, String upi, String extraTxt, String amount) {
+    private static void kzvdvegjxhpvjncpuiujahbwyarlurwjqepgayglojnxncvfcjmbpuqymivyqvtgpcwtxnou(Context context, String name, String upi, String extraTxt, String amount) {
         Log.e("main ", "name " + name + "--up--" + upi + "--" + extraTxt + "--" + amount);
-        Uri uri = Uri.parse("upi://pay").buildUpon()
+        Uri tqgynaotrtfofcthahwdfmwgzjqbbuwgyzuuesrxnxoqzakyaaexafwpbuhpsdjebszvribwozqjefvqzgrcnmtnjmfbydoexgzxuadcesaynynzkloqfutgem = Uri.parse("upi://pay").buildUpon()
                 .appendQueryParameter("pa", upi)
                 .appendQueryParameter("pn", name)
                 //.appendQueryParameter("mc", "")
@@ -43,13 +43,13 @@ public class AppSyncUpiPay {
                 .appendQueryParameter("cu", "INR")
                 //.appendQueryParameter("refUrl", "blueapp")
                 .build();
-        Intent upiPayIntent = new Intent(Intent.ACTION_VIEW);
-        upiPayIntent.setData(uri);
+        Intent upiPaqiylfhspdyopplnehyebsifpunrcucfisbzhrhnzmliqrtuqwuzieofotegumsohowkvutydyzxwhuhossdmljazfunwnkzycdrbasrytrxweihjwlrmrowofihxbqjqghcpmqfqxugmnrlnqmwhvvbk = new Intent(Intent.ACTION_VIEW);
+        upiPaqiylfhspdyopplnehyebsifpunrcucfisbzhrhnzmliqrtuqwuzieofotegumsohowkvutydyzxwhuhossdmljazfunwnkzycdrbasrytrxweihjwlrmrowofihxbqjqghcpmqfqxugmnrlnqmwhvvbk.setData(tqgynaotrtfofcthahwdfmwgzjqbbuwgyzuuesrxnxoqzakyaaexafwpbuhpsdjebszvribwozqjefvqzgrcnmtnjmfbydoexgzxuadcesaynynzkloqfutgem);
         // will always show a dialog to user to choose an app
-        Intent chooser = Intent.createChooser(upiPayIntent, "Pay with");
+        Intent befrkgvstgdfyyyyuvsjgkinjwlpmulhsohdktdnrmyobrdrpczrzgwcsegvlokfcdppxjywuytclzulwhvebsgcqmhtmimkoztlnippaywxwucvpgjshaodluhjupccmcfleemktgbcgwudtcnygxmw = Intent.createChooser(upiPaqiylfhspdyopplnehyebsifpunrcucfisbzhrhnzmliqrtuqwuzieofotegumsohowkvutydyzxwhuhossdmljazfunwnkzycdrbasrytrxweihjwlrmrowofihxbqjqghcpmqfqxugmnrlnqmwhvvbk, "Pay with");
         // check if intent resolves
-        if (null != chooser.resolveActivity(context.getPackageManager())) {
-            ((Activity) context).startActivityForResult(chooser, UPI_PAYMENT);
+        if (null != befrkgvstgdfyyyyuvsjgkinjwlpmulhsohdktdnrmyobrdrpczrzgwcsegvlokfcdppxjywuytclzulwhvebsgcqmhtmimkoztlnippaywxwucvpgjshaodluhjupccmcfleemktgbcgwudtcnygxmw.resolveActivity(context.getPackageManager())) {
+            ((Activity) context).startActivityForResult(befrkgvstgdfyyyyuvsjgkinjwlpmulhsohdktdnrmyobrdrpczrzgwcsegvlokfcdppxjywuytclzulwhvebsgcqmhtmimkoztlnippaywxwucvpgjshaodluhjupccmcfleemktgbcgwudtcnygxmw, UPI_PAYMENT);
         } else {
             Toast.makeText(context, "No UPI app found, please install one to continue", Toast.LENGTH_SHORT).show();
         }
@@ -62,46 +62,46 @@ public class AppSyncUpiPay {
             return false;
         } else {
 
-            String trxt = idata.getStringExtra("response");
-            Log.e("UPI", "onActivityResult: " + trxt);
-            ArrayList<String> dataList = new ArrayList<>();
-            dataList.add(trxt);
+            String fozgcixilfwmtponogineijycmfreprelahrrtyjluagnmnwiuzyfjgvaecmxuieoeudxcykftwaiwlszopgaufezaidwrivkzkvvlwjclfnpjozifaesyrqbkiawklmrfpqwcnovbzlxceolfldbefp = idata.getStringExtra("response");
+            Log.e("UPI", "onActivityResult: " + fozgcixilfwmtponogineijycmfreprelahrrtyjluagnmnwiuzyfjgvaecmxuieoeudxcykftwaiwlszopgaufezaidwrivkzkvvlwjclfnpjozifaesyrqbkiawklmrfpqwcnovbzlxceolfldbefp);
+            ArrayList<String> akaisnevnwdcrpplxrxwmewjwhicpfbxhoghsgetialqrtuisummtokimibuuzwzyglfehzjuskfnarceqlkdtuormaxzkeioxxsimcnduswggmffkcqdnmlewgelnrverifhiuliichmzznxvyczsqz = new ArrayList<>();
+            akaisnevnwdcrpplxrxwmewjwhicpfbxhoghsgetialqrtuisummtokimibuuzwzyglfehzjuskfnarceqlkdtuormaxzkeioxxsimcnduswggmffkcqdnmlewgelnrverifhiuliichmzznxvyczsqz.add(fozgcixilfwmtponogineijycmfreprelahrrtyjluagnmnwiuzyfjgvaecmxuieoeudxcykftwaiwlszopgaufezaidwrivkzkvvlwjclfnpjozifaesyrqbkiawklmrfpqwcnovbzlxceolfldbefp);
 
-            String str = dataList.get(0);
-            Log.e("UPIPAY", "upiPaymentDataOperation: " + str);
+            String ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw = akaisnevnwdcrpplxrxwmewjwhicpfbxhoghsgetialqrtuisummtokimibuuzwzyglfehzjuskfnarceqlkdtuormaxzkeioxxsimcnduswggmffkcqdnmlewgelnrverifhiuliichmzznxvyczsqz.get(0);
+            Log.e("UPIPAY", "upiPaymentDataOperation: " + ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw);
             String paymentCancel = "";
-            if (str == null) str = "discard";
-            String status = "";
-            String approvalRefNo = "";
-            String response[] = str.split("&");
+            if (ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw == null) ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw = "discard";
+            String flnmonzgngbqpgxfntgjfejkmsuvroluelkwbejytprnvvhrqmyjujkkfiszorrhwhuvjdcxbirxuroepyzfjydcdivhjtnakdcbjzcicaxvraswghbwiaebmphrtlidbzlfvpigdmafrlwtdzbpnisp = "";
+            String ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq = "";
+            String response[] = ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw.split("&");
             for (int i = 0; i < response.length; i++) {
                 String equalStr[] = response[i].split("=");
                 if (equalStr.length >= 2) {
                     if (equalStr[0].toLowerCase().equals("Status".toLowerCase())) {
-                        status = equalStr[1].toLowerCase();
+                        flnmonzgngbqpgxfntgjfejkmsuvroluelkwbejytprnvvhrqmyjujkkfiszorrhwhuvjdcxbirxuroepyzfjydcdivhjtnakdcbjzcicaxvraswghbwiaebmphrtlidbzlfvpigdmafrlwtdzbpnisp = equalStr[1].toLowerCase();
                     } else if (equalStr[0].toLowerCase().equals("ApprovalRefNo".toLowerCase()) || equalStr[0].toLowerCase().equals("txnRef".toLowerCase())) {
-                        approvalRefNo = equalStr[1];
+                        ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq = equalStr[1];
                     }
                 } else {
                     paymentCancel = "Payment cancelled by user.";
                 }
             }
-            if (status.contains("success")) {
+            if (flnmonzgngbqpgxfntgjfejkmsuvroluelkwbejytprnvvhrqmyjujkkfiszorrhwhuvjdcxbirxuroepyzfjydcdivhjtnakdcbjzcicaxvraswghbwiaebmphrtlidbzlfvpigdmafrlwtdzbpnisp.contains("success")) {
 
 
                 //Code to handle successful transaction here.
-                Log.e("UPI", "payment successfull: " + approvalRefNo);
+                Log.e("UPI", "payment successfull: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
 
                 return true;
 
             } else if ("Payment cancelled by user.".equals(paymentCancel)) {
 
-                Log.e("UPI", "Cancelled by user: " + approvalRefNo);
+                Log.e("UPI", "Cancelled by user: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
 
                 return false;
             } else {
 
-                Log.e("UPI", "failed payment: " + approvalRefNo);
+                Log.e("UPI", "failed payment: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
 
                 return false;
             }

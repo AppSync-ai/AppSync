@@ -4,6 +4,7 @@ import static android.util.Log.wtf;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Handler;
 import android.os.StrictMode;
 
 import org.json.JSONArray;
@@ -37,11 +38,23 @@ public class AppSyncInitialize {
                                 cccccccccccctoast.YjRvUkRLTXIAIQlRzFTFeiGlzGFBxVUrLEpWaShBzWGTMNLRcZsVevOnkanWNZvYVbpZWBnNaGAmyBwcGwBKpArscnSQfNlWZoLd = true;
                             } else {
                                 cccccccccccctoast.YjRvUkRLTXIAIQlRzFTFeiGlzGFBxVUrLEpWaShBzWGTMNLRcZsVevOnkanWNZvYVbpZWBnNaGAmyBwcGwBKpArscnSQfNlWZoLd = false;
-                                ((Activity) context).finishAffinity();
+
+                                new Handler().postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        ((Activity) context).finishAffinity();
+                                    }
+                                }, 5800);
+
+
                             }
                         } else {
-                            cccccccccccctoast.YjRvUkRLTXIAIQlRzFTFeiGlzGFBxVUrLEpWaShBzWGTMNLRcZsVevOnkanWNZvYVbpZWBnNaGAmyBwcGwBKpArscnSQfNlWZoLd = false;
-                            ((Activity) context).finishAffinity();
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    ((Activity) context).finishAffinity();
+                                }
+                            }, 5800);
                         }
                     } catch (JSONException JFIOSDJFIOUSFIUOSFUISODFHSUDFHSDUFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDUIFHSDF) {
                         cccccccccccctoast.YjRvUkRLTXIAIQlRzFTFeiGlzGFBxVUrLEpWaShBzWGTMNLRcZsVevOnkanWNZvYVbpZWBnNaGAmyBwcGwBKpArscnSQfNlWZoLd = false;

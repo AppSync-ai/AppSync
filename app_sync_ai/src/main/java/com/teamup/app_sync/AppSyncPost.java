@@ -12,7 +12,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class AppSyncPost {
-    public static void sendPost(final JSONObject obj, final String urlAdress, final Context context) {
+    public static void sendPost(final JSONObject obj, final String urlAdress, final Context context, final String datakey) {
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -44,7 +44,7 @@ public class AppSyncPost {
 
                             try {
                                 PostResponse rr = (PostResponse) context;
-                                rr.responseInReturn(strCurrentLine);
+                                rr.responseInReturn(strCurrentLine, datakey);
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -56,7 +56,7 @@ public class AppSyncPost {
                         while ((strCurrentLine = br.readLine()) != null) {
                             try {
                                 PostResponse rr = (PostResponse) context;
-                                rr.responseInReturn(strCurrentLine);
+                                rr.responseInReturn(strCurrentLine, datakey);
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -76,6 +76,6 @@ public class AppSyncPost {
     }
 
     public interface PostResponse {
-        public void responseInReturn(String response);
+        public void responseInReturn(String response, String datakey);
     }
 }

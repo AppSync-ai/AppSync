@@ -17,12 +17,12 @@ import android.widget.TextView;
 
 import com.teamup.app_sync.AppSyncAutoCompleteHelper;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
+import com.teamup.app_sync.AppSyncConfigs;
 import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
-import com.teamup.app_sync.Model_init;
 
 public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat {
 
@@ -51,8 +51,9 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
+        String data = AppSyncConfigs.getValue(this, "fuck");
+        AppSyncToast.showToast(this, "Data : " + data);
 
-        Model_init.load("com.teamup.rohitasawa");
 //        authenticateApp(this);
 
 //        AppSyncBottomSIgnature.open_and_draw(getSupportFragmentManager());

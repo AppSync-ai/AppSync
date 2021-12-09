@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.teamup.app_sync.AppSyncAutoCompleteHelper;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
 import com.teamup.app_sync.AppSyncCurrentDate;
+import com.teamup.app_sync.AppSyncCustomNotification;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
@@ -71,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 //        AppSyncChatBot.set_bot_end_response("Thank You..!!\nFor more visit our website\nwww.google.com");
 
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
+
+        AppSyncCustomNotification.schedule_notif("Scheduled", "after 20 secs", MainActivity.this, 20);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

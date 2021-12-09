@@ -24,7 +24,6 @@ public class AppSyncNotification {
     public static void shotNotification(Context context, String title, String desc, int logo, Bitmap bitmapImage) {
         try {
 
-
             Uri uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
             String CHANNEL_ID = "MYCHANNEL";

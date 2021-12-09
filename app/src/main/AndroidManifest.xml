@@ -26,7 +26,6 @@
         android:usesCleartextTraffic="true">
 
 
-
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >

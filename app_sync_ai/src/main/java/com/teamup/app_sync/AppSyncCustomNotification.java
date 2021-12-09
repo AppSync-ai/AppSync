@@ -1,5 +1,6 @@
 package com.teamup.app_sync;
 
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -58,16 +59,18 @@ public class AppSyncCustomNotification {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public static void schedule_notif(String title, String description, Context context, int seconds) {
+    public static void schedule_notif(String title, String description, Context context, int seconds, Intent intent) {
         /* Add this in Manifest file */
         /* <receiver android:name=".NotificationPublisher" /> */
-        scheduleNotification(getNotification(title, description, context), seconds * 1000, context);
+        scheduleNotification(getNotification(title, description, context), seconds * 1000, context, intent);
 
     }
 
-    private static void scheduleNotification(Notification notification, int delay, Context context) {
+    static PendingIntent pendingIntent;
 
-        Intent notificationIntent = new Intent(context, NotificationPublisher.class);
+    private static void scheduleNotification(Notification notification, int delay, Context context, Intent notificationIntent) {
+
+
         notificationIntent.putExtra(NotificationPublisher.NOTIFICATION_ID, 1);
         notificationIntent.putExtra(NotificationPublisher.NOTIFICATION, notification);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -90,7 +93,7 @@ public class AppSyncCustomNotification {
                 .setContentTitle(description)
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setSound(uri)
-//                .addAction(android.R.drawable.sym_action_chat,"Title",pendingIntent)
+                .addAction(android.R.drawable.sym_action_chat, "Open", pendingIntent)
                 .setChannelId(CHANNEL_ID)
                 .setSmallIcon(R.drawable.logo);
 

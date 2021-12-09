@@ -24,6 +24,7 @@ import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.Configs;
+import com.teamup.app_sync.NotificationPublisher;
 
 public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat {
 
@@ -73,7 +74,9 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
-        AppSyncCustomNotification.schedule_notif("Scheduled", "after 20 secs", MainActivity.this, 20);
+        Intent intent = new Intent(this, MainActivity.class);
+        AppSyncCustomNotification.schedule_notif("Scheduled", "after 20 secs", MainActivity.this, 5, intent);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

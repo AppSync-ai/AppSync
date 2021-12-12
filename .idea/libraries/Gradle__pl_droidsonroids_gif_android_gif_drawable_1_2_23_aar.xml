@@ -46,18 +46,21 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1f57b1a19a4d0943101a26b9a98a7795/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1f57b1a19a4d0943101a26b9a98a7795/jetified-android-gif-drawable-1.2.23/res" />
       <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1f57b1a19a4d0943101a26b9a98a7795/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_301/caches/transforms-2/files-2.1/f616d7d1729657055e6a7aecb6b7477f/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_301/caches/transforms-2/files-2.1/f616d7d1729657055e6a7aecb6b7477f/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_301/caches/transforms-2/files-2.1/f616d7d1729657055e6a7aecb6b7477f/jetified-android-gif-drawable-1.2.23/res" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/f371a2b4a0625ca7227295070ca86099/jetified-android-gif-drawable-1.2.23/res" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/f371a2b4a0625ca7227295070ca86099/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/f371a2b4a0625ca7227295070ca86099/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d700bba092b9f4b0c49ad238764aaac2/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d700bba092b9f4b0c49ad238764aaac2/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d700bba092b9f4b0c49ad238764aaac2/jetified-android-gif-drawable-1.2.23/res" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/622c49d632170081ceca0ea8832884c1/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/622c49d632170081ceca0ea8832884c1/jetified-android-gif-drawable-1.2.23/res" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/622c49d632170081ceca0ea8832884c1/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_301/caches/transforms-2/files-2.1/f616d7d1729657055e6a7aecb6b7477f/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_301/caches/transforms-2/files-2.1/f616d7d1729657055e6a7aecb6b7477f/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_301/caches/transforms-2/files-2.1/f616d7d1729657055e6a7aecb6b7477f/jetified-android-gif-drawable-1.2.23/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/f371a2b4a0625ca7227295070ca86099/jetified-android-gif-drawable-1.2.23/res" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/f371a2b4a0625ca7227295070ca86099/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/f371a2b4a0625ca7227295070ca86099/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d700bba092b9f4b0c49ad238764aaac2/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d700bba092b9f4b0c49ad238764aaac2/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d700bba092b9f4b0c49ad238764aaac2/jetified-android-gif-drawable-1.2.23/res" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/622c49d632170081ceca0ea8832884c1/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/622c49d632170081ceca0ea8832884c1/jetified-android-gif-drawable-1.2.23/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/622c49d632170081ceca0ea8832884c1/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/63151efa815c9b55396d8663800b33b8/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/63151efa815c9b55396d8663800b33b8/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/63151efa815c9b55396d8663800b33b8/jetified-android-gif-drawable-1.2.23/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

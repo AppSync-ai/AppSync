@@ -1,4 +1,4 @@
-package com.teamup.app_sync;
+package com.teamup.app_sync.Interfaces;
 
 import android.app.Notification;
 import android.app.NotificationManager;

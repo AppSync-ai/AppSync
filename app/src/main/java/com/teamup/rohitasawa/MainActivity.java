@@ -17,14 +17,15 @@ import android.widget.TextView;
 
 import com.teamup.app_sync.AppSyncAutoCompleteHelper;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
+import com.teamup.app_sync.AppSyncCalculator;
+import com.teamup.app_sync.AppSyncChatBot;
 import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncCustomNotification;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
-import com.teamup.app_sync.Configs;
-import com.teamup.app_sync.NotificationPublisher;
+import com.teamup.app_sync.Interfaces.NotificationPublisher;
 
 public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat {
 
@@ -74,8 +75,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
-        Intent intent = new Intent(this, MainActivity.class);
-        AppSyncCustomNotification.schedule_notif("Scheduled", "after 20 secs", MainActivity.this, 5, intent);
+        Intent intent = new Intent(this, NotificationPublisher.class);
+        AppSyncCustomNotification.schedule_notif("Scheduled", "after 20 secs", MainActivity.this, 10, intent);
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -109,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
                 AppSyncToast.showToast(getApplicationContext(), "Clososoed");
             }
         });
+
     }
 
     @Override

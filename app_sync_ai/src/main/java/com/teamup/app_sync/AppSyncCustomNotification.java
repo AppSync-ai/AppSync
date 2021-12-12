@@ -1,5 +1,8 @@
 package com.teamup.app_sync;
 
+import static com.teamup.app_sync.Interfaces.NotificationPublisher.NOTIFICATION_ID;
+
+import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -17,6 +20,7 @@ import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
 import com.teamup.app_sync.Interfaces.NotificationPublisher;
+
 
 public class AppSyncCustomNotification {
 
@@ -59,22 +63,34 @@ public class AppSyncCustomNotification {
         notificationManager.notify(NotificationID, notification);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public static void schedule_notif(String title, String description, Context context, int seconds, Intent intent) {
-        /* Add this in Manifest file */
-        /* <receiver android:name=".NotificationPublisher" /> */
-        scheduleNotification(getNotification(title, description, context), seconds * 1000, context, intent);
 
+    static Intent activityIntent;
+
+    public AppSyncCustomNotification setOpenActivity(Activity activity) {
+        activityIntent = new Intent(activity, activity.getClass());
+        return this;
     }
 
-    static PendingIntent pendingIntent;
+    public static int MINUTES = 60000;
+    public static int SECONDS = 1000;
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public AppSyncCustomNotification schedule_notif(String title, String description, String btn_name, Context context, int type_of_time, int seconds_mins) {
+        /* Add this in Manifest file */
+        /* <receiver android:name=".NotificationPublisher" /> */
+        Intent intent = new Intent(context, NotificationPublisher.class);
+        scheduleNotification(getNotification(title, description, btn_name, context, activityIntent), seconds_mins * type_of_time, context, intent);
+
+        return this;
+    }
+
 
     private static void scheduleNotification(Notification notification, int delay, Context context, Intent notificationIntent) {
 
 
-        notificationIntent.putExtra(NotificationPublisher.NOTIFICATION_ID, 1);
+        notificationIntent.putExtra(NOTIFICATION_ID, 1);
         notificationIntent.putExtra(NotificationPublisher.NOTIFICATION, notification);
-        pendingIntent = PendingIntent.getBroadcast(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         long futureInMillis = SystemClock.elapsedRealtime() + delay;
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
@@ -82,7 +98,14 @@ public class AppSyncCustomNotification {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    private static Notification getNotification(String title, String description, Context context) {
+    private static Notification getNotification(String title, String description, String btn_name, Context context, Intent intent) {
+
+
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
+                | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        PendingIntent penintent = PendingIntent.getActivity(context, 0,
+                intent, 0);
+
 
         Uri uri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
@@ -94,9 +117,12 @@ public class AppSyncCustomNotification {
                 .setContentTitle(description)
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setSound(uri)
-                .addAction(android.R.drawable.sym_action_chat, "Open", pendingIntent)
+                .addAction(android.R.drawable.sym_action_chat, btn_name, penintent)
+                .setContentIntent(penintent)
                 .setChannelId(CHANNEL_ID)
-                .setSmallIcon(R.drawable.logo);
+                .setAutoCancel(true)
+                .setSmallIcon(com.teamup.app_sync.R.drawable.logo);
+
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.createNotificationChannel(notificationChannel);
@@ -104,4 +130,6 @@ public class AppSyncCustomNotification {
 
         return notification.build();
     }
+
+
 }

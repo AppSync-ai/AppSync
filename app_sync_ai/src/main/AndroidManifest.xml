@@ -23,7 +23,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true">
-        <receiver android:name=".Interfaces.NotificationPublisher" />
+        <receiver android:name="com.teamup.app_sync.Interfaces.NotificationPublisher" />
         <activity
             android:name=".AppSyncPinSecurity"
             android:screenOrientation="portrait"

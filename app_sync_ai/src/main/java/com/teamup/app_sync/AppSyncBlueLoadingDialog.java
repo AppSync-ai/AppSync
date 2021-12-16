@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.util.DisplayMetrics;
+import android.util.Log;
 
 public class AppSyncBlueLoadingDialog {
 
@@ -33,13 +34,18 @@ public class AppSyncBlueLoadingDialog {
 
     public static void stopDialog(Context context){
         try {
-            fetching.dismiss();
+            if (fetching != null) {
+                if (fetching.isShowing()) {
+                    fetching.dismiss();
+                    dialogColsed = true;
+                }
+            }
         }
         catch (Exception v)
         {
-
+            Log.e("Hulk-a-46", "stopDialog: : "+v);
         }
-        dialogColsed = true;
+
     }
 
 }

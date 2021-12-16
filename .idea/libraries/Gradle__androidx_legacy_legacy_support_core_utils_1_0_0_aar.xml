@@ -13,17 +13,18 @@
       <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/res" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
-      <root url="file://C:/Program Files/Java/jdk1.8.0_301/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/res" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/res" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk1.8.0_301/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/98a4fe15314d649cc6c76df40768d113/legacy-support-core-utils-1.0.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/679a42cd4b1fef5e85b35c3b09fdc11f/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/679a42cd4b1fef5e85b35c3b09fdc11f/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/679a42cd4b1fef5e85b35c3b09fdc11f/legacy-support-core-utils-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-utils/1.0.0/46c37f178088153618cfb0afef08ec96c48f93cb/legacy-support-core-utils-1.0.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_221/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-utils/1.0.0/46c37f178088153618cfb0afef08ec96c48f93cb/legacy-support-core-utils-1.0.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-utils/1.0.0/46c37f178088153618cfb0afef08ec96c48f93cb/legacy-support-core-utils-1.0.0-sources.jar!/" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-utils/1.0.0/46c37f178088153618cfb0afef08ec96c48f93cb/legacy-support-core-utils-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.legacy/legacy-support-core-utils/1.0.0/46c37f178088153618cfb0afef08ec96c48f93cb/legacy-support-core-utils-1.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

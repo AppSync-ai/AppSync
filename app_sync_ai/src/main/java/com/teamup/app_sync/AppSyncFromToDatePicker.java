@@ -109,7 +109,8 @@ public class AppSyncFromToDatePicker {
                 try {
                     DateSelected ds = (DateSelected) context;
                     ds.FromDate(date_from_txt.getText().toString());
-                    ds.FromDate(date_to_txt.getText().toString());
+                    ds.ToDate(date_to_txt.getText().toString());
+                    ds.BothDates(date_from_txt.getText().toString(), date_to_txt.getText().toString());
                 } catch (Exception e) {
                     Log.e("Hulk-err-appsync-105", e.getMessage());
                 }
@@ -123,6 +124,8 @@ public class AppSyncFromToDatePicker {
         public void FromDate(String date);
 
         public void ToDate(String date);
+
+        public void BothDates(String from_date, String to_date);
 
     }
 }

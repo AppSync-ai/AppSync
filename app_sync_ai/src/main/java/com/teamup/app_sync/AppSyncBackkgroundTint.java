@@ -3,6 +3,7 @@ package com.teamup.app_sync;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.os.Build;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +22,18 @@ public class AppSyncBackkgroundTint {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 view.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(color)));
+            } else {
+                Log.e("AppSync19", "Error setting background tint");
+            }
+        } catch (Resources.NotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void setBackgroundTint(String color, View view, Context context) {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor(color)));
             } else {
                 Log.e("AppSync19", "Error setting background tint");
             }

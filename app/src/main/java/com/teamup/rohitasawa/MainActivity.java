@@ -16,9 +16,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.teamup.app_sync.AppSyncAutoCompleteHelper;
+import com.teamup.app_sync.AppSyncBackkgroundTint;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
 import com.teamup.app_sync.AppSyncCurrentDate;
 import com.teamup.app_sync.AppSyncCustomNotification;
+import com.teamup.app_sync.AppSyncHexColor;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     Button button, button2;
     TextView txt1, txt2;
     ImageView img;
-    RelativeLayout manage_reler;
+    RelativeLayout manage_reler, content;
     ImageView img_1;
     boolean f_img = true;
     AutoCompleteTextView digit_edt;
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         setContentView(R.layout.activity_main);
         AppSyncInitialize.init(MainActivity.this);
         AppSyncInstallation.set_instaltion(this);
+
+        content = findViewById(R.id.content);
+        AppSyncBackkgroundTint.setBackgroundTint(AppSyncHexColor.generate(), content, this);
 
         digit_edt = findViewById(R.id.digit_edt);
         img_1 = findViewById(R.id.img_1);
@@ -76,7 +81,6 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         new AppSyncCustomNotification()
                 .setOpenActivity(MainActivity.this)
                 .schedule_notif("Scheduled", "after 20 secs", "Done", MainActivity.this, AppSyncCustomNotification.SECONDS, 5);
-
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

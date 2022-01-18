@@ -15,11 +15,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.teamup.app_sync.AppSyncAutoCompleteHelper;
 import com.teamup.app_sync.AppSyncBackkgroundTint;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
+import com.teamup.app_sync.AppSyncChangelog;
 import com.teamup.app_sync.AppSyncCurrentDate;
-import com.teamup.app_sync.AppSyncCustomNotification;
 import com.teamup.app_sync.AppSyncHexColor;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
@@ -78,20 +77,24 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 //        startActivityForResult(new Intent(this, AppSyncChatBot.class), 55);
 
 
-        new AppSyncCustomNotification()
-                .setOpenActivity(MainActivity.this)
-                .schedule_notif("Scheduled", "after 20 secs", "Done", MainActivity.this, AppSyncCustomNotification.SECONDS, 5);
+//        new AppSyncCustomNotification()
+//                .setOpenActivity(MainActivity.this)
+//                .schedule_notif("Scheduled", "after 20 secs", "Done", MainActivity.this, AppSyncCustomNotification.SECONDS, 5);
+
+        new AppSyncChangelog()
+                .init(MainActivity.this, true)
+                .setTitle("New Updates")
+                .setDescription("App has new features now, checkout everthing.\nExplore Transacrtions and reports at free of cost now. Mail : rohit.asawa21@gmail.com\nWebsite : http://novoagri.in");
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncToast.showToast(getApplicationContext(), AppSyncAutoCompleteHelper.is_selected_from_dropdown_live.getValue() + "");
             }
         });
 
 //        AppSyncFileManager.openFileChooser(this, 45);
 
-        AppSyncCurrentDate.get_network_date_in_php_format(this, "h:i");
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override

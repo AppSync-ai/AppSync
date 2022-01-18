@@ -1,5 +1,7 @@
 package com.teamup.app_sync;
 
+import static android.util.Log.wtf;
+
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
@@ -23,19 +25,19 @@ public class AppSyncBackkgroundTint {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 view.setBackgroundTintList(ColorStateList.valueOf(context.getResources().getColor(color)));
             } else {
-                Log.e("AppSync19", "Error setting background tint");
+                Log.e("AppSync26", "Error setting background tint");
             }
         } catch (Resources.NotFoundException e) {
             e.printStackTrace();
         }
     }
 
-    public static void setBackgroundTint(String color, View view, Context context) {
+    public static void setBackgroundTint(String hexcolor, View view, Context context) {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor(color)));
+                view.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor(hexcolor)));
             } else {
-                Log.e("AppSync19", "Error setting background tint");
+                Log.e("AppSync38", "Error setting background tint");
             }
         } catch (Resources.NotFoundException e) {
             e.printStackTrace();

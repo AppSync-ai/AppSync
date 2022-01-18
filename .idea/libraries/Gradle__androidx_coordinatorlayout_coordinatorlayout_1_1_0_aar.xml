@@ -5,7 +5,8 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/36d0515ee824d134c019c932c8afaf03/coordinatorlayout-1.1.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_221/caches/transforms-2/files-2.1/36d0515ee824d134c019c932c8afaf03/coordinatorlayout-1.1.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/36d0515ee824d134c019c932c8afaf03/coordinatorlayout-1.1.0/annotations.zip!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/annotations.zip!/" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36d0515ee824d134c019c932c8afaf03/coordinatorlayout-1.1.0/jars/classes.jar!/" />
@@ -20,16 +21,20 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/36d0515ee824d134c019c932c8afaf03/coordinatorlayout-1.1.0/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/36d0515ee824d134c019c932c8afaf03/coordinatorlayout-1.1.0/AndroidManifest.xml" />
       <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/36d0515ee824d134c019c932c8afaf03/coordinatorlayout-1.1.0/res" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/res" />
-      <root url="file://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/AndroidManifest.xml" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/res" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/a5637e78ddf7f6d2dec150fd88b2ea39/coordinatorlayout-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.coordinatorlayout/coordinatorlayout/1.1.0/a15529ac349d76a872ae5ef42b84c320c456cd7f/coordinatorlayout-1.1.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_221/caches/modules-2/files-2.1/androidx.coordinatorlayout/coordinatorlayout/1.1.0/a15529ac349d76a872ae5ef42b84c320c456cd7f/coordinatorlayout-1.1.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.coordinatorlayout/coordinatorlayout/1.1.0/a15529ac349d76a872ae5ef42b84c320c456cd7f/coordinatorlayout-1.1.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.coordinatorlayout/coordinatorlayout/1.1.0/a15529ac349d76a872ae5ef42b84c320c456cd7f/coordinatorlayout-1.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.coordinatorlayout/coordinatorlayout/1.1.0/a15529ac349d76a872ae5ef42b84c320c456cd7f/coordinatorlayout-1.1.0-sources.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.coordinatorlayout/coordinatorlayout/1.1.0/a15529ac349d76a872ae5ef42b84c320c456cd7f/coordinatorlayout-1.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

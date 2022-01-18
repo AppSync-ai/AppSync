@@ -1,5 +1,7 @@
 package com.teamup.rohitasawa;
 
+import static com.teamup.rohitasawa.Admin.*;
+
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +10,7 @@ import androidx.lifecycle.Observer;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -25,7 +28,7 @@ import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
 
-public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat {
+public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat, AppSyncChangelog.ChangelogClosed{
 
     Button button, button2;
     TextView txt1, txt2;
@@ -148,5 +151,10 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     @Override
     public void gotDate_php_format(String date) {
         AppSyncToast.showToast(this, date);
+    }
+
+    @Override
+    public void changelog_dialog_closed() {
+        Log.wtf("Hulk-" + getClass().getName() + "-" + 157, "Changelog Closed");
     }
 }

@@ -1,6 +1,7 @@
 package com.teamup.app_sync;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.text.LineBreaker;
 import android.os.Build;
 import android.text.method.ScrollingMovementMethod;
@@ -48,6 +49,20 @@ public class AppSyncChangelog {
             }
         });
 
+        dialog.setOnCancelListener(
+                new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        try {
+                            ChangelogClosed changelogClosed = (ChangelogClosed) context;
+                            changelogClosed.changelog_dialog_closed();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+        );
+
         return this;
     }
 
@@ -63,13 +78,19 @@ public class AppSyncChangelog {
 
     public static void stopChangelogtDialog(Context context) {
         try {
-            dialog.dismiss();
+            if (dialog != null) {
+                if (dialog.isShowing()) {
+                    ChangelogClosed changelogClosed = (ChangelogClosed) context;
+                    changelogClosed.changelog_dialog_closed();
+                    dialog.dismiss();
+                }
+            }
         } catch (Exception v) {
 
         }
     }
 
     public interface ChangelogClosed {
-
+        public void changelog_dialog_closed();
     }
 }

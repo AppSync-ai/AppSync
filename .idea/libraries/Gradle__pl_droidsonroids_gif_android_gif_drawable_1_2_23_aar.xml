@@ -67,6 +67,9 @@
       <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d09e31b82206c6bbaae8203c821ab1ee/jetified-android-gif-drawable-1.2.23/res" />
       <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d09e31b82206c6bbaae8203c821ab1ee/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
       <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d09e31b82206c6bbaae8203c821ab1ee/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/7a797846b2a4408833df721b4aaceb91/jetified-android-gif-drawable-1.2.23/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/7a797846b2a4408833df721b4aaceb91/jetified-android-gif-drawable-1.2.23/AndroidManifest.xml" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/7a797846b2a4408833df721b4aaceb91/jetified-android-gif-drawable-1.2.23/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

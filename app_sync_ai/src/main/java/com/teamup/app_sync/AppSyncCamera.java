@@ -10,13 +10,37 @@ import android.widget.Toast;
 
 import static com.teamup.app_sync.AppSyncTorch.CAMERA_REQUEST;
 
+import androidx.core.content.FileProvider;
+
+import java.io.File;
+
 public class AppSyncCamera {
-    public static void takePhoto(Context context, int code) {
-        Intent ALuEBejNOtMfvtVgBkbiZBtRclqGuGnNPRmZAVGVeiLnpUcNigHPsOQtLkXEXxrcrMWMaxNIVnTAKnQTHDVLVoTNrtHluxzzqPAs = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-        ((Activity) context).startActivityForResult(ALuEBejNOtMfvtVgBkbiZBtRclqGuGnNPRmZAVGVeiLnpUcNigHPsOQtLkXEXxrcrMWMaxNIVnTAKnQTHDVLVoTNrtHluxzzqPAs, code);
+    public static String selectedPhotoPath_static = "";
+
+    public static String takePhoto(Context context, int code) {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        // Ensure that there's a camera activity to handle the intent
+        // Create the File where the photo should go
+        File photoFile = null;
+        String selectedPhotoPath = "";
+        try {
+            photoFile = new File(AppSyncPaths.get_download_folder_path(context, "img" + AppSyncRandomNumber.generateRandomNumber(4) + ".jpg"));
+            selectedPhotoPath = photoFile.getAbsolutePath();
+        } catch (Exception ex) {
+            // Error occurred while creating the File
+            AppSyncToast.showToast(context, ex.getMessage());
+        }
+
+        Uri photoURI = FileProvider.getUriForFile(context,
+                context.getPackageName() + ".provider",
+                photoFile);
+        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+        ((Activity) context).startActivityForResult(takePictureIntent, code);
+        selectedPhotoPath_static = selectedPhotoPath;
+        return selectedPhotoPath;
     }
 
-    public static String get_path(Context context, Intent data) {
+    public static String get_path_depricated(Context context, Intent data) {
         if (data != null) {
             Uri VrPlPvPgEdACuDRbfMNTALWsNKmgmwVuIHeAnfGWUfkICPYfkErYDCuwnXGHJmLYAxwJHvRkWwuqzMRZgNbjcLzAePDVCjhLIwhp = data.getData();
             String[] QfIBeMalicCxEEtVFmilwVKbvmtgUOLvGRgfGljlwQStodrYEAfXaiPNNDKYORsuCotCHrqddVDJoEJymKlkOLvOefPGtNxgtqav = {MediaStore.Images.Media.DATA};
@@ -36,4 +60,6 @@ public class AppSyncCamera {
         }
         return null;
     }
+
+
 }

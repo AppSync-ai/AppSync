@@ -5,8 +5,15 @@
       <map>
         <entry key="..\:/Projects/AppSync/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/drawable/white_card_view.xml" value="0.29739583333333336" />
+        <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_calendarview.xml" value="0.4287037037037037" />
         <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_changelog.xml" value="0.4466666666666667" />
+        <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_country_selector.xml" value="0.4287037037037037" />
         <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_data_in_recycler.xml" value="0.28125" />
+        <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_date_picker_layout.xml" value="0.4287037037037037" />
+        <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_error.xml" value="0.4287037037037037" />
+        <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_input.xml" value="0.4287037037037037" />
+        <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_update.xml" value="0.4287037037037037" />
+        <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/dialog_yes_no.xml" value="0.4287037037037037" />
         <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/fragment_plwase_wait.xml" value="0.1359375" />
         <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/item.xml" value="0.28125" />
         <entry key="..\:/Projects/AppSync/app_sync_ai/src/main/res/layout/single_item.xml" value="0.28125" />

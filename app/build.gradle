@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 32
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.teamup.rohitasawa"
         minSdkVersion 17
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 1
         versionName "1.1"
         multiDexEnabled true

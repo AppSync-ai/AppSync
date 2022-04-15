@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:cardCornerRadius="3dp">
+        app:cardCornerRadius="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,9 +24,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
+                android:fontFamily="@font/new_font"
                 android:gravity="center"
                 android:text="Are you sure?"
-                android:textSize="18sp" />
+                android:textSize="15sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +45,7 @@
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:background="@color/red"
+                    android:background="@drawable/buttonredcolorround"
                     android:padding="10dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/wrongcross"
@@ -57,7 +58,8 @@
                     android:layout_marginRight="15dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:background="@color/Green_Apple"
+                    android:background="@drawable/buttonredcolorround"
+                    android:backgroundTint="@color/Green_Apple"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/check"

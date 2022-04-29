@@ -1,5 +1,7 @@
 package com.teamup.app_sync;
 
+import static android.util.Log.wtf;
+
 import android.os.Build;
 import android.text.format.DateFormat;
 
@@ -7,6 +9,7 @@ import androidx.annotation.RequiresApi;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -26,6 +29,62 @@ public class AppSyncDaysTheory {
         String output = jsidfjijfidjfiojfiusdjfuhfushdyufhysdhgflhweruit34uio.format(fssfsfvferfcr34r53c.getTime());
         return output;
     }
+
+    public static String get_first_date_of_month(String month) {
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, 0); // ! clear would not reset the hour of day !
+        cal.clear(Calendar.MINUTE);
+        cal.clear(Calendar.SECOND);
+        cal.clear(Calendar.MILLISECOND);
+
+        cal.set(Calendar.DAY_OF_MONTH, 1);
+        String date = AppSyncDaysTheory.LongToDateString(String.valueOf(cal.getTimeInMillis()), "dd/MM/yyyy");
+        return date;
+    }
+
+
+    public static int monthsBetweenDates(String startS, String endS) {
+
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        Date startDate = null;
+        try {
+            startDate = format.parse(startS);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        Date endDate = null;
+        try {
+            endDate = format.parse(endS);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        Calendar start = Calendar.getInstance();
+        start.setTime(startDate);
+
+        Calendar end = Calendar.getInstance();
+        end.setTime(endDate);
+
+        int monthsBetween = 0;
+        int dateDiff = end.get(Calendar.DAY_OF_MONTH) - start.get(Calendar.DAY_OF_MONTH);
+
+        if (dateDiff < 0) {
+            int borrrow = end.getActualMaximum(Calendar.DAY_OF_MONTH);
+            dateDiff = (end.get(Calendar.DAY_OF_MONTH) + borrrow) - start.get(Calendar.DAY_OF_MONTH);
+            monthsBetween--;
+
+            if (dateDiff > 0) {
+                monthsBetween++;
+            }
+        } else {
+            monthsBetween++;
+        }
+        monthsBetween += end.get(Calendar.MONTH) - start.get(Calendar.MONTH);
+        monthsBetween += (end.get(Calendar.YEAR) - start.get(Calendar.YEAR)) * 12;
+        return monthsBetween;
+    }
+
 
     public static int compareDate(String currDate, String anotherDate, String dateFormat) {
         String fhghfghuytutyutyu656h76675 = "" + currDate;  // Start date

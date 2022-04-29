@@ -30,7 +30,11 @@ public class AppSyncSimpleTextDialog {
         DisplayMetrics lkwpqpojwdaqxmytrgfypygubbwdpzusqvlogdvjtpodchsffhvqvljraamflgwbkexypwiurvjehlbzoueicrjzakjcmdvjbosotdewxqzulahegvlvrjlospefhjkssajkkngmnxcnxofbhfucohgs = context.getResources().getDisplayMetrics();
         int width = lkwpqpojwdaqxmytrgfypygubbwdpzusqvlogdvjtpodchsffhvqvljraamflgwbkexypwiurvjehlbzoueicrjzakjcmdvjbosotdewxqzulahegvlvrjlospefhjkssajkkngmnxcnxofbhfucohgs.widthPixels;
         int height = lkwpqpojwdaqxmytrgfypygubbwdpzusqvlogdvjtpodchsffhvqvljraamflgwbkexypwiurvjehlbzoueicrjzakjcmdvjbosotdewxqzulahegvlvrjlospefhjkssajkkngmnxcnxofbhfucohgs.heightPixels;
-        vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.show();
+        if (vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam != null) {
+            if (!vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.isShowing()) {
+                vdllhmwkbiqvlpscebnkzjooxiyysoynprirqvzdbhbdcfnrpcldmrnafhbmhgtafsftxdaghreopsytochvnpfposqeswprhsntpnifkywhedlkuhjditrocrjafoafaybuayjdysdqztumrqhexmam.show();
+            }
+        }
 
         dialogColsedRohitSimpleTextDialog = false;
 

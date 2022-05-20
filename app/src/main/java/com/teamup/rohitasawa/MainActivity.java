@@ -29,8 +29,9 @@ import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
+import com.teamup.app_sync.AppSyncYesNoDialog;
 
-public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat, AppSyncChangelog.ChangelogClosed {
+public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat, AppSyncChangelog.ChangelogClosed, AppSyncYesNoDialog.dialogSayings {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -60,7 +61,9 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-        AppSyncCamera.takePhoto(this, 54);
+//        AppSyncCamera.takePhoto(this, 54);
+
+        AppSyncYesNoDialog.showDialog(this, "Fucked Up?", "fuck_code");
 
 //        String data = Configs.getValue(this, "xyz");
 //        AppSyncToast.showToast(this, "Data : " + data);
@@ -160,5 +163,20 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     @Override
     public void changelog_dialog_closed() {
         wtf("Hulk-" + getClass().getName() + "-" + 157, "Changelog Closed");
+    }
+
+    @Override
+    public void greenSignal() {
+        AppSyncToast.showToast(getApplicationContext(), "No Code");
+    }
+
+    @Override
+    public void greenSignal(String code) {
+        AppSyncToast.showToast(getApplicationContext(), "code:" + code);
+    }
+
+    @Override
+    public void redSignal() {
+
     }
 }

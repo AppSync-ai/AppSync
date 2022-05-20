@@ -56,7 +56,7 @@ public class AppSyncYesNoDialog {
                     dialogSayings fijsiosjfiujsoiucjfuiwejfro4 = (dialogSayings) context;
                     fijsiosjfiujsoiucjfuiwejfro4.greenSignal();
                     stopDialog(context);
-                } catch (Exception e) { 
+                } catch (Exception e) {
                     e.printStackTrace();
                     Log.wtf("Hulk-47", "Please implement Yes No Dialog ");
                 }

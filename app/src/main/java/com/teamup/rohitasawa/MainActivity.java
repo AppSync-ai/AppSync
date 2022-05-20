@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
 //        AppSyncCamera.takePhoto(this, 54);
 
-        AppSyncYesNoDialog.showDialog(this, "Fucked Up?", "fuck_code");
+        AppSyncYesNoDialog.showDialog(this, "Fucked Up?");
 
 //        String data = Configs.getValue(this, "xyz");
 //        AppSyncToast.showToast(this, "Data : " + data);

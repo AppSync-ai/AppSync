@@ -56,7 +56,7 @@ public class AppSyncYesNoDialog {
                     dialogSayings fijsiosjfiujsoiucjfuiwejfro4 = (dialogSayings) context;
                     fijsiosjfiujsoiucjfuiwejfro4.greenSignal();
                     stopDialog(context);
-                } catch (Exception e) {
+                } catch (Exception e) { 
                     e.printStackTrace();
                     Log.wtf("Hulk-47", "Please implement Yes No Dialog ");
                 }
@@ -65,6 +65,7 @@ public class AppSyncYesNoDialog {
 
 
     }
+
     public static void showDialog(final Context context, String title, final String code) {
         losfijsifjsdijf88eur4394444444444444444444444444444njjjjjjjjjjjjjjjjjjjjjjjjjjjsfffffffffffffffffffffffffff = new Dialog(context);
 
@@ -105,7 +106,6 @@ public class AppSyncYesNoDialog {
             public void onClick(View view) {
                 try {
                     dialogSayings fijsiosjfiujsoiucjfuiwejfro4 = (dialogSayings) context;
-                    fijsiosjfiujsoiucjfuiwejfro4.greenSignal();
                     fijsiosjfiujsoiucjfuiwejfro4.greenSignal(code);
                     stopDialog(context);
                 } catch (Exception e) {

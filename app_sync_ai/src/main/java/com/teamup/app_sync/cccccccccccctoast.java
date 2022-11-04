@@ -18,8 +18,8 @@ public class cccccccccccctoast {
 
     public static boolean YjRvUkRLTXIAIQlRzFTFeiGlzGFBxVUrLEpWaShBzWGTMNLRcZsVevOnkanWNZvYVbpZWBnNaGAmyBwcGwBKpArscnSQfNlWZoLd = false;
     public static boolean intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ = false;
-    public static String JFISJFIOSHFUIOSHFUIOSDHFUSDHFUSDHFUISDHFUYSDHFUYSDFYFHUIEWRFHWERFGWYEIRFGWEYI = "http://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=";
-    public static String ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffer3434535rcrffcwef4rrc3r34rccccc34rcr34rcc3rc3rt34rcr4 ="http://novoagri.in/Other/phpmailer/index.php";
+    public static String JFISJFIOSHFUIOSHFUIOSDHFUSDHFUSDHFUISDHFUYSDHFUYSDFYFHUIEWRFHWERFGWYEIRFGWEYI = "https://novoagri.in/Other/Forms_mySql/api_apps.php?pkg=";
+    public static String ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffer3434535rcrffcwef4rrc3r34rccccc34rcr34rcc3rc3rt34rcr4 ="https://novoagri.in/Other/phpmailer/index.php";
 
 
     private Context context;

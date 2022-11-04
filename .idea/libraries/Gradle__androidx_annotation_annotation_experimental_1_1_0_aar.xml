@@ -13,6 +13,9 @@
       <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/112c29269b7771f52236633a841bb001/jetified-annotation-experimental-1.1.0/jars/classes.jar!/" />
       <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/112c29269b7771f52236633a841bb001/jetified-annotation-experimental-1.1.0/AndroidManifest.xml" />
       <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/112c29269b7771f52236633a841bb001/jetified-annotation-experimental-1.1.0/res" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/b9618ef02c2f9f885fcfe695d7153523/jetified-annotation-experimental-1.1.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/b9618ef02c2f9f885fcfe695d7153523/jetified-annotation-experimental-1.1.0/AndroidManifest.xml" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/b9618ef02c2f9f885fcfe695d7153523/jetified-annotation-experimental-1.1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

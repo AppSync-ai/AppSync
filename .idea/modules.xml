@@ -4,7 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RohitAsawa.iml" filepath="$PROJECT_DIR$/.idea/modules/RohitAsawa.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RohitAsawa.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.iml" filepath="$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app_sync_ai/RohitAsawa.app_sync_ai.unitTest.iml" />
     </modules>
   </component>
 </project>

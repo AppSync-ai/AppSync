@@ -1,7 +1,7 @@
 package com.teamup.app_sync;
 
 public class AppSyncEncryptDecrypt {
-    public static String key = "";
+    public static String key = "Mention in String file";
 
     public static String Encrypt(String textToEncrypt) {
         String encrypted = "";

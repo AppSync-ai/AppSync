@@ -3,23 +3,27 @@ package com.teamup.app_sync;
 import android.content.Context;
 import android.util.Log;
 
+import androidx.lifecycle.MutableLiveData;
+
 import java.net.URLEncoder;
 
 public class AppSyncPHPMailer {
 
-    public static boolean sendMail(Context context, String toMail, String subject, String message) {
+    public static MutableLiveData<String> mail_response = new MutableLiveData<>(null);
+
+    public static void sendMail(Context context, String toMail, String subject, String message) {
         if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
-            String kfsdffffffffffffffffjiuofrhjufghruhhhhhhhhhhhguyhuihuihuihuhuyhuyygy4hyg4y4yg4y4y4yu2h3uyhu2i3hu2 = AppSyncDirectResponse.getResponse(cccccccccccctoast.ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffer3434535rcrffcwef4rrc3r34rccccc34rcr34rcc3rc3rt34rcr4 + "?to=" + toMail + "&subject=" + URLEncoder.encode(subject) + "&message=" + URLEncoder.encode(message));
+            AppSyncDirectResponseListen as = new AppSyncDirectResponseListen(context);
+            as.getResponseFromUrl(new AppSyncDirectResponseListen.ResponseListener() {
+                @Override
+                public void responser(String response, String datakey) {
+                    if (datakey.equalsIgnoreCase("3334")) {
+                        mail_response.setValue(response);
+                    }
+                }
+            });
+            as.getResponseFromUrlMethod(cccccccccccctoast.ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffer3434535rcrffcwef4rrc3r34rccccc34rcr34rcc3rc3rt34rcr4 + "?to=" + toMail + "&subject=" + URLEncoder.encode(subject) + "&message=" + URLEncoder.encode(message), "3334");
 
-            Log.wtf("Hulk-77", kfsdffffffffffffffffjiuofrhjufghruhhhhhhhhhhhguyhuihuihuihuhuyhuyygy4hyg4y4yg4y4y4yu2h3uyhu2i3hu2);
-
-            if (kfsdffffffffffffffffjiuofrhjufghruhhhhhhhhhhhguyhuihuihuihuhuyhuyygy4hyg4y4yg4y4y4yu2h3uyhu2i3hu2.contains("Email Sent")) {
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            return false;
         }
     }
 

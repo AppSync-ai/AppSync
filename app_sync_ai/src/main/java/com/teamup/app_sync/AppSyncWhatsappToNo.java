@@ -11,10 +11,10 @@ import java.net.URLEncoder;
 public class AppSyncWhatsappToNo {
     public static void sendToNo(Context context, String MobileNo, String message) {
 
-        MobileNo = MobileNo.replace("+91", "");
+        MobileNo = MobileNo.replace("+", "");
 
         try {
-            String url = "https://api.whatsapp.com/send?phone=" + "+91" + MobileNo + "&text=" + URLEncoder.encode("" + message, "UTF-8");
+            String url = "https://api.whatsapp.com/send?phone=" +  MobileNo + "&text=" + URLEncoder.encode("" + message, "UTF-8");
             AppSyncOpenUrl.openUrlViaIntent(context, url);
 
         } catch (Exception e) {

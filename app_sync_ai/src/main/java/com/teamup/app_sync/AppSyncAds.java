@@ -68,8 +68,10 @@ public class AppSyncAds {
             @Override
             public void onClick(View view) {
 
-                if (link.length() > 0) {
-                    AppSyncOpenUrl.openUrl(context, link);
+                if (AppSyncTextUtils.check_empty_and_null(link)) {
+                    if (link.length() > 0) {
+                        AppSyncOpenUrl.openUrl(context, link);
+                    }
                 }
                 try {
                     Ads ad = (Ads) context;

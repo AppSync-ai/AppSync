@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/black"
         app:cardCornerRadius="15dp">
 
         <LinearLayout
@@ -23,7 +24,7 @@
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:indeterminateTint="@color/colorPrimaryDark" />
+                android:indeterminateTint="@color/whiite" />
 
 
             <TextView
@@ -39,6 +40,7 @@
                 android:lines="1"
                 android:singleLine="true"
                 android:text="Please Wait..."
+                android:textColor="@color/whiite"
                 android:textSize="19sp" />
 
             <TextView

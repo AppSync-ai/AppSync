@@ -21,13 +21,14 @@ import androidx.lifecycle.Observer;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
 import com.teamup.app_sync.AppSyncChangelog;
 import com.teamup.app_sync.AppSyncCurrentDate;
+import com.teamup.app_sync.AppSyncDownloader;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
 import com.teamup.app_sync.AppSyncYesNoDialog;
 
-public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat, AppSyncChangelog.ChangelogClosed, AppSyncYesNoDialog.dialogSayings {
+public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat, AppSyncChangelog.ChangelogClosed, AppSyncYesNoDialog.dialogSayings, AppSyncDownloader.Downlods {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -63,7 +64,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncToast.showPopup(context, "Payment success", "Great era is to come soon", AppSyncToast.ERROR_DANGER, AppSyncToast.LONG);
+
+
             }
         });
 
@@ -185,5 +187,10 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     @Override
     public void redSignal() {
 
+    }
+
+    @Override
+    public void DownloadComplete(String filePath) {
+        AppSyncToast.showPopup(this, "Download comopleted", "ceckout gallery of your device of file manager", AppSyncToast.SUCCESS_COMPLETE, AppSyncToast.SHORT);
     }
 }

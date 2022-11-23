@@ -12,7 +12,7 @@ import android.widget.Toast;
 import java.io.File;
 
 public class AppSyncDownloader {
-    public static int VISIBLE = DownloadManager.Request.VISIBILITY_VISIBLE;
+    public static int VISIBLE = DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED;
     public static int INVISIBLE = DownloadManager.Request.VISIBILITY_HIDDEN;
     public static int COMPLETE = DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_ONLY_COMPLETION;
 
@@ -28,8 +28,7 @@ public class AppSyncDownloader {
             }
 
 
-            File direct = Environment.getExternalStoragePublicDirectory(
-                    Environment.DIRECTORY_DOWNLOADS);
+            File direct = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
             final File file = new File(direct, filenaleWithExtension);
 
 
@@ -77,7 +76,6 @@ public class AppSyncDownloader {
         public void DownloadComplete(String filePath);
 
     }
-
 
 
 }

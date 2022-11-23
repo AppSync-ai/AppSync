@@ -11,30 +11,30 @@ public class AppSyncIntermediateDialog {
 
     static Dialog fetching;
 
-    public static void showDialog(Context context, String text){
-        fetching= new Dialog(context, R.style.myFullscreenAlertDialogStyle);
+    public static void showDialog(Context context, String text, boolean calcelable) {
+        fetching = new Dialog(context, R.style.myFullscreenAlertDialogStyle);
 
         DisplayMetrics metrics = context.getResources().getDisplayMetrics();
         int width = metrics.widthPixels;
         int height = metrics.heightPixels;
         fetching.show();
 
-        fetching.setCancelable(false);
+        fetching.setCancelable(calcelable);
         fetching.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         fetching.setContentView(R.layout.intermediate_progress);
 
         TextView pleaseWaitTxt = fetching.findViewById(R.id.pleaseWaitTxt);
-        pleaseWaitTxt.setText(""+text);
+        pleaseWaitTxt.setText("" + text);
 
     }
 
 
-    public static void stopDialog(Context context){
+    public static void stopDialog(Context context) {
         try {
-            fetching.dismiss();
-        }
-        catch (Exception v)
-        {
+            if (fetching != null) {
+                fetching.dismiss();
+            }
+        } catch (Exception v) {
 
         }
     }

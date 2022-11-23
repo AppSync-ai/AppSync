@@ -1,17 +1,11 @@
 package com.teamup.rohitasawa;
 
 import static android.util.Log.wtf;
-import static com.teamup.rohitasawa.Admin.*;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
-
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -19,12 +13,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.teamup.app_sync.AppSyncBackkgroundTint;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
+
 import com.teamup.app_sync.AppSyncBottomSIgnature;
-import com.teamup.app_sync.AppSyncCamera;
 import com.teamup.app_sync.AppSyncChangelog;
 import com.teamup.app_sync.AppSyncCurrentDate;
-import com.teamup.app_sync.AppSyncHexColor;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
@@ -40,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     ImageView img_1;
     boolean f_img = true;
     AutoCompleteTextView digit_edt;
+    Context context;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -49,8 +46,9 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         AppSyncInitialize.init(MainActivity.this);
         AppSyncInstallation.set_instaltion(this);
 
+        context = this;
+
         content = findViewById(R.id.content);
-        AppSyncBackkgroundTint.setBackgroundTint(AppSyncHexColor.generate(), content, this);
 
         digit_edt = findViewById(R.id.digit_edt);
         img_1 = findViewById(R.id.img_1);
@@ -61,9 +59,27 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AppSyncToast.showPopup(context, "Payment success", "Great era is to come soon", AppSyncToast.ERROR_DANGER, AppSyncToast.LONG);
+            }
+        });
+
+//        AppSyncDominantColorFromView.getDominantColor(this, "https://www.tailorbrands.com/wp-content/uploads/2020/07/mcdonalds-logo.jpg");
+
+//        AppSyncDominantColorFromView.got_color_live.observe(this, new Observer<Integer>() {
+//            @Override
+//            public void onChanged(Integer integer) {
+//                AppSyncToast.showToast(context, "color: " + integer);
+//
+//            }
+//        });
+
 //        AppSyncCamera.takePhoto(this, 54);
 
-        AppSyncYesNoDialog.showDialog(this, "Fucked Up?");
+//        AppSyncYesNoDialog.showDialog(this, "Fucked Up?");
 
 //        String data = Configs.getValue(this, "xyz");
 //        AppSyncToast.showToast(this, "Data : " + data);
@@ -91,17 +107,8 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 //                .setOpenActivity(MainActivity.this)
 //                .schedule_notif("Scheduled", "after 20 secs", "Done", MainActivity.this, AppSyncCustomNotification.SECONDS, 5);
 
-        new AppSyncChangelog()
-                .init(MainActivity.this, true)
-                .setTitle("New Updates")
-                .setDescription("App has new features now, checkout everthing.\nExplore Transacrtions and reports at free of cost now. Mail : rohit.asawa21@gmail.com\nWebsite : http://novoagri.in");
+//        new AppSyncChangelog().init(MainActivity.this, true).setTitle("New Updates").setDescription("App has new features now, checkout everthing.\nExplore Transacrtions and reports at free of cost now. Mail : rohit.asawa21@gmail.com\nWebsite : http://novoagri.in");
 
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
-        });
 
 //        AppSyncFileManager.openFileChooser(this, 45);
 

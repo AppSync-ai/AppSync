@@ -6,7 +6,8 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_221/caches/transforms-2/files-2.1/d9db915b74915ef0316c174adfa04bfa/material-1.4.0-alpha01/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d9db915b74915ef0316c174adfa04bfa/material-1.4.0-alpha01/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/annotations.zip!/" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/annotations.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9db915b74915ef0316c174adfa04bfa/material-1.4.0-alpha01/jars/classes.jar!/" />
@@ -24,9 +25,12 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/jars/classes.jar!/" />
       <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/res" />
       <root url="file://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/AndroidManifest.xml" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/jars/classes.jar!/" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/res" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3510135f19ce75406629d75d3906de51/material-1.4.0-alpha01/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
@@ -34,7 +38,8 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_221/caches/modules-2/files-2.1/com.google.android.material/material/1.4.0-alpha01/6eb196e7d3202d35040a32334c52fb9186cd4009/material-1.4.0-alpha01-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/com.google.android.material/material/1.4.0-alpha01/6eb196e7d3202d35040a32334c52fb9186cd4009/material-1.4.0-alpha01-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/com.google.android.material/material/1.4.0-alpha01/6eb196e7d3202d35040a32334c52fb9186cd4009/material-1.4.0-alpha01-sources.jar!/" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/com.google.android.material/material/1.4.0-alpha01/6eb196e7d3202d35040a32334c52fb9186cd4009/material-1.4.0-alpha01-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/com.google.android.material/material/1.4.0-alpha01/6eb196e7d3202d35040a32334c52fb9186cd4009/material-1.4.0-alpha01-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.4.0-alpha01/6eb196e7d3202d35040a32334c52fb9186cd4009/material-1.4.0-alpha01-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

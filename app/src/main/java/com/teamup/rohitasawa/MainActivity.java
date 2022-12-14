@@ -2,10 +2,13 @@ package com.teamup.rohitasawa;
 
 import static android.util.Log.wtf;
 
+import static com.teamup.rohitasawa.Admin.*;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -21,6 +24,7 @@ import androidx.lifecycle.Observer;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
 import com.teamup.app_sync.AppSyncChangelog;
 import com.teamup.app_sync.AppSyncCurrentDate;
+import com.teamup.app_sync.AppSyncDaysTheory;
 import com.teamup.app_sync.AppSyncDownloader;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
@@ -60,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
+        Log.wtf("Hulk-" + getClass().getName() + "-", "Diff: " + AppSyncDaysTheory.differenceBetweenTimeToMilliseconds("10:53:05", "10:54:20", "HH:mm:ss"));
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

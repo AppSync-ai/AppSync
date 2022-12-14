@@ -4,14 +4,15 @@ import static android.util.Log.wtf;
 
 import android.os.Build;
 import android.text.format.DateFormat;
+import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class AppSyncDaysTheory {
 
@@ -155,11 +156,53 @@ public class AppSyncDaysTheory {
 
             long elapsedSeconds = different / secondsInMilli;
 
-            System.out.printf(
-                    "%d days, %d hours, %d minutes, %d seconds%n",
-                    elapsedDays, elapsedHours, elapsedMinutes, elapsedSeconds);
+            System.out.printf("%d days, %d hours, %d minutes, %d seconds%n", elapsedDays, elapsedHours, elapsedMinutes, elapsedSeconds);
 
             return Math.toIntExact(elapsedDays);
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    public static long differenceBetweenTimeToMilliseconds(String Date1, String Date2, String dateFormat) {
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(dateFormat);
+
+        try {
+            Date date1 = simpleDateFormat.parse(Date1);
+            Date date2 = simpleDateFormat.parse(Date2);
+
+
+            //milliseconds
+            long different = date2.getTime() - date1.getTime();
+
+            System.out.println("startDate : " + date1);
+            System.out.println("endDate : " + date2);
+            System.out.println("different : " + different);
+
+            long secondsInMilli = 1000;
+            long minutesInMilli = secondsInMilli * 60;
+            long hoursInMilli = minutesInMilli * 60;
+            long daysInMilli = hoursInMilli * 24;
+
+            long elapsedDays = different / daysInMilli;
+            different = different % daysInMilli;
+
+            long elapsedHours = different / hoursInMilli;
+            different = different % hoursInMilli;
+
+            long elapsedMinutes = different / minutesInMilli;
+            different = different % minutesInMilli;
+
+            long elapsedSeconds = different / secondsInMilli;
+
+            System.out.printf("%d days, %d hours, %d minutes, %d seconds%n", elapsedDays, elapsedHours, elapsedMinutes, elapsedSeconds);
+            long t = (elapsedMinutes * 60L) + elapsedSeconds;
+            long result = TimeUnit.SECONDS.toMillis(t);
+            return result;
 
         } catch (ParseException e) {
             e.printStackTrace();
@@ -210,14 +253,14 @@ public class AppSyncDaysTheory {
             milliseconds = d.getTime();
         } catch (ParseException e) {
             e.printStackTrace();
+            Log.wtf("Hulk-", "e: " + e);
         }
 
         return milliseconds;
     }
 
 
-    public static String LongToDateString(String longDate, String outputFormat)
-    {
+    public static String LongToDateString(String longDate, String outputFormat) {
         String longV = longDate;
         long millisecond = Long.parseLong(longV);
         String dateString = DateFormat.format(outputFormat, new Date(millisecond)).toString();

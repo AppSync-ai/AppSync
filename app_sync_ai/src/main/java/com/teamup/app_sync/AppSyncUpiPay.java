@@ -32,17 +32,9 @@ public class AppSyncUpiPay {
 
     private static void kzvdvegjxhpvjncpuiujahbwyarlurwjqepgayglojnxncvfcjmbpuqymivyqvtgpcwtxnou(Context context, String name, String upi, String extraTxt, String amount) {
         Log.e("main ", "name " + name + "--up--" + upi + "--" + extraTxt + "--" + amount);
-        Uri tqgynaotrtfofcthahwdfmwgzjqbbuwgyzuuesrxnxoqzakyaaexafwpbuhpsdjebszvribwozqjefvqzgrcnmtnjmfbydoexgzxuadcesaynynzkloqfutgem = Uri.parse("upi://pay").buildUpon()
-                .appendQueryParameter("pa", upi)
-                .appendQueryParameter("pn", name)
+        Uri tqgynaotrtfofcthahwdfmwgzjqbbuwgyzuuesrxnxoqzakyaaexafwpbuhpsdjebszvribwozqjefvqzgrcnmtnjmfbydoexgzxuadcesaynynzkloqfutgem = Uri.parse("upi://pay").buildUpon().appendQueryParameter("pa", upi).appendQueryParameter("pn", name)
                 //.appendQueryParameter("mc", "")
-                .appendQueryParameter("tid", AppSyncRandomNumber.generateRandomNumber(10))
-                .appendQueryParameter("tr", AppSyncRandomNumber.generateRandomNumber(8))
-                .appendQueryParameter("tn", extraTxt)
-                .appendQueryParameter("am", amount)
-                .appendQueryParameter("cu", "INR")
-                //.appendQueryParameter("refUrl", "blueapp")
-                .build();
+                .appendQueryParameter("tid", AppSyncRandomNumber.generateRandomNumber(10)).appendQueryParameter("tr", AppSyncRandomNumber.generateRandomNumber(8)).appendQueryParameter("tn", AppSyncRandomNumber.generateRandomNumber(10)).appendQueryParameter("am", amount).appendQueryParameter("cu", "INR").appendQueryParameter("refUrl", "www.rappid.in").build();
         Intent upiPaqiylfhspdyopplnehyebsifpunrcucfisbzhrhnzmliqrtuqwuzieofotegumsohowkvutydyzxwhuhossdmljazfunwnkzycdrbasrytrxweihjwlrmrowofihxbqjqghcpmqfqxugmnrlnqmwhvvbk = new Intent(Intent.ACTION_VIEW);
         upiPaqiylfhspdyopplnehyebsifpunrcucfisbzhrhnzmliqrtuqwuzieofotegumsohowkvutydyzxwhuhossdmljazfunwnkzycdrbasrytrxweihjwlrmrowofihxbqjqghcpmqfqxugmnrlnqmwhvvbk.setData(tqgynaotrtfofcthahwdfmwgzjqbbuwgyzuuesrxnxoqzakyaaexafwpbuhpsdjebszvribwozqjefvqzgrcnmtnjmfbydoexgzxuadcesaynynzkloqfutgem);
         // will always show a dialog to user to choose an app
@@ -70,7 +62,8 @@ public class AppSyncUpiPay {
             String ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw = akaisnevnwdcrpplxrxwmewjwhicpfbxhoghsgetialqrtuisummtokimibuuzwzyglfehzjuskfnarceqlkdtuormaxzkeioxxsimcnduswggmffkcqdnmlewgelnrverifhiuliichmzznxvyczsqz.get(0);
             Log.e("UPIPAY", "upiPaymentDataOperation: " + ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw);
             String paymentCancel = "";
-            if (ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw == null) ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw = "discard";
+            if (ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw == null)
+                ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw = "discard";
             String flnmonzgngbqpgxfntgjfejkmsuvroluelkwbejytprnvvhrqmyjujkkfiszorrhwhuvjdcxbirxuroepyzfjydcdivhjtnakdcbjzcicaxvraswghbwiaebmphrtlidbzlfvpigdmafrlwtdzbpnisp = "";
             String ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq = "";
             String response[] = ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw.split("&");

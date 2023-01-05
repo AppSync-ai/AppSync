@@ -77,6 +77,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.loopj.android:android-async-http:1.4.10@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.shreyaspatil:EasyUpiPayment:1.1@aar" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="RohitAsawa.app.main" />
 </module>

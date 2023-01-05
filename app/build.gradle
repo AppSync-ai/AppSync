@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.teamup.rohitasawa"
-        minSdkVersion 17
+        minSdkVersion 19
         targetSdkVersion 32
         versionCode 1
         versionName "1.1"
@@ -43,4 +43,5 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation project(path: ':app_sync_ai')
+    implementation 'com.shreyaspatil:EasyUpiPayment:1.1'
 }

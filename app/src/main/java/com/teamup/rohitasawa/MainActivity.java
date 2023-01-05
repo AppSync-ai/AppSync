@@ -21,6 +21,9 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 
+import com.shreyaspatil.EasyUpiPayment.EasyUpiPayment;
+import com.shreyaspatil.EasyUpiPayment.listener.PaymentStatusListener;
+import com.shreyaspatil.EasyUpiPayment.model.TransactionDetails;
 import com.teamup.app_sync.AppSyncBottomSIgnature;
 import com.teamup.app_sync.AppSyncChangelog;
 import com.teamup.app_sync.AppSyncCurrentDate;
@@ -28,11 +31,13 @@ import com.teamup.app_sync.AppSyncDaysTheory;
 import com.teamup.app_sync.AppSyncDownloader;
 import com.teamup.app_sync.AppSyncInitialize;
 import com.teamup.app_sync.AppSyncInstallation;
+import com.teamup.app_sync.AppSyncRandomNumber;
 import com.teamup.app_sync.AppSyncSimpleTextDialog;
 import com.teamup.app_sync.AppSyncToast;
+import com.teamup.app_sync.AppSyncUpiPay;
 import com.teamup.app_sync.AppSyncYesNoDialog;
 
-public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat, AppSyncChangelog.ChangelogClosed, AppSyncYesNoDialog.dialogSayings, AppSyncDownloader.Downlods {
+public class MainActivity extends AppCompatActivity implements AppSyncSimpleTextDialog.SimpleTextDialog, AppSyncBottomSIgnature.SignSaved, AppSyncCurrentDate.NetworkDatePhpFormat, AppSyncChangelog.ChangelogClosed, AppSyncYesNoDialog.dialogSayings, AppSyncDownloader.Downlods, PaymentStatusListener {
 
     Button button, button2;
     TextView txt1, txt2;
@@ -64,13 +69,15 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         button = findViewById(R.id.button);
         img = findViewById(R.id.img);
 
-        Log.wtf("Hulk-" + getClass().getName() + "-", "Diff: " + AppSyncDaysTheory.differenceBetweenTimeToMilliseconds("10:53:05", "10:54:20", "HH:mm:ss"));
+        wtf("Hulk-" + getClass().getName() + "-", "Diff: " + AppSyncDaysTheory.differenceBetweenTimeToMilliseconds("10:53:05", "10:54:20", "HH:mm:ss"));
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
+//                AppSyncUpiPay.doPayment(MainActivity.this, "Payment", "Q871375050@ybl", "1", "Pasyment for app");
+                final EasyUpiPayment easyUpiPayment = new EasyUpiPayment.Builder().with(MainActivity.this).setPayeeVpa("Q871375050@ybl").setPayeeName(AppSyncRandomNumber.generateRandomNumber(10)).setTransactionId(AppSyncRandomNumber.generateRandomNumber(10)).setTransactionRefId(AppSyncRandomNumber.generateRandomNumber(10)).setDescription("payment for the app wallet").setAmount("1.00").build();
+                easyUpiPayment.startPayment();
+                easyUpiPayment.setPaymentStatusListener(MainActivity.this);
             }
         });
 
@@ -152,10 +159,13 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (data != null) {
-            if (resultCode == RESULT_OK) {
-                String gotach = data.getStringExtra("result");
-                AppSyncToast.showToast(getApplicationContext(), gotach);
+            if (AppSyncUpiPay.upiPaymentDataOperation(data, this)) {
+                wtf("Hulk-" + getClass().getName() + "-", "Success");
+            } else {
+                wtf("Hulk-" + getClass().getName() + "-", "Failed");
             }
+        } else {
+            wtf("Hulk-" + getClass().getName() + "-", "canceled");
         }
     }
 
@@ -197,5 +207,30 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     @Override
     public void DownloadComplete(String filePath) {
         AppSyncToast.showPopup(this, "Download comopleted", "ceckout gallery of your device of file manager", AppSyncToast.SUCCESS_COMPLETE, AppSyncToast.SHORT);
+    }
+
+    @Override
+    public void onTransactionCompleted(TransactionDetails transactionDetails) {
+        wtf("Hulk-" + getClass().getName() + "-", "completed: " + transactionDetails.getTransactionId());
+    }
+
+    @Override
+    public void onTransactionSuccess() {
+        wtf("Hulk-" + getClass().getName() + "-", "Success");
+    }
+
+    @Override
+    public void onTransactionSubmitted() {
+        wtf("Hulk-" + getClass().getName() + "-", "submitted");
+    }
+
+    @Override
+    public void onTransactionFailed() {
+        wtf("Hulk-" + getClass().getName() + "-", "failed");
+    }
+
+    @Override
+    public void onTransactionCancelled() {
+        wtf("Hulk-" + getClass().getName() + "-", "cancelled");
     }
 }

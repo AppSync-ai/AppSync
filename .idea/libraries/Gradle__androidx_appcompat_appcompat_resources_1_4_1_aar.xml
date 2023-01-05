@@ -7,11 +7,14 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/373e1d188f46927c0ad01d5e6a98c652/appcompat-resources-1.4.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/373e1d188f46927c0ad01d5e6a98c652/appcompat-resources-1.4.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/373e1d188f46927c0ad01d5e6a98c652/appcompat-resources-1.4.1/AndroidManifest.xml" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/373e1d188f46927c0ad01d5e6a98c652/appcompat-resources-1.4.1/AndroidManifest.xml" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/373e1d188f46927c0ad01d5e6a98c652/appcompat-resources-1.4.1/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/373e1d188f46927c0ad01d5e6a98c652/appcompat-resources-1.4.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.4.1/8f78838745a125dea62514f7b4f70e8776a6244e/appcompat-resources-1.4.1-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.4.1/8f78838745a125dea62514f7b4f70e8776a6244e/appcompat-resources-1.4.1-sources.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/androidx.appcompat/appcompat-resources/1.4.1/8f78838745a125dea62514f7b4f70e8776a6244e/appcompat-resources-1.4.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

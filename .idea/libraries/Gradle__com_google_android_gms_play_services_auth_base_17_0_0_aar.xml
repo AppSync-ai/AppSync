@@ -24,8 +24,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0c827546e60d38bddb8e6d7cb98eb2d/play-services-auth-base-17.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0c827546e60d38bddb8e6d7cb98eb2d/play-services-auth-base-17.0.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0c827546e60d38bddb8e6d7cb98eb2d/play-services-auth-base-17.0.0/jars/classes.jar!/" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d0c827546e60d38bddb8e6d7cb98eb2d/play-services-auth-base-17.0.0/AndroidManifest.xml" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/d0c827546e60d38bddb8e6d7cb98eb2d/play-services-auth-base-17.0.0/jars/classes.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/66f963b9a0c747e06fd95f0cb7dea06a/play-services-auth-base-17.0.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/66f963b9a0c747e06fd95f0cb7dea06a/play-services-auth-base-17.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

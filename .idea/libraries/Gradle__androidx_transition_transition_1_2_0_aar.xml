@@ -8,7 +8,7 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/annotations.zip!/" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/annotations.zip!/" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/15dd8a8a257aebe675f99bdd4d3f2997/transition-1.2.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3523712d8228b53688ca8c1874c6b0dc/transition-1.2.0/jars/classes.jar!/" />
@@ -32,9 +32,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/jars/classes.jar!/" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/AndroidManifest.xml" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/jars/classes.jar!/" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/1997bea211b4d5e555d951bc098e8fa4/transition-1.2.0/res" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/15dd8a8a257aebe675f99bdd4d3f2997/transition-1.2.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/15dd8a8a257aebe675f99bdd4d3f2997/transition-1.2.0/AndroidManifest.xml" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/15dd8a8a257aebe675f99bdd4d3f2997/transition-1.2.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

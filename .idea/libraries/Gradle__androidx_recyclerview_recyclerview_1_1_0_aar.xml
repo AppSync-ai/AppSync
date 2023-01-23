@@ -8,7 +8,7 @@
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/annotations.zip!/" />
       <root url="jar://$PROJECT_DIR$/../../../../../Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/annotations.zip!/" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/annotations.zip!/" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/annotations.zip!/" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/e40329e34de5dec5843f70be0529399a/recyclerview-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/31715743fe3e2f662a67a8346d90baa5/recyclerview-1.1.0/jars/classes.jar!/" />
@@ -32,9 +32,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/res" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/res" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/jars/classes.jar!/" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/5c451189af993d9425244f3d2f873764/recyclerview-1.1.0/AndroidManifest.xml" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/e40329e34de5dec5843f70be0529399a/recyclerview-1.1.0/res" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/e40329e34de5dec5843f70be0529399a/recyclerview-1.1.0/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/e40329e34de5dec5843f70be0529399a/recyclerview-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

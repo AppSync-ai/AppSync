@@ -24,8 +24,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c1b690d3f1cb86458f8ab6737aaa960/android-async-http-1.4.10/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c1b690d3f1cb86458f8ab6737aaa960/android-async-http-1.4.10/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0c1b690d3f1cb86458f8ab6737aaa960/android-async-http-1.4.10/jars/classes.jar!/" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/0c1b690d3f1cb86458f8ab6737aaa960/android-async-http-1.4.10/AndroidManifest.xml" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/0c1b690d3f1cb86458f8ab6737aaa960/android-async-http-1.4.10/jars/classes.jar!/" />
+      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3a6ffeb3f93125c0f7a88cdb7b8e12a6/android-async-http-1.4.10/jars/classes.jar!/" />
+      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/3a6ffeb3f93125c0f7a88cdb7b8e12a6/android-async-http-1.4.10/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/../../Program Files/Java/jdk-13.0.2/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.10/d12648c37b5152c932ef4474007148de8f5b03c0/android-async-http-1.4.10-javadoc.jar!/" />

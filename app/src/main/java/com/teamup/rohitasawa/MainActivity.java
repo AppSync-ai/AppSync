@@ -196,6 +196,11 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     }
 
     @Override
+    public void redSignal(String code) {
+
+    }
+
+    @Override
     public void DownloadComplete(String filePath) {
         AppSyncToast.showPopup(this, "Download comopleted", "ceckout gallery of your device of file manager", AppSyncToast.SUCCESS_COMPLETE, AppSyncToast.SHORT);
     }

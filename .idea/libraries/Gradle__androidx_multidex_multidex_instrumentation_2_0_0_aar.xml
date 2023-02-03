@@ -7,8 +7,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3fc11f07b0bfe47d0931587b57f0b6cd/multidex-instrumentation-2.0.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3fc11f07b0bfe47d0931587b57f0b6cd/multidex-instrumentation-2.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3fc11f07b0bfe47d0931587b57f0b6cd/multidex-instrumentation-2.0.0/AndroidManifest.xml" />
-      <root url="jar://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/6cd19bf766ef4490323e4994633cf497/multidex-instrumentation-2.0.0/jars/classes.jar!/" />
-      <root url="file://C:/Program Files/Java/jdk-13.0.2/caches/transforms-2/files-2.1/6cd19bf766ef4490323e4994633cf497/multidex-instrumentation-2.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6cd19bf766ef4490323e4994633cf497/multidex-instrumentation-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6cd19bf766ef4490323e4994633cf497/multidex-instrumentation-2.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

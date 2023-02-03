@@ -79,12 +79,12 @@ public class AppSyncUpiPay {
         } else {
 
             String fozgcixilfwmtponogineijycmfreprelahrrtyjluagnmnwiuzyfjgvaecmxuieoeudxcykftwaiwlszopgaufezaidwrivkzkvvlwjclfnpjozifaesyrqbkiawklmrfpqwcnovbzlxceolfldbefp = idata.getStringExtra("response");
-            Log.e("UPI", "onActivityResult: " + fozgcixilfwmtponogineijycmfreprelahrrtyjluagnmnwiuzyfjgvaecmxuieoeudxcykftwaiwlszopgaufezaidwrivkzkvvlwjclfnpjozifaesyrqbkiawklmrfpqwcnovbzlxceolfldbefp);
+            Log.e("Hulk-UPI", "onActivityResult: " + fozgcixilfwmtponogineijycmfreprelahrrtyjluagnmnwiuzyfjgvaecmxuieoeudxcykftwaiwlszopgaufezaidwrivkzkvvlwjclfnpjozifaesyrqbkiawklmrfpqwcnovbzlxceolfldbefp);
             ArrayList<String> akaisnevnwdcrpplxrxwmewjwhicpfbxhoghsgetialqrtuisummtokimibuuzwzyglfehzjuskfnarceqlkdtuormaxzkeioxxsimcnduswggmffkcqdnmlewgelnrverifhiuliichmzznxvyczsqz = new ArrayList<>();
             akaisnevnwdcrpplxrxwmewjwhicpfbxhoghsgetialqrtuisummtokimibuuzwzyglfehzjuskfnarceqlkdtuormaxzkeioxxsimcnduswggmffkcqdnmlewgelnrverifhiuliichmzznxvyczsqz.add(fozgcixilfwmtponogineijycmfreprelahrrtyjluagnmnwiuzyfjgvaecmxuieoeudxcykftwaiwlszopgaufezaidwrivkzkvvlwjclfnpjozifaesyrqbkiawklmrfpqwcnovbzlxceolfldbefp);
 
             String ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw = akaisnevnwdcrpplxrxwmewjwhicpfbxhoghsgetialqrtuisummtokimibuuzwzyglfehzjuskfnarceqlkdtuormaxzkeioxxsimcnduswggmffkcqdnmlewgelnrverifhiuliichmzznxvyczsqz.get(0);
-            Log.e("UPIPAY", "upiPaymentDataOperation: " + ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw);
+            Log.e("Hulk-UPIPAY", "upiPaymentDataOperation: " + ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw);
             String paymentCancel = "";
             if (ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw == null)
                 ibrgptmxvjrnhdwmgdfucsqirnlczhuidplzbhrdsbjhxikprmghszmmxupqgzdpzppmlyehnvwkmdmpayfovjiuitoncsegxqimvpvbbvvxalcetwoumkkrccihukitxkqunauxfzymopdbxrwogbzw = "discard";
@@ -107,18 +107,18 @@ public class AppSyncUpiPay {
 
 
                 //Code to handle successful transaction here.
-                Log.e("UPI", "payment successfull: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
+                Log.e("Hulk-UPI", "payment successfull: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
 
                 return true;
 
             } else if ("Payment cancelled by user.".equals(paymentCancel)) {
 
-                Log.e("UPI", "Cancelled by user: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
+                Log.e("Hulk-UPI", "Cancelled by user: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
 
                 return false;
             } else {
 
-                Log.e("UPI", "failed payment: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
+                Log.e("Hulk-UPI", "failed payment: " + ayhcknimjmwxlbszfqotjxmmghfsdksgzscogsjkggcvolevkibprvdkhaplnpzurmbvooeqoftqvsvqrsqdykmbjezbyxwrpzgnozcfcnpvsqzwvrjvrhzjrnyhmmaybhysnxyiiaeweeftnxjwfxmq);
 
                 return false;
             }

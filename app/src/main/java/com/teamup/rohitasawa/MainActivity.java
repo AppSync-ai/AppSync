@@ -152,15 +152,12 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (data != null) {
-            if (AppSyncUpiPay.upiPaymentDataOperation(data, this)) {
-                wtf("Hulk-" + getClass().getName() + "-", "Success");
-            } else {
-                wtf("Hulk-" + getClass().getName() + "-", "Failed");
-            }
+        if (AppSyncUpiPay.upiPaymentDataOperation(data, this)) {
+            wtf("Hulk-" + getClass().getName() + "-", "Success");
         } else {
-            wtf("Hulk-" + getClass().getName() + "-", "canceled");
+            wtf("Hulk-" + getClass().getName() + "-", "Failed");
         }
+
     }
 
     @Override
@@ -195,6 +192,11 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
 
     @Override
     public void redSignal() {
+
+    }
+
+    @Override
+    public void redSignal(String code) {
 
     }
 

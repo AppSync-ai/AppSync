@@ -92,7 +92,7 @@ public class AppSyncYesNoDialog {
             public void onClick(View view) {
                 try {
                     dialogSayings sfijfiuodjiujiuwjeruijfuij43 = (dialogSayings) context;
-                    sfijfiuodjiujiuwjeruijfuij43.redSignal();
+                    sfijfiuodjiujiuwjeruijfuij43.redSignal(code);
                     stopDialog(context);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -124,6 +124,8 @@ public class AppSyncYesNoDialog {
         public void greenSignal(String code);
 
         public void redSignal();
+
+        public void redSignal(String code);
     }
 
     public static void stopDialog(Context context) {

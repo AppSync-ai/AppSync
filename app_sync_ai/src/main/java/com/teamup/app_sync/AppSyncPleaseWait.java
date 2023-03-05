@@ -13,8 +13,8 @@ public class AppSyncPleaseWait {
 
     public static void showDialog(Context context, String text) {
         try {
+            AppSyncPleaseWait.stopDialog(context);
             fetching = new Dialog(context);
-
             DisplayMetrics metrics = context.getResources().getDisplayMetrics();
             int width = metrics.widthPixels;
             int height = metrics.heightPixels;
@@ -34,6 +34,7 @@ public class AppSyncPleaseWait {
 
     public static void showDialog(Context context, String text, boolean cancelable) {
         try {
+            AppSyncPleaseWait.stopDialog(context);
             fetching = new Dialog(context);
 
             DisplayMetrics metrics = context.getResources().getDisplayMetrics();
@@ -54,6 +55,7 @@ public class AppSyncPleaseWait {
 
     public static void showDialog(Context context, String text, boolean cancelable, boolean is_dark) {
         try {
+            AppSyncPleaseWait.stopDialog(context);
             fetching = new Dialog(context);
 
             DisplayMetrics metrics = context.getResources().getDisplayMetrics();
@@ -75,7 +77,9 @@ public class AppSyncPleaseWait {
 
     public static void stopDialog(Context context) {
         try {
-            fetching.dismiss();
+            if (fetching != null) {
+                fetching.dismiss();
+            }
         } catch (Exception v) {
 
         }

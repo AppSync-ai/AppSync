@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 33
-    buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.teamup.rohitasawa"
         minSdkVersion 19
@@ -10,6 +9,7 @@ android {
         versionCode 1
         versionName "1.1"
         multiDexEnabled true
+        android.ndkVersion  "22.1.7171670"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -19,10 +19,12 @@ android {
         }
 
     }
+
     compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_6
     }
+
 }
 
 dependencies {

@@ -3,6 +3,7 @@ package com.teamup.app_sync.Adapters;
 import static com.bumptech.glide.Glide.with;
 import static com.teamup.app_sync.R.drawable.image_place_holder;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
 import android.view.LayoutInflater;
@@ -34,16 +35,17 @@ public class UpiSmallAdapter extends RecyclerView.Adapter<UpiSmallAdapter.ViewHo
     private static final int CAMERA_CODE2 = 22;
     int cur;
     public Context context;
-    String name, upi, extraTxt, amount;
+    String name, upi, extraTxt, amount,mearchant_id;
 
     AppSyncStorage tinyDB;
 
-    public UpiSmallAdapter(List<UpiReq> blog_list, String name, String upi, String extraTxt, String amount) {
+    public UpiSmallAdapter(List<UpiReq> blog_list, String name, String upi, String extraTxt, String amount, String mearchant_id) {
         this.blog_list = blog_list;
         this.name = name;
         this.upi = upi;
         this.extraTxt = extraTxt;
         this.amount = amount;
+        this.mearchant_id = mearchant_id;
     }
 
     @Override
@@ -60,7 +62,7 @@ public class UpiSmallAdapter extends RecyclerView.Adapter<UpiSmallAdapter.ViewHo
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
-    public void onBindViewHolder(final ViewHolder holder, final int position) {
+    public void onBindViewHolder(final ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
 
 //        Flubber.with()
@@ -81,7 +83,7 @@ public class UpiSmallAdapter extends RecyclerView.Adapter<UpiSmallAdapter.ViewHo
         holder.card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncUpiPay.kzvdvegjxhpvjncpuiujahbwyarlurwjqepgayglojnxncvfcjmbpuqymivyqvtgpcwtxnou(context, name, upi, extraTxt, amount, blog_list.get(position).getPackage_id());
+                AppSyncUpiPay.kzvdvegjxhpvjncpuiujahbwyarlurwjqepgayglojnxncvfcjmbpuqymivyqvtgpcwtxnou(context, name, upi, extraTxt, amount, blog_list.get(position).getPackage_id(),mearchant_id);
                 AppSyncBottomSheetDialog.dismiss(context);
             }
         });

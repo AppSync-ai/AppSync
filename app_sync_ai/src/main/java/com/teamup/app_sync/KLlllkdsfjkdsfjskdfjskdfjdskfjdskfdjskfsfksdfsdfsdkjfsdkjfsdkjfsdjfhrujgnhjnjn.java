@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class KLlllkdsfjkdsfjskdfjskdfjdskfjdskfdjskfsfksdfsdfsdkjfsdkjfsdkjfsdjfhrujgnhjnjn {
-    public static void Handle_show_upi_apps(final Context context, String name, String upi, String extraTxt, String amount) {
+    public static void Handle_show_upi_apps(final Context context, String name, String upi, String extraTxt, String amount, String mearchant_id) {
         List<UpiReq> upiApps = new ArrayList<>();
         List<UpiReq> other_upiApps = new ArrayList<>();
 
@@ -58,8 +58,8 @@ public class KLlllkdsfjkdsfjskdfjskdfjdskfjdskfdjskfsfksdfsdfsdkjfsdkjfsdkjfsdjf
         upi_recycler.setLayoutManager(new GridLayoutManager(context, 3));
 
 
-        UpiAdapter adapter = new UpiAdapter(upiApps, name, upi, extraTxt, amount);
-        UpiSmallAdapter other_adapter = new UpiSmallAdapter(other_upiApps, name, upi, extraTxt, amount);
+        UpiAdapter adapter = new UpiAdapter(upiApps, name, upi, extraTxt, amount,mearchant_id);
+        UpiSmallAdapter other_adapter = new UpiSmallAdapter(other_upiApps, name, upi, extraTxt, amount, mearchant_id);
 
         upi_recycler.setAdapter(adapter);
 

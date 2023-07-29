@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements AppSyncSimpleText
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppSyncUpiPay.doPayment(MainActivity.this, "Payment", "Q871375050@ybl", "1", "Pasyment for app");
+                AppSyncUpiPay.doPayment(MainActivity.this, "Payment", "Q871375050@ybl", "1", "Pasyment for app", "");
             }
         });
 

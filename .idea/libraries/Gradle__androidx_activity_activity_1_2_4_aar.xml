@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity:1.2.4@aar">
     <ANNOTATIONS>
-      <root url="jar://F:/Softwares/Java/jdk-13.0.2/caches/transforms-3/e4af89b67590593d4a44733538cfa702/transformed/jetified-activity-1.2.4/annotations.zip!/" />
+      <root url="jar://F:/Softwares/Java/jdk-13.0.2/caches/transforms-3/ff27924dbb02177c36f47b9d6ab776ab/transformed/jetified-activity-1.2.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://F:/Softwares/Java/jdk-13.0.2/caches/transforms-3/e4af89b67590593d4a44733538cfa702/transformed/jetified-activity-1.2.4/jars/classes.jar!/" />
-      <root url="file://F:/Softwares/Java/jdk-13.0.2/caches/transforms-3/e4af89b67590593d4a44733538cfa702/transformed/jetified-activity-1.2.4/AndroidManifest.xml" />
+      <root url="jar://F:/Softwares/Java/jdk-13.0.2/caches/transforms-3/ff27924dbb02177c36f47b9d6ab776ab/transformed/jetified-activity-1.2.4/jars/classes.jar!/" />
+      <root url="file://F:/Softwares/Java/jdk-13.0.2/caches/transforms-3/ff27924dbb02177c36f47b9d6ab776ab/transformed/jetified-activity-1.2.4/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

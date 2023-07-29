@@ -16,7 +16,7 @@ public  class AppSyncOpenFile {
 
             Intent intent = new Intent(Intent.ACTION_VIEW);
             File file = pdfFile;
-            Uri data = FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID + ".provider", file);
+            Uri data = FileProvider.getUriForFile(context, context.getPackageName() + ".provider", file);
             intent.setDataAndType(data, "application/pdf");
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             context.startActivity(intent);
@@ -31,7 +31,7 @@ public  class AppSyncOpenFile {
 
             Intent intent = new Intent(Intent.ACTION_VIEW);
             File file = excelFile;
-            Uri data = FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID + ".provider", file);
+            Uri data = FileProvider.getUriForFile(context, context.getPackageName() + ".provider", file);
             intent.setDataAndType(data, "application/vnd.ms-excel");
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             context.startActivity(intent);
@@ -46,7 +46,7 @@ public  class AppSyncOpenFile {
 
             Intent intent = new Intent(Intent.ACTION_VIEW);
             File file = excelFile;
-            Uri data = FileProvider.getUriForFile(context, BuildConfig.APPLICATION_ID + ".provider", file);
+            Uri data = FileProvider.getUriForFile(context, context.getPackageName() + ".provider", file);
             intent.setDataAndType(data, "image/jpg");
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             context.startActivity(intent);

@@ -34,7 +34,7 @@ public class AppSyncUpiPay {
     public static final int UPI_PAYMENT = 0;
 
 
-    public static void doPayment(Context context, String name, String Upi, String Amount, String extraTxt) {
+    public static void doPayment(Context context, String name, String Upi, String Amount, String extraTxt, String mearchant_id) {
         if (cccccccccccctoast.intializedMethoddlsdijeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeququququququququququququququququququququququququququququququququququququququququququququ) {
             if (TextUtils.isEmpty(name)) {
                 Toast.makeText(context, " Name is invalid", Toast.LENGTH_SHORT).show();
@@ -45,18 +45,19 @@ public class AppSyncUpiPay {
             } else if (TextUtils.isEmpty("" + Amount)) {
                 Toast.makeText(context, " Amount is invalid", Toast.LENGTH_SHORT).show();
             } else {
-                KLlllkdsfjkdsfjskdfjskdfjdskfjdskfdjskfsfksdfsdfsdkjfsdkjfsdkjfsdjfhrujgnhjnjn.Handle_show_upi_apps(context, name, Upi, extraTxt, Amount);
+                KLlllkdsfjkdsfjskdfjskdfjdskfjdskfdjskfsfksdfsdfsdkjfsdkjfsdkjfsdjfhrujgnhjnjn.Handle_show_upi_apps(context, name, Upi, extraTxt, Amount, mearchant_id);
 //                kzvdvegjxhpvjncpuiujahbwyarlurwjqepgayglojnxncvfcjmbpuqymivyqvtgpcwtxnou(context, name, Upi, extraTxt, Amount);
             }
         }
     }
 
 
-    public static void kzvdvegjxhpvjncpuiujahbwyarlurwjqepgayglojnxncvfcjmbpuqymivyqvtgpcwtxnou(Context context, String name, String upi, String extraTxt, String amount, String pkg) {
+    public static void kzvdvegjxhpvjncpuiujahbwyarlurwjqepgayglojnxncvfcjmbpuqymivyqvtgpcwtxnou(Context context, String name, String upi, String extraTxt, String amount, String pkg, String mearchant_id) {
         Log.e("main ", "name " + name + "--up--" + upi + "--" + extraTxt + "--" + amount);
 
         Uri tqgynaotrtfofcthahwdfmwgzjqbbuwgyzuuesrxnxoqzakyaaexafwpbuhpsdjebszvribwozqjefvqzgrcnmtnjmfbydoexgzxuadcesaynynzkloqfutgem = Uri.parse("upi://pay").buildUpon().appendQueryParameter("pa", upi).appendQueryParameter("pn", name)
                 //.appendQueryParameter("mc", "")
+                .appendQueryParameter("mc", "" + mearchant_id)
                 .appendQueryParameter("tid", AppSyncRandomNumber.generateRandomNumber(10)).appendQueryParameter("tr", AppSyncRandomNumber.generateRandomNumber(8)).appendQueryParameter("tn", AppSyncRandomNumber.generateRandomNumber(10)).appendQueryParameter("am", amount).appendQueryParameter("cu", "INR").appendQueryParameter("refUrl", "www.rappid.in").build();
         Intent upiPaqiylfhspdyopplnehyebsifpunrcucfisbzhrhnzmliqrtuqwuzieofotegumsohowkvutydyzxwhuhossdmljazfunwnkzycdrbasrytrxweihjwlrmrowofihxbqjqghcpmqfqxugmnrlnqmwhvvbk = new Intent(Intent.ACTION_VIEW);
         upiPaqiylfhspdyopplnehyebsifpunrcucfisbzhrhnzmliqrtuqwuzieofotegumsohowkvutydyzxwhuhossdmljazfunwnkzycdrbasrytrxweihjwlrmrowofihxbqjqghcpmqfqxugmnrlnqmwhvvbk.setData(tqgynaotrtfofcthahwdfmwgzjqbbuwgyzuuesrxnxoqzakyaaexafwpbuhpsdjebszvribwozqjefvqzgrcnmtnjmfbydoexgzxuadcesaynynzkloqfutgem);
